@@ -22,6 +22,7 @@ const getDefaultData = (): PlayerData => ({
   unlockedSkinIds: [DEFAULT_SKINS[0].id],
   unlockedCollectibles: [],
   selectedCollectibleId: null,
+  transactions: [],
   xp: 0,
   level: 1,
   xpToNext: 1000,
@@ -201,6 +202,16 @@ function App() {
     savePlayerData(currentUser.id, newData);
   };
 
+  const handleRecordTransaction = (tx: import('./types').TransactionRecord) => {
+    if (!currentUser) return;
+    const newData = {
+      ...playerData,
+      transactions: [tx, ...(playerData.transactions || [])]
+    };
+    setPlayerData(newData);
+    savePlayerData(currentUser.id, newData);
+  };
+
   // Shop Logic - Collectibles
   const buyCollectible = (item: Collectible): boolean => {
     if (!currentUser) return false;
@@ -339,6 +350,7 @@ function App() {
           onUnlockSkin={handleUnlockSkin}
           onBuyCollectible={buyCollectible}
           onEquipCollectible={equipCollectible}
+          onRecordTransaction={handleRecordTransaction}
           onClose={() => setGameState('MENU')}
           tonAddress={tonAddress}
         />

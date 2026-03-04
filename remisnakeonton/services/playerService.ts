@@ -13,6 +13,7 @@ const DEFAULT_DATA: PlayerData = {
   unlockedSkinIds: [DEFAULT_SKINS[0].id],
   unlockedCollectibles: [],
   selectedCollectibleId: null,
+  transactions: [],
   xp: 0,
   level: 1,
   xpToNext: 1000,

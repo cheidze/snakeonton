@@ -4,8 +4,10 @@ import { GameSettings, PlayerData, BotDifficulty, UserProfile } from '../types';
 import { audioService } from '../services/audioService';
 import { authService } from '../services/authService';
 import { PLAYER_COUNTRIES } from '../services/constants';
+import { tonService } from '../services/tonService';
 import XPBar from './XPBar';
 import CountrySelector from './CountrySelector';
+import Transactions from './Transactions';
 
 interface Props {
   onStart: (name: string) => void;
@@ -20,6 +22,9 @@ interface Props {
   onLogin: (user: UserProfile) => void;
   onLogout: () => void;
   onAdminLogin: () => void; // New callback
+  tonAddress?: string | null;
+  onConnectWallet?: () => void;
+  onDisconnectWallet?: () => void;
   isTelegram?: boolean; // New prop to detect Telegram context
 }
 
@@ -36,10 +41,13 @@ const MainMenu: React.FC<Props> = ({
   onLogin,
   onLogout,
   onAdminLogin,
+  tonAddress = null,
+  onConnectWallet,
+  onDisconnectWallet,
   isTelegram = false
 }) => {
-  // View state: 'auth' | 'profile-completion' | 'main' | 'settings' | 'user-profile'
-  const [view, setView] = useState<'auth' | 'profile-completion' | 'main' | 'settings' | 'user-profile'>('auth');
+  // View state: 'auth' | 'profile-completion' | 'main' | 'settings' | 'user-profile' | 'transactions'
+  const [view, setView] = useState<'auth' | 'profile-completion' | 'main' | 'settings' | 'user-profile' | 'transactions'>('auth');
   const [authMode, setAuthMode] = useState<'login' | 'register'>('login');
 
   // Auth inputs
@@ -319,8 +327,8 @@ const MainMenu: React.FC<Props> = ({
                               type="button"
                               onClick={() => setGender(g as any)}
                               className={`flex-1 py-2 rounded border ${gender === g
-                                  ? `bg-white/20 border-${themeColor} text-white`
-                                  : 'bg-black/50 border-white/10 text-gray-500'
+                                ? `bg-white/20 border-${themeColor} text-white`
+                                : 'bg-black/50 border-white/10 text-gray-500'
                                 } uppercase text-xs font-bold transition-all`}
                               style={{ borderColor: gender === g ? themeColor : '' }}
                             >
@@ -449,8 +457,8 @@ const MainMenu: React.FC<Props> = ({
                       type="button"
                       onClick={() => setGender(g as any)}
                       className={`flex-1 py-2 rounded border ${gender === g
-                          ? `bg-white/20 border-${themeColor} text-white`
-                          : 'bg-black/50 border-white/10 text-gray-500'
+                        ? `bg-white/20 border-${themeColor} text-white`
+                        : 'bg-black/50 border-white/10 text-gray-500'
                         } uppercase text-xs font-bold transition-all`}
                       style={{ borderColor: gender === g ? themeColor : '' }}
                     >
@@ -502,6 +510,38 @@ const MainMenu: React.FC<Props> = ({
               <XPBar level={playerData.level} xp={playerData.xp} xpToNext={playerData.xpToNext} />
             </div>
 
+            {/* WALLET INTEGRATION HEADER */}
+            <div className="w-full flex items-center justify-between gap-2 mb-4">
+              <div className="flex-1 bg-black/60 border border-white/10 rounded-lg p-3 flex items-center justify-between">
+                {tonAddress ? (
+                  <>
+                    <div className="flex items-center gap-2">
+                      <span className="text-blue-400 text-xl">💎</span>
+                      <div className="flex flex-col">
+                        <span className="text-[10px] text-gray-400 uppercase font-bold tracking-widest">TON Wallet</span>
+                        <span className="text-sm font-mono font-bold text-white">{tonService.formatAddress(tonAddress)}</span>
+                      </div>
+                    </div>
+                    <button
+                      onClick={() => { audioService.playClick(); onDisconnectWallet?.(); }}
+                      className="w-8 h-8 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center hover:bg-red-500 hover:text-white transition-colors border border-red-500/30"
+                      title="Disconnect Wallet"
+                    >
+                      ✕
+                    </button>
+                  </>
+                ) : (
+                  <button
+                    onClick={() => { audioService.playClick(); onConnectWallet?.(); }}
+                    className="w-full flex items-center justify-center gap-2 text-blue-400 hover:text-white transition-colors py-1 group"
+                  >
+                    <span className="text-xl group-hover:scale-110 transition-transform">🔗</span>
+                    <span className="font-bold text-sm tracking-widest uppercase">Connect TON Wallet</span>
+                  </button>
+                )}
+              </div>
+            </div>
+
             <div className="flex items-center gap-2 w-72 mb-4 transform transition-all z-20">
               <button
                 onClick={() => setShowCountrySelector(true)}
@@ -532,6 +572,22 @@ const MainMenu: React.FC<Props> = ({
                 style={cyberBtnStyle}
               >
                 <span className="text-2xl font-black italic text-white tracking-widest drop-shadow-md transition-colors" style={{ textShadow: `0 0 10px ${themeColor}` }}>PLAY ONLINE</span>
+              </div>
+            </button>
+
+            {/* TRANSACTIONS BUTTON */}
+            <button
+              onClick={() => { audioService.playClick(); setView('transactions'); }}
+              className="w-64 h-12 mb-3 relative group focus:outline-none"
+            >
+              <div
+                className="relative h-full bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300"
+                style={{ ...cyberBtnStyle, borderColor: `rgba(255,255,255,0.1)` }}
+              >
+                <div className="flex items-center justify-center h-full gap-2">
+                  <span className="text-blue-400">📜</span>
+                  <span className="font-bold text-sm uppercase tracking-wider text-gray-300 group-hover:tracking-[0.2em] transition-all duration-300 drop-shadow-md group-hover:text-white">TRANSACTIONS</span>
+                </div>
               </div>
             </button>
 
@@ -691,8 +747,8 @@ const MainMenu: React.FC<Props> = ({
                       key={diff}
                       onClick={() => updateSettings({ botDifficulty: diff })}
                       className={`px-2 py-2 rounded text-xs font-bold uppercase border transition-all ${settings.botDifficulty === diff
-                          ? 'bg-neon-blue/20 text-neon-blue border-neon-blue'
-                          : 'bg-black/40 text-gray-500 border-white/5 hover:bg-white/5'
+                        ? 'bg-neon-blue/20 text-neon-blue border-neon-blue'
+                        : 'bg-black/40 text-gray-500 border-white/5 hover:bg-white/5'
                         }`}
                       style={{
                         borderColor: settings.botDifficulty === diff ? themeColor : undefined,
@@ -710,6 +766,17 @@ const MainMenu: React.FC<Props> = ({
             <button onClick={() => { audioService.playClick(); setView('main'); }} className="w-full py-3 bg-white/10 hover:bg-white/20 border border-white/10 rounded-lg font-bold tracking-widest transition-all hover:text-white hover:border-white">
               BACK
             </button>
+          </div>
+        )}
+
+        {/* TRANSACTIONS VIEW */}
+        {view === 'transactions' && (
+          <div className="w-full glass-panel rounded-2xl animate-in fade-in zoom-in-95 duration-300 border shadow-[0_0_30px_rgba(0,0,0,0.5)] bg-black/80" style={{ borderColor: `${themeColor}40`, height: '500px' }}>
+            <Transactions
+              transactions={playerData.transactions || []}
+              onBack={() => setView('main')}
+              themeColor={themeColor}
+            />
           </div>
         )}
       </div>

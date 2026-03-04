@@ -52,12 +52,20 @@ export interface TelegramUser {
   language_code?: string;
 }
 
-// Withdraw request to backend
 export interface WithdrawRequest {
   userId: string;
   tonAddress: string;
   amount: number; // in gold
   tonAmount: number; // calculated TON amount
+}
+
+export interface TransactionRecord {
+  id: string;
+  type: 'buy_skin' | 'withdraw';
+  amount: number;
+  currency: 'TON' | 'GOLD';
+  date: number; // timestamp
+  itemName?: string; // e.g., "Neon Blue"
 }
 
 export interface SnakeSkin {
@@ -87,6 +95,8 @@ export interface PlayerData {
   // Collectibles
   unlockedCollectibles: string[];
   selectedCollectibleId: string | null;
+  // Transactions History
+  transactions: TransactionRecord[];
   // Progression
   xp: number;
   level: number;

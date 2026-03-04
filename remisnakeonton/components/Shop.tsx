@@ -18,6 +18,7 @@ interface Props {
     onBuyCollectible: (item: Collectible) => boolean;
     onEquipCollectible: (itemId: string) => void;
     onUnlockSkin: (skinId: string) => void;
+    onRecordTransaction: (tx: import('../types').TransactionRecord) => void;
     onClose: () => void;
     tonAddress?: string | null;
 }
@@ -34,6 +35,7 @@ const Shop: React.FC<Props> = ({
     onUnlockSkin,
     onBuyCollectible,
     onEquipCollectible,
+    onRecordTransaction,
     onClose,
     tonAddress
 }) => {
@@ -88,6 +90,17 @@ const Shop: React.FC<Props> = ({
             if (success) {
                 audioService.playClick();
                 onUnlockSkin(skin.id);
+
+                // Record transaction locally
+                onRecordTransaction({
+                    id: Math.random().toString(36).substring(2, 10),
+                    type: 'buy_skin',
+                    amount: skin.tonPrice,
+                    currency: 'TON',
+                    date: Date.now(),
+                    itemName: skin.name
+                });
+
                 setErrorMsg("Skin purchased successfully!");
                 setTimeout(() => setErrorMsg(null), 3000);
             } else {
@@ -132,6 +145,16 @@ const Shop: React.FC<Props> = ({
 
             if (success) {
                 audioService.playClick();
+
+                // Record local withdraw transaction
+                onRecordTransaction({
+                    id: Math.random().toString(36).substring(2, 10),
+                    type: 'withdraw',
+                    amount: tonAmount,
+                    currency: 'TON',
+                    date: Date.now()
+                });
+
                 setErrorMsg("Withdraw requested successfully!"); // In reality, update DB
                 setTimeout(() => setErrorMsg(null), 3000);
             } else {
