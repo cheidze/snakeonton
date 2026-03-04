@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { DEFAULT_SKINS, DEFAULT_COLLECTIBLES } from '../services/constants';
+import { DEFAULT_SKINS, DEFAULT_COLLECTIBLES, TREASURY_ADDRESS } from '../services/constants';
 import { SnakeSkin, Collectible } from '../types';
 import { audioService } from '../services/audioService';
 import { economyService } from '../services/economyService';
@@ -79,10 +79,9 @@ const Shop: React.FC<Props> = ({
 
         try {
             const amountNanoTon = tonService.tonToNano(skin.tonPrice);
-            const treasuryAddress = "EQCJvI7GevbB_iS5HlHntk8x1zD1lH8H_-Rz-L3D3vB2R-7W";
 
             const success = await tonService.sendTransaction({
-                toAddress: treasuryAddress,
+                toAddress: TREASURY_ADDRESS,
                 amountNanoTon,
                 comment: `Buy Skin: ${skin.name}`
             });
@@ -138,7 +137,7 @@ const Shop: React.FC<Props> = ({
             // For Demo: we send a 0 TON transaction to the backend/smart contract wallet with a comment
             // In production, the backend would sign sending TON *to* the user. This flow here is just a proof-of-work signature for claiming.
             const success = await tonService.sendTransaction({
-                toAddress: "EQCJvI7GevbB_iS5HlHntk8x1zD1lH8H_-Rz-L3D3vB2R-7W", // Replace with your treasury address
+                toAddress: TREASURY_ADDRESS,
                 amountNanoTon: "10000000", // 0.01 TON fee for claim
                 comment: `Withdraw ${tonAmount} TON for ${gold} gold`
             });
