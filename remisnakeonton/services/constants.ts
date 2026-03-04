@@ -2,7 +2,8 @@
 import { SnakeSkin, Collectible, BotDifficulty } from "../types";
 
 // The merchant address where users send TON to buy things in-game
-export const TREASURY_ADDRESS = import.meta.env.VITE_TON_TREASURY_ADDRESS || "EQCJvI7GevbB_iS5HlHntk8x1zD1lH8H_-Rz-L3D3vB2R-7W";
+// TESTNET ADDRESS - Replace with mainnet address for production
+export const TREASURY_ADDRESS = (import.meta as any).env?.VITE_TON_TREASURY_ADDRESS || "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR";
 
 export const WORLD_SIZE = 12000; // Massive map (3x size)
 export const INITIAL_SNAKE_LENGTH = 10;
