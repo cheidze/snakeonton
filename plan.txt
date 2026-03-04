@@ -1,0 +1,148 @@
+You are a senior Web3 game architect, growth strategist, and behavioral game economist.
+
+Your task is to design and generate a production-ready Telegram WebApp multiplayer Snake.io style game optimized for:
+
+- High retention
+- Viral growth
+- Strong monetization
+- Long-term scalability
+- TON blockchain integration
+
+IMPORTANT:
+This is NOT a demo.
+This is NOT a prototype.
+This must be a scalable real product architecture.
+
+-----------------------------------
+PRIMARY GOAL
+-----------------------------------
+
+Build a highly addictive competitive Snake.io game where:
+
+- Players compete in real-time multiplayer
+- Earn internal coins
+- Buy skins and boosts
+- Compete in tournaments
+- Invite friends for rewards
+- Later integrate real TON rewards
+
+Game must be optimized for:
+- Session length 3–7 minutes
+- Daily return behavior
+- Competitive ranking pressure
+- Social bragging
+
+-----------------------------------
+CORE GAME DESIGN
+-----------------------------------
+
+1) Gameplay Loop:
+- Fast matchmaking (<3 sec)
+- Smooth movement
+- Server-authoritative logic
+- Dynamic map size based on players
+- Risk vs reward boosts
+- Kill steal mechanics
+
+2) Reward Psychology:
+- Visible coin animation
+- Rank progression system (Bronze → Diamond)
+- Daily login rewards
+- Streak bonuses
+- Surprise loot drops
+- Limited-time multipliers
+
+3) Retention Mechanics:
+- Daily missions
+- Weekly tournaments
+- Global leaderboard
+- Country leaderboard
+- Seasonal resets
+- Unlockable skins by achievement
+
+4) Viral Growth:
+- Referral system (earn % of friend's earnings)
+- Share result screenshot
+- Telegram deep link invites
+- Clan system (future phase)
+
+5) Monetization:
+- Internal coin economy (off-chain)
+- TON coin packs
+- Premium skins (NFT future ready)
+- Ad-based revive option
+- Tournament entry fees (future TON staking)
+
+-----------------------------------
+TECH STACK
+-----------------------------------
+
+Frontend:
+- Next.js 14
+- Phaser 3
+- Telegram WebApp SDK
+- TON Connect
+- TailwindCSS (modern green banking-grade UI)
+
+Backend:
+- NestJS
+- PostgreSQL
+- Prisma
+- Redis
+- WebSocket Gateway
+- JWT auth
+
+-----------------------------------
+TECHNICAL REQUIREMENTS
+-----------------------------------
+
+1) TON wallet authentication:
+- Signature verification
+- One wallet per Telegram account
+
+2) Internal coin system:
+- Server-controlled reward calculation
+- Anti-inflation model
+- Daily earning cap
+
+3) Multiplayer:
+- Tick-based authoritative server
+- Speed validation
+- Collision server-side
+- Redis pub/sub for scaling
+
+4) Leaderboard:
+- Daily / Weekly / All-time
+- GeoIP country detection
+
+5) Admin panel:
+- Player control
+- Economy control
+- Analytics (DAU, ARPU, revenue)
+- Treasury overview
+
+6) Security:
+- Bot detection
+- Multi-account detection
+- Rate limiting
+- DDOS mitigation
+- Transaction replay protection
+
+-----------------------------------
+OUTPUT REQUIRED
+-----------------------------------
+
+1) Full folder structure
+2) Backend modules
+3) Frontend starter
+4) Prisma schema
+5) WebSocket event map
+6) Economy model
+7) Reward formula
+8) Monetization logic
+9) Growth mechanics logic
+10) Deployment plan
+11) Scaling strategy for 100k concurrent users
+
+No simplified explanations.
+Generate real production-ready architecture.

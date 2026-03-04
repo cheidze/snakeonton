@@ -1,0 +1,191 @@
+
+import { TelegramUser } from '../types';
+
+/**
+ * Telegram Mini App Service
+ * Wraps the Telegram WebApp JS SDK (loaded via <script> in index.html)
+ * Works gracefully in browser (non-Telegram) context.
+ */
+
+declare global {
+    interface Window {
+        Telegram?: {
+            WebApp: TelegramWebApp;
+        };
+    }
+}
+
+interface TelegramWebApp {
+    initData: string;
+    initDataUnsafe: {
+        user?: TelegramUser;
+        start_param?: string; // referral code from deep link ?start=xxx
+        query_id?: string;
+    };
+    version: string;
+    platform: string;
+    colorScheme: 'light' | 'dark';
+    themeParams: {
+        bg_color?: string;
+        text_color?: string;
+        hint_color?: string;
+        link_color?: string;
+        button_color?: string;
+        button_text_color?: string;
+    };
+    isExpanded: boolean;
+    viewportHeight: number;
+    viewportStableHeight: number;
+    ready(): void;
+    expand(): void;
+    close(): void;
+    BackButton: {
+        isVisible: boolean;
+        show(): void;
+        hide(): void;
+        onClick(fn: () => void): void;
+        offClick(fn: () => void): void;
+    };
+    MainButton: {
+        text: string;
+        color: string;
+        textColor: string;
+        isVisible: boolean;
+        isActive: boolean;
+        show(): void;
+        hide(): void;
+        setText(text: string): void;
+        onClick(fn: () => void): void;
+        offClick(fn: () => void): void;
+        showProgress(leaveActive?: boolean): void;
+        hideProgress(): void;
+    };
+    HapticFeedback: {
+        impactOccurred(style: 'light' | 'medium' | 'heavy' | 'rigid' | 'soft'): void;
+        notificationOccurred(type: 'error' | 'success' | 'warning'): void;
+        selectionChanged(): void;
+    };
+    openLink(url: string): void;
+    openTelegramLink(url: string): void;
+    setHeaderColor(color: string): void;
+    setBackgroundColor(color: string): void;
+}
+
+class TelegramService {
+    private webApp: TelegramWebApp | null = null;
+
+    constructor() {
+        if (typeof window !== 'undefined' && window.Telegram?.WebApp) {
+            this.webApp = window.Telegram.WebApp;
+        }
+    }
+
+    /**
+     * Returns true if the app is running inside Telegram
+     */
+    public isTelegramContext(): boolean {
+        return !!this.webApp && !!this.webApp.initData && this.webApp.initData.length > 0;
+    }
+
+    /**
+     * Initialize the Telegram Mini App — must be called on startup
+     */
+    public init(): void {
+        if (!this.webApp) return;
+        try {
+            this.webApp.ready();
+            this.webApp.expand();
+            // Use dark theme header to match game UI
+            this.webApp.setHeaderColor('#0a0a0f');
+            this.webApp.setBackgroundColor('#0a0a0f');
+        } catch (e) {
+            console.warn('[TelegramService] init error:', e);
+        }
+    }
+
+    /**
+     * Get the Telegram user from initDataUnsafe
+     * NOTE: For production, validate initData on the backend!
+     */
+    public getTelegramUser(): TelegramUser | null {
+        if (!this.isTelegramContext()) return null;
+        return this.webApp?.initDataUnsafe?.user || null;
+    }
+
+    /**
+     * Get referral start_param from deep link t.me/Bot?start=REFCODE
+     */
+    public getStartParam(): string | null {
+        if (!this.isTelegramContext()) return null;
+        return this.webApp?.initDataUnsafe?.start_param || null;
+    }
+
+    /**
+     * Get raw initData string for backend validation
+     */
+    public getInitData(): string {
+        return this.webApp?.initData || '';
+    }
+
+    /**
+     * Haptic feedback — game events
+     */
+    public hapticImpact(style: 'light' | 'medium' | 'heavy' = 'medium'): void {
+        try {
+            this.webApp?.HapticFeedback.impactOccurred(style);
+        } catch (_) { }
+    }
+
+    public hapticSuccess(): void {
+        try {
+            this.webApp?.HapticFeedback.notificationOccurred('success');
+        } catch (_) { }
+    }
+
+    public hapticError(): void {
+        try {
+            this.webApp?.HapticFeedback.notificationOccurred('error');
+        } catch (_) { }
+    }
+
+    /**
+     * Show / hide Telegram Back Button
+     */
+    public showBackButton(onClick: () => void): void {
+        if (!this.webApp) return;
+        this.webApp.BackButton.show();
+        this.webApp.BackButton.onClick(onClick);
+    }
+
+    public hideBackButton(): void {
+        if (!this.webApp) return;
+        this.webApp.BackButton.hide();
+    }
+
+    /**
+     * Open external URL via Telegram browser
+     */
+    public openLink(url: string): void {
+        if (this.webApp) {
+            this.webApp.openLink(url);
+        } else {
+            window.open(url, '_blank');
+        }
+    }
+
+    /**
+     * Get the Telegram platform (ios / android / web / unknown)
+     */
+    public getPlatform(): string {
+        return this.webApp?.platform || 'unknown';
+    }
+
+    /**
+     * Get Telegram color scheme
+     */
+    public getColorScheme(): 'light' | 'dark' {
+        return this.webApp?.colorScheme || 'dark';
+    }
+}
+
+export const telegramService = new TelegramService();
