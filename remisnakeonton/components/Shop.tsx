@@ -5,6 +5,8 @@ import { SnakeSkin, Collectible } from '../types';
 import { audioService } from '../services/audioService';
 import { economyService } from '../services/economyService';
 import { tonService } from '../services/tonService';
+import { paymentService } from '../services/paymentService';
+import { telegramService } from '../services/telegramService';
 
 interface Props {
     gold: number;
@@ -78,15 +80,26 @@ const Shop: React.FC<Props> = ({
         }
 
         try {
-            const amountNanoTon = tonService.tonToNano(skin.tonPrice);
-
-            const success = await tonService.sendTransaction({
-                toAddress: TREASURY_ADDRESS,
-                amountNanoTon,
-                comment: `Buy Skin: ${skin.name}`
+            // Track purchase attempt
+            telegramService.trackEvent('purchase_attempt', {
+                item_type: 'skin',
+                item_name: skin.name,
+                price_ton: skin.tonPrice
             });
 
-            if (success) {
+            const amountNanoTon = tonService.tonToNano(skin.tonPrice);
+
+            const result = await paymentService.processPayment({
+                toAddress: TREASURY_ADDRESS,
+                amountNanoTon,
+                comment: `Buy Skin: ${skin.name}`,
+                userId: 'demo_user', // Replace with actual user ID
+                type: 'buy_skin',
+                amount: skin.tonPrice,
+                itemName: skin.name
+            });
+
+            if (result.success) {
                 audioService.playClick();
                 onUnlockSkin(skin.id);
 
@@ -100,12 +113,26 @@ const Shop: React.FC<Props> = ({
                     itemName: skin.name
                 });
 
+                // Track successful purchase
+                telegramService.trackEvent('purchase_success', {
+                    item_type: 'skin',
+                    item_name: skin.name,
+                    price_ton: skin.tonPrice
+                });
+
                 setErrorMsg("Skin purchased successfully!");
                 setTimeout(() => setErrorMsg(null), 3000);
             } else {
-                throw new Error("Transaction cancelled or failed");
+                throw new Error(result.message || "Purchase failed");
             }
         } catch (e: any) {
+            // Track failed purchase
+            telegramService.trackEvent('purchase_failed', {
+                item_type: 'skin',
+                item_name: skin.name,
+                error: e.message
+            });
+
             setErrorMsg(e.message || "Purchase failed");
             setTimeout(() => setErrorMsg(null), 3000);
         }
@@ -133,33 +160,48 @@ const Shop: React.FC<Props> = ({
 
         setIsWithdrawing(true);
         try {
-            const tonAmount = economyService.goldToTon(gold);
-            // For Demo: we send a 0 TON transaction to the backend/smart contract wallet with a comment
-            // In production, the backend would sign sending TON *to* the user. This flow here is just a proof-of-work signature for claiming.
-            const success = await tonService.sendTransaction({
-                toAddress: TREASURY_ADDRESS,
-                amountNanoTon: "10000000", // 0.01 TON fee for claim
-                comment: `Withdraw ${tonAmount} TON for ${gold} gold`
+            // Track withdrawal attempt
+            telegramService.trackEvent('withdraw_attempt', {
+                gold_amount: gold,
+                ton_amount: economyService.goldToTon(gold)
             });
 
-            if (success) {
+            const result = await paymentService.processWithdrawal({
+                userId: 'demo_user', // Replace with actual user ID
+                tonAddress,
+                goldAmount: gold
+            });
+
+            if (result.success) {
                 audioService.playClick();
 
                 // Record local withdraw transaction
                 onRecordTransaction({
                     id: Math.random().toString(36).substring(2, 10),
                     type: 'withdraw',
-                    amount: tonAmount,
+                    amount: economyService.goldToTon(gold),
                     currency: 'TON',
                     date: Date.now()
                 });
 
-                setErrorMsg("Withdraw requested successfully!"); // In reality, update DB
+                // Track successful withdrawal
+                telegramService.trackEvent('withdraw_success', {
+                    gold_amount: gold,
+                    ton_amount: economyService.goldToTon(gold)
+                });
+
+                setErrorMsg("Withdraw requested successfully! " + (result.estimatedTime || ""));
                 setTimeout(() => setErrorMsg(null), 3000);
             } else {
-                throw new Error("Transaction cancelled or failed");
+                throw new Error(result.message || "Withdraw failed");
             }
         } catch (e: any) {
+            // Track failed withdrawal
+            telegramService.trackEvent('withdraw_failed', {
+                gold_amount: gold,
+                error: e.message
+            });
+
             setErrorMsg(e.message || "Withdraw failed");
             setTimeout(() => setErrorMsg(null), 3000);
         } finally {

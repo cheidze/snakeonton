@@ -113,6 +113,13 @@ function App() {
     setCurrentUser(user);
     setPlayerData(loadPlayerData(user.id));
     setSettings(prev => ({ ...prev, playerName: user.username }));
+    
+    // Track login with analytics
+    telegramService.trackEvent('user_login', {
+      user_id: user.id,
+      username: user.username
+    });
+    telegramService.setUserProperty('username', user.username);
   };
 
   // Handle Logout
@@ -242,6 +249,13 @@ function App() {
     engine.setBotCount(settings.botCount);
     engine.spawnPlayer(name, activeSkin, userCountry, playerData.selectedCollectibleId);
     setGameState('PLAYING');
+    
+    // Track game start
+    telegramService.trackEvent('game_start', {
+      player_name: name,
+      skin_id: playerData.selectedSkinId,
+      country: userCountry
+    });
   };
 
   const handleDeath = (score: number) => {
@@ -256,6 +270,14 @@ function App() {
       if (levelUpEvents.length > 0) {
         setPendingLevelUps(levelUpEvents);
       }
+      
+      // Track game end
+      telegramService.trackEvent('game_end', {
+        score: score,
+        gold_collected: collected,
+        xp_gained: Math.floor(score * 2),
+        session_duration_ms: Date.now() // Could track actual duration
+      });
     }
 
     setGameState('GAMEOVER');

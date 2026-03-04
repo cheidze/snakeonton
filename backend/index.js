@@ -46,6 +46,85 @@ app.use(express.json());
 
 app.get('/', (req, res) => res.send('Snake TON Backend is running'));
 
+/**
+ * POST /api/verify-transaction
+ * Verifies a TON blockchain transaction and processes purchases/withdrawals
+ */
+app.post('/api/verify-transaction', async (req, res) => {
+    try {
+        const { txHash, userId, type, amount, itemName } = req.body;
+        
+        if (!txHash || !userId || !type) {
+            return res.status(400).json({ 
+                success: false, 
+                error: 'Missing required fields' 
+            });
+        }
+
+        // TODO: Implement TON API verification
+        // Use https://toncenter.com/api/v2/getTransaction?hash=${txHash}
+        // Verify:
+        // 1. Transaction exists on-chain
+        // 2. Sender matches user wallet
+        // 3. Amount matches expected
+        // 4. Recipient is TREASURY_ADDRESS
+        
+        console.log(`[Transaction Verification] User: ${userId}, Type: ${type}, Amount: ${amount}`);
+        
+        // For now, accept all transactions (REMOVE IN PRODUCTION)
+        res.json({ 
+            success: true, 
+            message: 'Transaction verified (demo mode)',
+            data: { type, amount, itemName }
+        });
+        
+    } catch (error) {
+        console.error('Transaction verification error:', error);
+        res.status(500).json({ 
+            success: false, 
+            error: 'Verification failed' 
+        });
+    }
+});
+
+/**
+ * POST /api/process-withdraw
+ * Processes withdrawal request from game gold to TON
+ */
+app.post('/api/process-withdraw', async (req, res) => {
+    try {
+        const { userId, tonAddress, goldAmount } = req.body;
+        
+        if (!userId || !tonAddress || !goldAmount) {
+            return res.status(400).json({ 
+                success: false, 
+                error: 'Missing required fields' 
+            });
+        }
+
+        // TODO: Implement actual TON transfer from treasury wallet
+        // This requires:
+        // 1. Backend wallet with TON balance
+        // 2. Smart contract for automated payouts
+        // 3. Database tracking of withdrawals
+        
+        console.log(`[Withdraw Request] User: ${userId}, Address: ${tonAddress}, Gold: ${goldAmount}`);
+        
+        res.json({ 
+            success: true, 
+            message: 'Withdrawal queued for processing',
+            estimatedTime: '24-48 hours'
+        });
+        
+    } catch (error) {
+        console.error('Withdraw error:', error);
+        res.status(500).json({ 
+            success: false, 
+            error: 'Withdrawal failed' 
+        });
+    }
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`🚀 API Server running on port ${PORT}`);

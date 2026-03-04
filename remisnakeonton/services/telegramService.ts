@@ -12,6 +12,10 @@ declare global {
         Telegram?: {
             WebApp: TelegramWebApp;
         };
+        TelegramAnalytics?: {
+            sendEvent(event: string, params?: Record<string, any>): void;
+            setUserProperty(property: string, value: string): void;
+        };
     }
 }
 
@@ -98,8 +102,51 @@ class TelegramService {
             // Use dark theme header to match game UI
             this.webApp.setHeaderColor('#0a0a0f');
             this.webApp.setBackgroundColor('#0a0a0f');
+            
+            // Initialize Telegram Analytics
+            this.initAnalytics();
         } catch (e) {
             console.warn('[TelegramService] init error:', e);
+        }
+    }
+
+    /**
+     * Initialize Telegram Mini Apps Analytics
+     */
+    private initAnalytics(): void {
+        if (window.TelegramAnalytics && this.isTelegramContext()) {
+            console.log('[TelegramService] Analytics initialized');
+            // Track app launch
+            this.trackEvent('app_launch', {
+                platform: this.getPlatform(),
+                version: '1.0.0'
+            });
+        }
+    }
+
+    /**
+     * Track custom event with Telegram Analytics
+     */
+    public trackEvent(eventName: string, params?: Record<string, any>): void {
+        if (window.TelegramAnalytics && this.isTelegramContext()) {
+            try {
+                window.TelegramAnalytics.sendEvent(eventName, params);
+            } catch (e) {
+                console.warn('[TelegramService] Analytics event error:', e);
+            }
+        }
+    }
+
+    /**
+     * Set user property for analytics
+     */
+    public setUserProperty(property: string, value: string): void {
+        if (window.TelegramAnalytics && this.isTelegramContext()) {
+            try {
+                window.TelegramAnalytics.setUserProperty(property, value);
+            } catch (e) {
+                console.warn('[TelegramService] Set user property error:', e);
+            }
         }
     }
 

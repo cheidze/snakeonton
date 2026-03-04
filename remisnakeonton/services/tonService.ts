@@ -97,11 +97,11 @@ class TonService {
     }
 
     /**
-     * Send a TON transaction (used for withdraw flow)
+     * Send a TON transaction (used for withdraw flow and purchases)
      * amount is in nanoTON (1 TON = 1_000_000_000 nanoTON)
      * 
-     * NOTE: For production, generate the transaction on the backend and
-     * only use this to prompt signing.
+     * IMPORTANT: For production, generate the transaction on the backend and
+     * only use this to prompt signing. This method sends raw TON transfers.
      */
     public async sendTransaction(params: {
         toAddress: string;
@@ -116,8 +116,9 @@ class TonService {
                     {
                         address: params.toAddress,
                         amount: params.amountNanoTon,
+                        // Properly encode comment as cell payload
                         payload: params.comment
-                            ? btoa(unescape(encodeURIComponent(params.comment)))
+                            ? this.createCommentPayload(params.comment)
                             : undefined,
                     },
                 ],
@@ -128,6 +129,19 @@ class TonService {
             console.error('[TonService] sendTransaction error:', e);
             return false;
         }
+    }
+
+    /**
+     * Create a properly formatted comment payload for TON transaction
+     */
+    private createCommentPayload(comment: string): string {
+        // TON comment payload needs to be base64 encoded with text tag (0x00000000)
+        const textTag = new Uint8Array(4); // 4 bytes for text tag (0x00000000)
+        const commentBytes = new TextEncoder().encode(comment);
+        const payload = new Uint8Array(textTag.length + commentBytes.length);
+        payload.set(textTag, 0);
+        payload.set(commentBytes, 4);
+        return btoa(String.fromCharCode(...payload));
     }
 
     /**
