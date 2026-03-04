@@ -64,6 +64,7 @@ export interface SnakeSkin {
   id: string;
   name: string;
   price: number;
+  tonPrice?: number;
   unlocked: boolean;
   colors: string[]; // [Primary, Secondary, ...]
   trailStyle?: "none" | "neon" | "fire" | "electric" | "cosmic";

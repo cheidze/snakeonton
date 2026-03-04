@@ -17,6 +17,7 @@ interface Props {
     onEquipSkin: (skinId: string) => void;
     onBuyCollectible: (item: Collectible) => boolean;
     onEquipCollectible: (itemId: string) => void;
+    onUnlockSkin: (skinId: string) => void;
     onClose: () => void;
     tonAddress?: string | null;
 }
@@ -30,6 +31,7 @@ const Shop: React.FC<Props> = ({
     themeColor = '#00f3ff', // Default Neon Blue
     onBuySkin,
     onEquipSkin,
+    onUnlockSkin,
     onBuyCollectible,
     onEquipCollectible,
     onClose,
@@ -62,6 +64,38 @@ const Shop: React.FC<Props> = ({
         } else {
             setErrorMsg("Not enough gold!");
             setTimeout(() => setErrorMsg(null), 2000);
+        }
+    };
+
+    const handleBuyWithTon = async (skin: SnakeSkin) => {
+        if (!skin.tonPrice) return;
+        if (!tonAddress) {
+            setErrorMsg("Please connect TON wallet in Main Menu first!");
+            setTimeout(() => setErrorMsg(null), 3000);
+            return;
+        }
+
+        try {
+            const amountNanoTon = tonService.tonToNano(skin.tonPrice);
+            const treasuryAddress = "EQCJvI7GevbB_iS5HlHntk8x1zD1lH8H_-Rz-L3D3vB2R-7W";
+
+            const success = await tonService.sendTransaction({
+                toAddress: treasuryAddress,
+                amountNanoTon,
+                comment: `Buy Skin: ${skin.name}`
+            });
+
+            if (success) {
+                audioService.playClick();
+                onUnlockSkin(skin.id);
+                setErrorMsg("Skin purchased successfully!");
+                setTimeout(() => setErrorMsg(null), 3000);
+            } else {
+                throw new Error("Transaction cancelled or failed");
+            }
+        } catch (e: any) {
+            setErrorMsg(e.message || "Purchase failed");
+            setTimeout(() => setErrorMsg(null), 3000);
         }
     };
 
@@ -254,13 +288,25 @@ const Shop: React.FC<Props> = ({
                                                 {isEquipped ? 'Equipped' : 'Equip'}
                                             </button>
                                         ) : (
-                                            <button
-                                                onClick={() => handleBuySkin(skin)}
-                                                className="w-full py-2 rounded-lg font-bold text-sm uppercase tracking-wider bg-gradient-to-r from-yellow-600 to-yellow-500 hover:from-yellow-500 hover:to-yellow-400 text-black shadow-lg flex items-center justify-center gap-2 transition-all hover:scale-[1.02]"
-                                            >
-                                                <span>Buy</span>
-                                                <span className="bg-black/20 px-2 rounded text-xs">{skin.price} 💰</span>
-                                            </button>
+                                            <div className="flex flex-col gap-2">
+                                                <button
+                                                    onClick={() => handleBuySkin(skin)}
+                                                    className="w-full py-2 rounded-lg font-bold text-sm uppercase tracking-wider bg-gradient-to-r from-yellow-600 to-yellow-500 hover:from-yellow-500 hover:to-yellow-400 text-black shadow-lg flex items-center justify-center gap-2 transition-all hover:scale-[1.02]"
+                                                >
+                                                    <span>Buy with Gold</span>
+                                                    <span className="bg-black/20 px-2 rounded text-xs">{skin.price} 💰</span>
+                                                </button>
+
+                                                {skin.tonPrice && (
+                                                    <button
+                                                        onClick={() => handleBuyWithTon(skin)}
+                                                        className="w-full py-2 rounded-lg font-bold text-sm uppercase tracking-wider bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white shadow-lg flex items-center justify-center gap-2 transition-all hover:scale-[1.02]"
+                                                    >
+                                                        <span>Buy with TON</span>
+                                                        <span className="bg-white/20 px-2 rounded text-xs font-mono">{skin.tonPrice} TON</span>
+                                                    </button>
+                                                )}
+                                            </div>
                                         )}
                                     </div>
                                 );

@@ -189,6 +189,18 @@ function App() {
     savePlayerData(currentUser.id, newData);
   };
 
+  // Directly unlocks and equips a skin (e.g. from TON purchase)
+  const handleUnlockSkin = (skinId: string) => {
+    if (!currentUser) return;
+    const newData = {
+      ...playerData,
+      unlockedSkinIds: Array.from(new Set([...playerData.unlockedSkinIds, skinId])),
+      selectedSkinId: skinId
+    };
+    setPlayerData(newData);
+    savePlayerData(currentUser.id, newData);
+  };
+
   // Shop Logic - Collectibles
   const buyCollectible = (item: Collectible): boolean => {
     if (!currentUser) return false;
@@ -324,6 +336,7 @@ function App() {
           themeColor={themeColor}
           onBuySkin={buySkin}
           onEquipSkin={equipSkin}
+          onUnlockSkin={handleUnlockSkin}
           onBuyCollectible={buyCollectible}
           onEquipCollectible={equipCollectible}
           onClose={() => setGameState('MENU')}

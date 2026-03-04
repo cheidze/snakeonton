@@ -337,7 +337,9 @@ export class AuthService {
 
     // New user — auto-register
     const ipInfo = await this.fetchIpInfo();
-    const username = tgUser.username || `${tgUser.first_name}_${tgUser.id}`.replace(/\s+/g, '_').toLowerCase();
+    // prioritize first_name + last_name, fallback to tgUser.username or ID
+    const fullName = [tgUser.first_name, tgUser.last_name].filter(Boolean).join(' ');
+    const username = fullName || tgUser.username || `Player_${tgUser.id}`;
     const referralCode = `ref_${telegramId}`;
 
     const newUser: StoredUser = {
