@@ -30,7 +30,7 @@ VITE_TON_NETWORK=testnet
 
 ### Backend (.env)
 ```bash
-TELEGRAM_BOT_TOKEN=your_bot_token_here
+TELEGRAM_BOT_TOKEN=8750454558:AAEgpWVYzT9wiGJTOPZejWJg7sf39ifjri8
 WEB_APP_URL=https://your-deployed-url.com
 
 # Treasury wallet (testnet)
