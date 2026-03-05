@@ -158,12 +158,16 @@ class TonService {
      * Ensures address is in the correct format (user-friendly or raw)
      */
     private formatAddressForTransaction(address: string): string {
-        // If already starts with EQ or UQ, it's already in raw format
-        if (address.startsWith('EQ') || address.startsWith('UQ')) {
-            return address;
-        }
-        // Otherwise return as-is (should already be correct format)
-        return address;
+        // TON Connect expects addresses without special characters like dashes
+        // Remove spaces, dashes, underscores
+        let cleanAddress = address.replace(/[\s\-_]/g, '');
+        
+        console.log('[TonService] Formatting address:', {
+            original: address,
+            cleaned: cleanAddress
+        });
+        
+        return cleanAddress;
     }
 
     /**
