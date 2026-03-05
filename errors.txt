@@ -1,243 +1,159 @@
-2026-03-05T22:34:52.105604513Z [inf]  Starting Container
-2026-03-05T22:34:52.178931300Z [err]  npm warn config production Use `--omit=dev` instead.
-2026-03-05T22:34:52.178936810Z [inf]  
-2026-03-05T22:34:52.178943000Z [inf]  > snake-ton-backend@1.0.0 start
-2026-03-05T22:34:52.178948380Z [inf]  > node index.js
-2026-03-05T22:34:52.178953630Z [inf]  
-2026-03-05T22:34:52.178959170Z [inf]  🤖 Telegram Bot started.
-2026-03-05T22:34:52.178964350Z [err]  (node:25) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-2026-03-05T22:34:52.178970040Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
-2026-03-05T22:34:52.178975470Z [inf]  🚀 API Server running on port 8080
-2026-03-05T22:34:53.876366619Z [err]  /app/node_modules/telegraf/lib/core/network/client.js:315
-2026-03-05T22:34:53.876372709Z [err]              throw new error_1.default(data, { method, payload });
-2026-03-05T22:34:53.876375459Z [err]                    ^
-2026-03-05T22:34:53.876381559Z [err]  
-2026-03-05T22:34:53.876384719Z [err]  TelegramError: 401: Unauthorized
-2026-03-05T22:34:53.876387498Z [err]      at Telegram.callApi (/app/node_modules/telegraf/lib/core/network/client.js:315:19)
-2026-03-05T22:34:53.876390018Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-2026-03-05T22:34:53.876394068Z [err]      at async Telegraf.launch (/app/node_modules/telegraf/lib/telegraf.js:188:78) {
-2026-03-05T22:34:53.876397428Z [err]    response: { ok: false, error_code: 401, description: 'Unauthorized' },
-2026-03-05T22:34:53.876400718Z [err]    on: { method: 'getMe', payload: {} }
-2026-03-05T22:34:53.876403478Z [err]  }
-2026-03-05T22:34:53.876406348Z [err]  
-2026-03-05T22:34:53.876409138Z [err]  Node.js v22.22.1
-2026-03-05T22:34:54.436760741Z [err]  npm warn config production Use `--omit=dev` instead.
-2026-03-05T22:34:54.445744307Z [inf]  
-2026-03-05T22:34:54.445747077Z [inf]  > snake-ton-backend@1.0.0 start
-2026-03-05T22:34:54.445749727Z [inf]  > node index.js
-2026-03-05T22:34:54.445752547Z [inf]  
-2026-03-05T22:34:54.573128086Z [inf]  🤖 Telegram Bot started.
-2026-03-05T22:34:54.582155510Z [err]  (node:25) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-2026-03-05T22:34:54.582159540Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
-2026-03-05T22:34:54.583349295Z [inf]  🚀 API Server running on port 8080
-2026-03-05T22:34:54.592525038Z [err]  /app/node_modules/telegraf/lib/core/network/client.js:315
-2026-03-05T22:34:54.592530478Z [err]              throw new error_1.default(data, { method, payload });
-2026-03-05T22:34:54.592535378Z [err]                    ^
-2026-03-05T22:34:54.592540628Z [err]  
-2026-03-05T22:34:54.592546378Z [err]  TelegramError: 401: Unauthorized
-2026-03-05T22:34:54.592551588Z [err]      at Telegram.callApi (/app/node_modules/telegraf/lib/core/network/client.js:315:19)
-2026-03-05T22:34:54.592557148Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-2026-03-05T22:34:54.592561708Z [err]      at async Telegraf.launch (/app/node_modules/telegraf/lib/telegraf.js:188:78) {
-2026-03-05T22:34:54.592574038Z [err]    response: { ok: false, error_code: 401, description: 'Unauthorized' },
-2026-03-05T22:34:54.592578808Z [err]    on: { method: 'getMe', payload: {} }
-2026-03-05T22:34:54.592583688Z [err]  }
-2026-03-05T22:34:54.592588258Z [err]  
-2026-03-05T22:34:54.592592818Z [err]  Node.js v22.22.1
-2026-03-05T22:34:55.184418463Z [err]  npm warn config production Use `--omit=dev` instead.
-2026-03-05T22:34:55.184425803Z [inf]  
-2026-03-05T22:34:55.184431803Z [inf]  > snake-ton-backend@1.0.0 start
-2026-03-05T22:34:55.184438253Z [inf]  > node index.js
-2026-03-05T22:34:55.184443913Z [inf]  
-2026-03-05T22:34:55.310568949Z [inf]  🤖 Telegram Bot started.
-2026-03-05T22:34:55.314919447Z [err]  (node:25) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-2026-03-05T22:34:55.314922377Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
-2026-03-05T22:34:55.314924907Z [inf]  🚀 API Server running on port 8080
-2026-03-05T22:34:55.326743658Z [err]  /app/node_modules/telegraf/lib/core/network/client.js:315
-2026-03-05T22:34:55.326746108Z [err]              throw new error_1.default(data, { method, payload });
-2026-03-05T22:34:55.326748338Z [err]                    ^
-2026-03-05T22:34:55.326750838Z [err]  
-2026-03-05T22:34:55.326753148Z [err]  TelegramError: 401: Unauthorized
-2026-03-05T22:34:55.326758468Z [err]      at Telegram.callApi (/app/node_modules/telegraf/lib/core/network/client.js:315:19)
-2026-03-05T22:34:55.326761208Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-2026-03-05T22:34:55.326763708Z [err]      at async Telegraf.launch (/app/node_modules/telegraf/lib/telegraf.js:188:78) {
-2026-03-05T22:34:55.326766348Z [err]    response: { ok: false, error_code: 401, description: 'Unauthorized' },
-2026-03-05T22:34:55.326768658Z [err]    on: { method: 'getMe', payload: {} }
-2026-03-05T22:34:55.326771638Z [err]  }
-2026-03-05T22:34:55.326774278Z [err]  
-2026-03-05T22:34:55.326776648Z [err]  Node.js v22.22.1
-2026-03-05T22:34:56.110587148Z [err]  npm warn config production Use `--omit=dev` instead.
-2026-03-05T22:34:56.110590218Z [inf]  
-2026-03-05T22:34:56.110593218Z [inf]  > snake-ton-backend@1.0.0 start
-2026-03-05T22:34:56.110596978Z [inf]  > node index.js
-2026-03-05T22:34:56.110600678Z [inf]  
-2026-03-05T22:34:56.158371347Z [inf]  🤖 Telegram Bot started.
-2026-03-05T22:34:56.181900259Z [err]  (node:25) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-2026-03-05T22:34:56.181905399Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
-2026-03-05T22:34:56.181913779Z [inf]  🚀 API Server running on port 8080
-2026-03-05T22:34:56.183452951Z [err]  /app/node_modules/telegraf/lib/core/network/client.js:315
-2026-03-05T22:34:56.183468111Z [err]              throw new error_1.default(data, { method, payload });
-2026-03-05T22:34:56.183478271Z [err]                    ^
-2026-03-05T22:34:56.183483221Z [err]  
-2026-03-05T22:34:56.183487621Z [err]  TelegramError: 401: Unauthorized
-2026-03-05T22:34:56.183492231Z [err]      at Telegram.callApi (/app/node_modules/telegraf/lib/core/network/client.js:315:19)
-2026-03-05T22:34:56.183496151Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-2026-03-05T22:34:56.183499571Z [err]      at async Telegraf.launch (/app/node_modules/telegraf/lib/telegraf.js:188:78) {
-2026-03-05T22:34:56.183503211Z [err]    response: { ok: false, error_code: 401, description: 'Unauthorized' },
-2026-03-05T22:34:56.183507811Z [err]    on: { method: 'getMe', payload: {} }
-2026-03-05T22:34:56.183511031Z [err]  }
-2026-03-05T22:34:56.183514061Z [err]  
-2026-03-05T22:34:56.183517271Z [err]  Node.js v22.22.1
-2026-03-05T22:34:56.794609299Z [err]  npm warn config production Use `--omit=dev` instead.
-2026-03-05T22:34:56.807555784Z [inf]  
-2026-03-05T22:34:56.807558174Z [inf]  > snake-ton-backend@1.0.0 start
-2026-03-05T22:34:56.807560534Z [inf]  > node index.js
-2026-03-05T22:34:56.807563334Z [inf]  
-2026-03-05T22:34:57.118440491Z [err]      at async Telegraf.launch (/app/node_modules/telegraf/lib/telegraf.js:188:78) {
-2026-03-05T22:34:57.118455501Z [err]    response: { ok: false, error_code: 401, description: 'Unauthorized' },
-2026-03-05T22:34:57.118462611Z [err]    on: { method: 'getMe', payload: {} }
-2026-03-05T22:34:57.118468601Z [err]  }
-2026-03-05T22:34:57.118476721Z [err]  
-2026-03-05T22:34:57.118485541Z [err]  Node.js v22.22.1
-2026-03-05T22:34:57.118819249Z [inf]  🤖 Telegram Bot started.
-2026-03-05T22:34:57.118824399Z [err]  (node:25) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-2026-03-05T22:34:57.118830020Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
-2026-03-05T22:34:57.118835490Z [inf]  🚀 API Server running on port 8080
-2026-03-05T22:34:57.118842130Z [err]  /app/node_modules/telegraf/lib/core/network/client.js:315
-2026-03-05T22:34:57.118848590Z [err]              throw new error_1.default(data, { method, payload });
-2026-03-05T22:34:57.118854040Z [err]                    ^
-2026-03-05T22:34:57.118864649Z [err]  
-2026-03-05T22:34:57.118870759Z [err]  TelegramError: 401: Unauthorized
-2026-03-05T22:34:57.118878249Z [err]      at Telegram.callApi (/app/node_modules/telegraf/lib/core/network/client.js:315:19)
-2026-03-05T22:34:57.118885649Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-2026-03-05T22:34:57.608637067Z [err]  npm warn config production Use `--omit=dev` instead.
-2026-03-05T22:34:57.618450688Z [inf]  
-2026-03-05T22:34:57.618455898Z [inf]  > snake-ton-backend@1.0.0 start
-2026-03-05T22:34:57.618460478Z [inf]  > node index.js
-2026-03-05T22:34:57.618463728Z [inf]  
-2026-03-05T22:34:57.787441758Z [inf]  🤖 Telegram Bot started.
-2026-03-05T22:34:57.799788335Z [err]  (node:25) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-2026-03-05T22:34:57.799792085Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
-2026-03-05T22:34:57.799795475Z [inf]  🚀 API Server running on port 8080
-2026-03-05T22:34:57.810582931Z [err]  /app/node_modules/telegraf/lib/core/network/client.js:315
-2026-03-05T22:34:57.810586861Z [err]              throw new error_1.default(data, { method, payload });
-2026-03-05T22:34:57.810590341Z [err]                    ^
-2026-03-05T22:34:57.810594361Z [err]  
-2026-03-05T22:34:57.810598261Z [err]  TelegramError: 401: Unauthorized
-2026-03-05T22:34:57.810601911Z [err]      at Telegram.callApi (/app/node_modules/telegraf/lib/core/network/client.js:315:19)
-2026-03-05T22:34:57.810605341Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-2026-03-05T22:34:57.810609291Z [err]      at async Telegraf.launch (/app/node_modules/telegraf/lib/telegraf.js:188:78) {
-2026-03-05T22:34:57.810612931Z [err]    response: { ok: false, error_code: 401, description: 'Unauthorized' },
-2026-03-05T22:34:57.810616301Z [err]    on: { method: 'getMe', payload: {} }
-2026-03-05T22:34:57.810619711Z [err]  }
-2026-03-05T22:34:57.810622961Z [err]  
-2026-03-05T22:34:57.810625851Z [err]  Node.js v22.22.1
-2026-03-05T22:34:58.422995463Z [err]  npm warn config production Use `--omit=dev` instead.
-2026-03-05T22:34:58.437897669Z [inf]  
-2026-03-05T22:34:58.437901929Z [inf]  > snake-ton-backend@1.0.0 start
-2026-03-05T22:34:58.437905029Z [inf]  > node index.js
-2026-03-05T22:34:58.437909429Z [inf]  
-2026-03-05T22:34:58.590050993Z [inf]  🤖 Telegram Bot started.
-2026-03-05T22:34:58.603528805Z [err]  (node:25) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-2026-03-05T22:34:58.603536195Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
-2026-03-05T22:34:58.603539965Z [inf]  🚀 API Server running on port 8080
-2026-03-05T22:34:58.613480756Z [err]  /app/node_modules/telegraf/lib/core/network/client.js:315
-2026-03-05T22:34:58.613488136Z [err]              throw new error_1.default(data, { method, payload });
-2026-03-05T22:34:58.613493806Z [err]                    ^
-2026-03-05T22:34:58.613499166Z [err]  
-2026-03-05T22:34:58.613504776Z [err]  TelegramError: 401: Unauthorized
-2026-03-05T22:34:58.613510906Z [err]      at Telegram.callApi (/app/node_modules/telegraf/lib/core/network/client.js:315:19)
-2026-03-05T22:34:58.613517806Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-2026-03-05T22:34:58.613525475Z [err]      at async Telegraf.launch (/app/node_modules/telegraf/lib/telegraf.js:188:78) {
-2026-03-05T22:34:58.613531945Z [err]    response: { ok: false, error_code: 401, description: 'Unauthorized' },
-2026-03-05T22:34:58.613537925Z [err]    on: { method: 'getMe', payload: {} }
-2026-03-05T22:34:58.613544165Z [err]  }
-2026-03-05T22:34:58.613551765Z [err]  
-2026-03-05T22:34:58.613557865Z [err]  Node.js v22.22.1
-2026-03-05T22:34:59.248967650Z [err]  npm warn config production Use `--omit=dev` instead.
-2026-03-05T22:34:59.261849246Z [inf]  
-2026-03-05T22:34:59.261854606Z [inf]  > snake-ton-backend@1.0.0 start
-2026-03-05T22:34:59.261861556Z [inf]  > node index.js
-2026-03-05T22:34:59.261865885Z [inf]  
-2026-03-05T22:34:59.371226856Z [inf]  🤖 Telegram Bot started.
-2026-03-05T22:34:59.423984681Z [err]  (node:25) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-2026-03-05T22:34:59.423990891Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
-2026-03-05T22:34:59.423995981Z [inf]  🚀 API Server running on port 8080
-2026-03-05T22:34:59.439042125Z [err]  /app/node_modules/telegraf/lib/core/network/client.js:315
-2026-03-05T22:34:59.439051045Z [err]              throw new error_1.default(data, { method, payload });
-2026-03-05T22:34:59.439059075Z [err]                    ^
-2026-03-05T22:34:59.439081425Z [err]  
-2026-03-05T22:34:59.439092125Z [err]  TelegramError: 401: Unauthorized
-2026-03-05T22:34:59.439099904Z [err]      at Telegram.callApi (/app/node_modules/telegraf/lib/core/network/client.js:315:19)
-2026-03-05T22:34:59.439107804Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-2026-03-05T22:34:59.439117064Z [err]      at async Telegraf.launch (/app/node_modules/telegraf/lib/telegraf.js:188:78) {
-2026-03-05T22:34:59.439124894Z [err]    response: { ok: false, error_code: 401, description: 'Unauthorized' },
-2026-03-05T22:34:59.439132204Z [err]    on: { method: 'getMe', payload: {} }
-2026-03-05T22:34:59.439139744Z [err]  }
-2026-03-05T22:34:59.439146574Z [err]  
-2026-03-05T22:34:59.439153695Z [err]  Node.js v22.22.1
-2026-03-05T22:35:00.123989922Z [err]  npm warn config production Use `--omit=dev` instead.
-2026-03-05T22:35:00.123992632Z [inf]  
-2026-03-05T22:35:00.123995812Z [inf]  > snake-ton-backend@1.0.0 start
-2026-03-05T22:35:00.123998482Z [inf]  > node index.js
-2026-03-05T22:35:00.124001782Z [inf]  
-2026-03-05T22:35:00.205951089Z [inf]  🤖 Telegram Bot started.
-2026-03-05T22:35:00.217429142Z [err]  (node:25) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-2026-03-05T22:35:00.217431612Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
-2026-03-05T22:35:00.217433972Z [inf]  🚀 API Server running on port 8080
-2026-03-05T22:35:00.227414062Z [err]  /app/node_modules/telegraf/lib/core/network/client.js:315
-2026-03-05T22:35:00.227416572Z [err]              throw new error_1.default(data, { method, payload });
-2026-03-05T22:35:00.227419442Z [err]                    ^
-2026-03-05T22:35:00.227421932Z [err]  
-2026-03-05T22:35:00.227424562Z [err]  TelegramError: 401: Unauthorized
-2026-03-05T22:35:00.227427382Z [err]      at Telegram.callApi (/app/node_modules/telegraf/lib/core/network/client.js:315:19)
-2026-03-05T22:35:00.227430542Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-2026-03-05T22:35:00.227432942Z [err]      at async Telegraf.launch (/app/node_modules/telegraf/lib/telegraf.js:188:78) {
-2026-03-05T22:35:00.227435312Z [err]    response: { ok: false, error_code: 401, description: 'Unauthorized' },
-2026-03-05T22:35:00.227437842Z [err]    on: { method: 'getMe', payload: {} }
-2026-03-05T22:35:00.227471482Z [err]  }
-2026-03-05T22:35:00.227474082Z [err]  
-2026-03-05T22:35:00.227476922Z [err]  Node.js v22.22.1
-2026-03-05T22:35:00.883610023Z [err]  npm warn config production Use `--omit=dev` instead.
-2026-03-05T22:35:00.895733881Z [inf]  
-2026-03-05T22:35:00.895743461Z [inf]  > snake-ton-backend@1.0.0 start
-2026-03-05T22:35:00.895750121Z [inf]  > node index.js
-2026-03-05T22:35:00.895755431Z [inf]  
-2026-03-05T22:35:01.145770015Z [inf]  🤖 Telegram Bot started.
-2026-03-05T22:35:01.145775085Z [err]  (node:25) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-2026-03-05T22:35:01.145779685Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
-2026-03-05T22:35:01.145784845Z [inf]  🚀 API Server running on port 8080
-2026-03-05T22:35:01.145791615Z [err]  /app/node_modules/telegraf/lib/core/network/client.js:315
-2026-03-05T22:35:01.145792315Z [err]      at Telegram.callApi (/app/node_modules/telegraf/lib/core/network/client.js:315:19)
-2026-03-05T22:35:01.145804035Z [err]              throw new error_1.default(data, { method, payload });
-2026-03-05T22:35:01.145807755Z [err]                    ^
-2026-03-05T22:35:01.145812205Z [err]  
-2026-03-05T22:35:01.145818375Z [err]  TelegramError: 401: Unauthorized
-2026-03-05T22:35:01.145818645Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-2026-03-05T22:35:01.145824105Z [err]      at async Telegraf.launch (/app/node_modules/telegraf/lib/telegraf.js:188:78) {
-2026-03-05T22:35:01.145827525Z [err]    response: { ok: false, error_code: 401, description: 'Unauthorized' },
-2026-03-05T22:35:01.145832775Z [err]    on: { method: 'getMe', payload: {} }
-2026-03-05T22:35:01.145837455Z [err]  }
-2026-03-05T22:35:01.145841335Z [err]  
-2026-03-05T22:35:01.145845155Z [err]  Node.js v22.22.1
-2026-03-05T22:35:01.677180943Z [err]  npm warn config production Use `--omit=dev` instead.
-2026-03-05T22:35:01.691029783Z [inf]  
-2026-03-05T22:35:01.691037773Z [inf]  > snake-ton-backend@1.0.0 start
-2026-03-05T22:35:01.691043413Z [inf]  > node index.js
-2026-03-05T22:35:01.691048833Z [inf]  
-2026-03-05T22:35:01.806006575Z [inf]  🤖 Telegram Bot started.
-2026-03-05T22:35:01.849947364Z [err]  (node:25) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-2026-03-05T22:35:01.849952334Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
-2026-03-05T22:35:01.849957894Z [inf]  🚀 API Server running on port 8080
-2026-03-05T22:35:01.864057814Z [err]  }
-2026-03-05T22:35:01.864062524Z [err]  
-2026-03-05T22:35:01.864066494Z [err]  Node.js v22.22.1
-2026-03-05T22:35:01.864083534Z [err]  /app/node_modules/telegraf/lib/core/network/client.js:315
-2026-03-05T22:35:01.864086784Z [err]              throw new error_1.default(data, { method, payload });
-2026-03-05T22:35:01.864090123Z [err]                    ^
-2026-03-05T22:35:01.864093453Z [err]  
-2026-03-05T22:35:01.864096323Z [err]  TelegramError: 401: Unauthorized
-2026-03-05T22:35:01.864100093Z [err]      at Telegram.callApi (/app/node_modules/telegraf/lib/core/network/client.js:315:19)
-2026-03-05T22:35:01.864109833Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-2026-03-05T22:35:01.864114133Z [err]      at async Telegraf.launch (/app/node_modules/telegraf/lib/telegraf.js:188:78) {
-2026-03-05T22:35:01.864117163Z [err]    response: { ok: false, error_code: 401, description: 'Unauthorized' },
-2026-03-05T22:35:01.864120283Z [err]    on: { method: 'getMe', payload: {} }
+
+SES Removing unpermitted intrinsics lockdown-install.js:1:203117
+  Removing intrinsics.%MapPrototype%.getOrInsertComputed lockdown-install.js:1:202962
+  Removing intrinsics.%WeakMapPrototype%.getOrInsert lockdown-install.js:1:202962
+  Removing intrinsics.%WeakMapPrototype%.getOrInsertComputed lockdown-install.js:1:202962
+  Removing intrinsics.%DatePrototype%.toTemporalInstant lockdown-install.js:1:202962
+Loading failed for the <script> with source “https://t.me/_websync_?authed=1&version=10.9.41+A”. a:1:1
+Loading failed for the <script> with source “https://telegram.me/_websync_?authed=1&version=10.9.41+A”. a:1:1
+Cookie warnings 2
+undefined main.591b17ddb6e56c8911a0.js:1:356142
+Uncaught (in promise) undefined
+[Teact] Error while rendering component  
+Object { id: 1308, "$element": {…}, Component: bh(), name: "", props: {…}, mountState: 1, context: {}, hooks: {…}, renderedValue: undefined, onUpdate: onUpdate() }
+main.591b17ddb6e56c8911a0.js:1:266707
+TypeError: can't access property "runtime", n is undefined
+    <anonymous> https://web.telegram.org/a/9451.98816126cb79a2d17f23.js:1
+    bh https://web.telegram.org/a/9451.98816126cb79a2d17f23.js:1
+    z https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    a https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    z https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    W https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    b https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    I https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    I https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    k https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    k https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    k https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    k https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    onUpdate https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    84051/$</</</< https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    84051/$</</< https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    84051/$</< https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    a https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    u https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    u https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+main.591b17ddb6e56c8911a0.js:1:356142
+    c https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    a https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    z https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    W https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    b https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    I https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    I https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    k https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    k https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    k https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    k https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    onUpdate https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    84051/$</</</< https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    84051/$</</< https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    84051/$</< https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    a https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    u https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+    u https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
+SES_UNHANDLED_REJECTION: undefined lockdown-install.js:1:145776
+SES Removing unpermitted intrinsics lockdown-install.js:1:203117
+  Removing intrinsics.%MapPrototype%.getOrInsert lockdown-install.js:1:202962
+  Removing intrinsics.%MapPrototype%.getOrInsertComputed lockdown-install.js:1:202962
+  Removing intrinsics.%WeakMapPrototype%.getOrInsert lockdown-install.js:1:202962
+  Removing intrinsics.%WeakMapPrototype%.getOrInsertComputed lockdown-install.js:1:202962
+  Removing intrinsics.%DatePrototype%.toTemporalInstant lockdown-install.js:1:202962
+[Telegram.WebView] > postEvent web_app_set_header_color 
+Object { color_key: "bg_color" }
+telegram-web-app.js:135:13
+[Telegram.WebView] > postEvent web_app_set_background_color 
+Object { color: "#212121" }
+telegram-web-app.js:135:13
+[Telegram.WebView] > postEvent web_app_set_bottom_bar_color 
+Object { color: "#0f0f0f" }
+telegram-web-app.js:135:13
+[Telegram.WebView] > postEvent web_app_request_theme <empty string> telegram-web-app.js:135:13
+[Telegram.WebView] > postEvent web_app_request_viewport <empty string> telegram-web-app.js:135:13
+[Telegram.WebView] > postEvent web_app_request_safe_area <empty string> telegram-web-app.js:135:13
+[Telegram.WebView] > postEvent web_app_request_content_safe_area <empty string> telegram-web-app.js:135:13
+cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation cdn.tailwindcss.com:64:1711
+Partitioned cookie or storage access was provided to “https://snakeonton.vercel.app/#tgWebAppData=query_id%3DAAEFlw12AgAAAAWXDXaHwJp7%26user%3D%257B%2522id%2522%253A6275569413%252C%2522first_name%2522%253A%2522Groku%2522%252C%2522last_name%2522%253A%2522%2522%252C%2522username%2522%253A%2522Mandalorel%2522%252C%2522language_code%2522%253A%2522en%2522%252C%2522allows_write_to_pm%2522%253Atrue%252C%2522photo_url%2522%253A%2522https%253A%255C%252F%255C%252Ft.me%255C%252Fi%255C%252Fuserpic%255C%252F320%255C%252F7mdQLYMkjqfISxs6VyoOtkcsRuX43OK4a-R8Y80nb7Xryt8SP1DqUEhNez8dI3nL.svg%2522%257D%26auth_date%3D1772754235%26signature%3DfD5MjhNKKNNmA23p_SMFvTRSegiS2NXvhv1_OB3NXfwzBT-tTgTTC3b1P1bfEGDewOLwrC453zcFRptj3G9BBQ%26hash%3D459f2845a1f41e5dc821a7322cebb5dd4716a00960b6a21c7b4caee58316865a&tgWebAppVersion=8.0&tgWebAppPlatform=weba&tgWebAppThemeParams=%7B%22bg_color%22%3A%22%23212121%22%2C%22text_color%22%3A%22%23ffffff%22%2C%22hint_color%22%3A%22%23aaaaaa%22%2C%22link_color%22%3A%22%238774e1%22%2C%22button_color%22%3A%22%238774e1%22%2C%22button_text_color%22%3A%22%23ffffff%22%2C%22secondary_bg_color%22%3A%22%230f0f0f%22%2C%22header_bg_color%22%3A%22%23212121%22%2C%22accent_text_color%22%3A%22%238774e1%22%2C%22section_bg_color%22%3A%22%23212121%22%2C%22section_header_text_color%22%3A%22%23aaaaaa%22%2C%22subtitle_text_color%22%3A%22%23aaaaaa%22%2C%22destructive_text_color%22%3A%22%23e53935%22%7D” because it is loaded in the third-party context and dynamic state partitioning is enabled. contentscript.js:12:73448
+Loading failed for the <script> with source “https://telegram.org/js/telegram-analytics.js”. snakeonton.vercel.app:1:1
+[Analytics] Failed to load, continuing without analytics snakeonton.vercel.app:18:49
+A resource is blocked by OpaqueResponseBlocking, please check browser console for details. telegram-analytics.js
+[Telegram.WebView] < receiveEvent theme_changed 
+Object { theme_params: {…} }
+telegram-web-app.js:162:13
+[Telegram.WebView] > postEvent web_app_setup_main_button 
+Object { is_visible: false }
+telegram-web-app.js:135:13
+[Telegram.WebView] > postEvent web_app_setup_secondary_button 
+Object { is_visible: false }
+telegram-web-app.js:135:13
+[Telegram.WebView] < receiveEvent viewport_changed 
+Object { width: 479, height: 643, is_expanded: true, is_state_stable: true }
+telegram-web-app.js:162:13
+[Telegram.WebView] < receiveEvent safe_area_changed 
+Object { left: 0, right: 0, top: 0, bottom: 0 }
+telegram-web-app.js:162:13
+[Telegram.WebView] < receiveEvent content_safe_area_changed 
+Object { left: 0, right: 0, top: 0, bottom: 0 }
+telegram-web-app.js:162:13
+[Telegram.WebView] < receiveEvent safe_area_changed 
+Object { left: 0, right: 0, top: 0, bottom: 0 }
+telegram-web-app.js:162:13
+[Telegram.WebView] < receiveEvent content_safe_area_changed 
+Object { left: 0, right: 0, top: 0, bottom: 0 }
+telegram-web-app.js:162:13
+[PaymentService] Backend URL: https://your-backend-url.railway.app index-BTd2Gof1.js:49:100100
+[Telegram.WebView] > postEvent web_app_ready <empty string> telegram-web-app.js:135:13
+[Telegram.WebView] > postEvent web_app_expand <empty string> telegram-web-app.js:135:13
+[Telegram.WebView] > postEvent web_app_set_header_color 
+Object { color: "#0a0a0f" }
+telegram-web-app.js:135:13
+[Telegram.WebView] > postEvent web_app_set_background_color 
+Object { color: "#0a0a0f" }
+telegram-web-app.js:135:13
+[TelegramService] Analytics not available, continuing without it index-BTd2Gof1.js:49:104125
+[Telegram.WebView] < receiveEvent visibility_changed 
+Object { is_visible: true }
+telegram-web-app.js:162:13
+[TonService] TonConnectUI initialized index-BTd2Gof1.js:49:63105
+[TON_CONNECT_SDK] Failed to actualize bridge connection Error: [TON_CONNECT_SDK_ERROR] ne
+Wallet info not found for appName: "Tonkeeper"
+    ne https://snakeonton.vercel.app/assets/index-BMTy-9QE.js:5
+    getRemoteWallet https://snakeonton.vercel.app/assets/index-BMTy-9QE.js:42
+    s https://snakeonton.vercel.app/assets/index-BMTy-9QE.js:5
+index-BMTy-9QE.js:6:6326
+[TON_CONNECT_SDK] Failed to actualize bridge connection Error: [TON_CONNECT_SDK_ERROR] ne
+Wallet info not found for appName: "Tonkeeper"
+    ne https://snakeonton.vercel.app/assets/index-BMTy-9QE.js:5
+    getRemoteWallet https://snakeonton.vercel.app/assets/index-BMTy-9QE.js:42
+    s https://snakeonton.vercel.app/assets/index-BMTy-9QE.js:5
+index-BMTy-9QE.js:6:6326
+[TON_CONNECT_SDK] Sending analytics events... 4 index-BMTy-9QE.js:6:6326
+[TON_CONNECT_SDK] Failed to send analytics events: Error: [TON_CONNECT_SDK_ERROR] ne
+Analytics API error: 400 
+    ne https://snakeonton.vercel.app/assets/index-BMTy-9QE.js:5
+    handleClientError https://snakeonton.vercel.app/assets/index-BMTy-9QE.js:42
+    handleResponse https://snakeonton.vercel.app/assets/index-BMTy-9QE.js:42
+    processEventsBatch https://snakeonton.vercel.app/assets/index-BMTy-9QE.js:42
+    s https://snakeonton.vercel.app/assets/index-BMTy-9QE.js:5
+index-BMTy-9QE.js:6:6396
+[TON_CONNECT_SDK] Analytics events sent successfully index-BMTy-9QE.js:6:6326
+Source map error: Error: NetworkError when attempting to fetch resource.
+Resource URL: https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js
+Source Map URL: main.b8b10c5f535a58c72c74.js.map
+
+​
+

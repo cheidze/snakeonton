@@ -83,6 +83,7 @@ app.post('/api/create-invoice', async (req, res) => {
 
         const providerToken = process.env.PROVIDER_TOKEN;
         if (!providerToken) {
+            console.error('[Create Invoice Error] PROVIDER_TOKEN is missing in the environment');
             return res.status(500).json({ success: false, error: 'Payment Provider Token not configured in backend' });
         }
 
@@ -90,6 +91,8 @@ app.post('/api/create-invoice', async (req, res) => {
         const description = `Purchase ${goldAmount.toLocaleString()} Gold in Snake.io TON`;
         const payload = `gold_purchase_${goldAmount}_${userId}_${Date.now()}`;
         const prices = [{ label: title, amount: priceAmount }];
+
+        console.log(`[Payment Request] Generating invoice for ${goldAmount} Gold (User: ${userId}, Amount: ${priceAmount} ${currency})`);
 
         const invoiceLink = await bot.telegram.createInvoiceLink(
             title,
@@ -107,6 +110,7 @@ app.post('/api/create-invoice', async (req, res) => {
             }
         );
 
+        console.log(`[Payment Request] Successfully generated invoice Link`);
         res.json({ success: true, url: invoiceLink });
 
     } catch (error) {
