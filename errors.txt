@@ -1,606 +1,243 @@
-
-SES Removing unpermitted intrinsics lockdown-install.js:1:203117
-[Telegram.WebView] < receiveEvent viewport_changed 
-Object { width: 479, height: 830, is_expanded: true, is_state_stable: true }
-telegram-web-app.js:162:13
-[Telegram.WebView] < receiveEvent safe_area_changed 
-Object { left: 0, right: 0, top: 0, bottom: 0 }
-telegram-web-app.js:162:13
-[Telegram.WebView] < receiveEvent content_safe_area_changed 
-Object { left: 0, right: 0, top: 0, bottom: 0 }
-telegram-web-app.js:162:13
-[Telegram.WebView] < receiveEvent viewport_changed 
-Object { width: 479, height: 830, is_expanded: true, is_state_stable: true }
-telegram-web-app.js:162:13
-[Telegram.WebView] < receiveEvent safe_area_changed 
-Object { left: 0, right: 0, top: 0, bottom: 0 }
-telegram-web-app.js:162:13
-[Telegram.WebView] < receiveEvent content_safe_area_changed 
-Object { left: 0, right: 0, top: 0, bottom: 0 }
-telegram-web-app.js:162:13
-[Telegram.WebView] < receiveEvent viewport_changed 
-Object { width: 479, height: 673, is_expanded: true, is_state_stable: false }
-telegram-web-app.js:162:13
-[Telegram.WebView] < receiveEvent viewport_changed 
-Object { width: 479, height: 673, is_expanded: true, is_state_stable: true }
-telegram-web-app.js:162:13
-[Telegram.WebView] < receiveEvent safe_area_changed 
-Object { left: 0, right: 0, top: 0, bottom: 0 }
-telegram-web-app.js:162:13
-[Telegram.WebView] < receiveEvent content_safe_area_changed 
-Object { left: 0, right: 0, top: 0, bottom: 0 }
-telegram-web-app.js:162:13
-[Telegram.WebView] < receiveEvent viewport_changed 
-Object { width: 479, height: 673, is_expanded: true, is_state_stable: true }
-telegram-web-app.js:162:13
-[PaymentService] Starting payment process: 
-Object { toAddress: "0QC2QYb_rY288lbVinWCkejq9A1sjafOA_yO1OF980r8yTF0", amountNanoTon: "100000000", comment: "Buy Skin: Neon Blue", userId: "demo_user", type: "buy_skin", amount: 0.1, itemName: "Neon Blue" }
-index-Dc3h7Pj0.js:49:100227
-[PaymentService] About to call tonService.sendTransaction index-Dc3h7Pj0.js:49:100689
-[TonService] Converting base64url to base64: 
-Object { original: "0QC2QYb_rY288lbVinWCkejq9A1sjafOA_yO1OF980r8yTF0", converted: "0QC2QYb/rY288lbVinWCkejq9A1sjafOA/yO1OF980r8yTF0" }
-index-Dc3h7Pj0.js:49:65040
-[TonService] Sending transaction: 
-Object { toAddress: "0QC2QYb_rY288lbVinWCkejq9A1sjafOA_yO1OF980r8yTF0", formattedAddress: "0QC2QYb/rY288lbVinWCkejq9A1sjafOA/yO1OF980r8yTF0", amountNanoTon: "100000000", comment: "Buy Skin: Neon Blue" }
-index-Dc3h7Pj0.js:49:64227
-[TonService] Transaction object created, sending to wallet... index-Dc3h7Pj0.js:49:64566
-[TON_CONNECT_UI] postEvent web_app_expand 
-Object {  }
-index-BMg5frqz.js:85:779
-validUntil (1772730301) is more than 5 minutes from now (1772729941) index-BMg5frqz.js:42:16225
-[TON_CONNECT_SDK] Failed to actualize bridge connection Error: [TON_CONNECT_SDK_ERROR] ne
-Wallet info not found for appName: "Tonkeeper"
-    ne https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    getRemoteWallet https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    promise callback*f https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    getRemoteWallet https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    actualizeBridgeConnection https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    actualizeBridgeConnection https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    getConnection https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    promise callback*f https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    getConnection https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    getNextRpcRequestId https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    getNextRpcRequestId https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    sendRequest https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    sendRequest https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    sendRequest https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    waitForSendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    waitForSendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    waitForSendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    i https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    promise callback*s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    sendTransaction https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    processPayment https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    he https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    onClick https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    $f https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    es https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    eo https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    es https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    ms https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    jm https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-index-BMg5frqz.js:6:6326
-[TON_CONNECT_SDK] Failed to actualize bridge connection Error: [TON_CONNECT_SDK_ERROR] ne
-Wallet info not found for appName: "Tonkeeper"
-    ne https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    getRemoteWallet https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    promise callback*f https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    getRemoteWallet https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    actualizeBridgeConnection https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    actualizeBridgeConnection https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    getConnection https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    promise callback*f https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    getConnection https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    increaseNextRpcRequestId https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    increaseNextRpcRequestId https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    sendRequest https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    promise callback*f https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    sendRequest https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    sendRequest https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    waitForSendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    waitForSendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    waitForSendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    i https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    promise callback*s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    sendTransaction https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    processPayment https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    he https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    onClick https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    $f https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    es https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    eo https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    es https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    ms https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    jm https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-index-BMg5frqz.js:6:6326
-[TON_CONNECT_SDK] Send http-bridge request: 
-Object { method: "sendTransaction", params: (1) […], id: "5" }
-index-BMg5frqz.js:6:6326
-[TON_CONNECT_SDK] Sending analytics events... 2 index-BMg5frqz.js:6:6326
-XHR
-POST
-https://analytics.ton.org/events
-[HTTP/2 400  72ms]
-
-[TON_CONNECT_SDK] Failed to send analytics events: Error: [TON_CONNECT_SDK_ERROR] ne
-Analytics API error: 400 
-    ne https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    handleClientError https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    handleResponse https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    processEventsBatch https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    promise callback*f https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    processEventsBatch https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    flush https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    flush https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    timeoutId https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    setTimeout handler*startTimeout https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    emit https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    get https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    g1 https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    dispatchEvent https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    dispatchEvent https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    dispatchUserActionEvent https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    trackTransactionSentForSignature https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    waitForSendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    waitForSendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    waitForSendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    i https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    promise callback*s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    sendTransaction https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    processPayment https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    he https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    onClick https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    $f https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    es https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    eo https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    es https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    ms https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    jm https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-index-BMg5frqz.js:6:6396
-[TON_CONNECT_SDK] Analytics events sent successfully index-BMg5frqz.js:6:6326
-[TonService] sendTransaction error: Error: [TON_CONNECT_SDK_ERROR] wt
-Transaction was not sent
-    ne https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    wt https://snakeonton.vercel.app/assets/index-BMg5frqz.js:85
-    f https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    v https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    Bm https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    Bm https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    O1 https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Zr https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    ai https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    j1 https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    N1 https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Mn https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    N1 https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Mn https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    _c https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    r https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    onClose https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    onClick https://snakeonton.vercel.app/assets/index-BMg5frqz.js:214
-    onClick https://snakeonton.vercel.app/assets/index-BMg5frqz.js:160
-    a https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    uf https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    nf https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Vs https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    cf https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Ac https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    O1 https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Zr https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Ke https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Ac https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    hf https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    O1 https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Zr https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    We https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    hf https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Fr https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    r https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    d https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    yt https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    d https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Gn https://snakeonton.vercel.app/assets/index-BMg5frqz.js:160
-    r https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    d https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    yt https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    d https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    get children https://snakeonton.vercel.app/assets/index-BMg5frqz.js:214
-    H1 https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    H1 https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    H1 https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Ac https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    O1 https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Zr https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Ke https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Ac https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    hf https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    O1 https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Zr https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    We https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    hf https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Fr https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    r https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    d https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    yt https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    d https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    get children https://snakeonton.vercel.app/assets/index-BMg5frqz.js:214
-    H1 https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    H1 https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    H1 https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    H1 https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Ac https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    O1 https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Zr https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Ke https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Ac https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    hf https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    O1 https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Zr https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    We https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    hf https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Fr https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    r https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    d https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    yt https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    d https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    get children https://snakeonton.vercel.app/assets/index-BMg5frqz.js:214
-    ye https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    O1 https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Zr https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    ai https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    kc https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    N1 https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Mn https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    _c https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    r https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    setAction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    setTimeout handler*setAction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    i https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    promise callback*s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    sendTransaction https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    processPayment https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    he https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    onClick https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    $f https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    es https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    eo https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    es https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    ms https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    jm https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-index-Dc3h7Pj0.js:49:64760
-[TonService] Error details: 
-Object { message: "[TON_CONNECT_SDK_ERROR] wt\nTransaction was not sent", stack: "ne@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5:889\nwt@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:85:695\nf@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242:25534\nsendTransaction/</v<@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242:20359\nBm/</<@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242:9024\nBm/<@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242:9012\nO1@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:5900\nZr@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:5829\nai@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:6643\nj1@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:7104\nN1/<@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:6943\nMn@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:6801\nN1@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:6934\nMn@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:6814\n_c@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:5533\nr@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:2123\nonClose@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242:3697\nonClick@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:214:1880\nonClick@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:160:104\na@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:19310\nuf@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:19663\nEventListener.handleEvent*nf@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:16227\nVs@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:18646\ncf@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:17845\nAc/<@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:17484\nO1@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:5900\nZr@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:5829\nKe@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:2243\nAc@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:17475\nhf/<@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:22339\nO1@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:5900\nZr@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:5829\nWe@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:2488\nhf@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:22217\nFr@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:22404\nr@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:24807\nd/<@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:9459\nyt@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:4020\nd@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:9451\nGn@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:160:53\nr@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:24755\nd/<@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:9459\nyt@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:4054\nd@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:9451\nget children@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:214:1847\nH1@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:9866\nH1@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:9866\nH1@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:9866\nAc/<@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:17405\nO1@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:5900\nZr@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:5829\nKe@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:2243\nAc@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:17384\nhf/<@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:22339\nO1@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:5900\nZr@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:5829\nWe@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:2488\nhf@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:22217\nFr@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:22404\nr@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:24807\nd/<@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:9459\nyt@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:4054\nd@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:9451\nget children@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:214:1791\nH1@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:9866\nH1@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:9866\nH1@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:9866\nH1@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:9866\nAc/<@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:17405\nO1@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:5900\nZr@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:5829\nKe@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:2243\nAc@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:17384\nhf/<@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:22339\nO1@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:5900\nZr@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:5829\nWe@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:2488\nhf@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:22217\nFr@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:22404\nr@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:24807\nd/<@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:9459\nyt@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:4054\nd@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:9451\nget children@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:214:1581\nye/<@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:11943\nO1@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:5900\nZr@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:5829\nai@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:6643\nkc@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:6995\nN1@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:6880\nMn@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:6814\n_c@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:5533\nr@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:2123\nsetAction/<@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242:6825\nsetTimeout handler*setAction@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242:6808\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242:19563\ni@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:1294\npromise callback*s@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:1407\nLe/<@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:1418\nLe@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46:1256\nsendTransaction@https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242:19110\nsendTransaction@https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49:64655\nprocessPayment@https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49:100771\nhe@https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49:105688\nonClick@https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49:112550\n$f@https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48:127468\nYm/es/<@https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48:132553\neo@https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48:15122\nes@https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48:128703\nms@https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49:28662\njm@https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49:28482\n" }
-index-Dc3h7Pj0.js:49:64835
-[PaymentService] Transaction result: false index-Dc3h7Pj0.js:49:100871
-[PaymentService] Transaction failed - check tonService logs above index-Dc3h7Pj0.js:49:100928
-[PaymentService] Starting payment process: 
-Object { toAddress: "0QC2QYb_rY288lbVinWCkejq9A1sjafOA_yO1OF980r8yTF0", amountNanoTon: "100000000", comment: "Buy Skin: Neon Blue", userId: "demo_user", type: "buy_skin", amount: 0.1, itemName: "Neon Blue" }
-index-Dc3h7Pj0.js:49:100227
-[PaymentService] About to call tonService.sendTransaction index-Dc3h7Pj0.js:49:100689
-[TonService] Converting base64url to base64: 
-Object { original: "0QC2QYb_rY288lbVinWCkejq9A1sjafOA_yO1OF980r8yTF0", converted: "0QC2QYb/rY288lbVinWCkejq9A1sjafOA/yO1OF980r8yTF0" }
-index-Dc3h7Pj0.js:49:65040
-[TonService] Sending transaction: 
-Object { toAddress: "0QC2QYb_rY288lbVinWCkejq9A1sjafOA_yO1OF980r8yTF0", formattedAddress: "0QC2QYb/rY288lbVinWCkejq9A1sjafOA/yO1OF980r8yTF0", amountNanoTon: "100000000", comment: "Buy Skin: Neon Blue" }
-index-Dc3h7Pj0.js:49:64227
-[TonService] Transaction object created, sending to wallet... index-Dc3h7Pj0.js:49:64566
-[TON_CONNECT_UI] postEvent web_app_expand 
-Object {  }
-index-BMg5frqz.js:85:779
-validUntil (1772730334) is more than 5 minutes from now (1772729974) index-BMg5frqz.js:42:16225
-[TON_CONNECT_SDK] Failed to actualize bridge connection Error: [TON_CONNECT_SDK_ERROR] ne
-Wallet info not found for appName: "Tonkeeper"
-    ne https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    getRemoteWallet https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    promise callback*f https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    getRemoteWallet https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    actualizeBridgeConnection https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    actualizeBridgeConnection https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    getConnection https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    promise callback*f https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    getConnection https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    getNextRpcRequestId https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    getNextRpcRequestId https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    sendRequest https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    sendRequest https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    sendRequest https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    waitForSendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    waitForSendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    waitForSendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    i https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    promise callback*s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    sendTransaction https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    processPayment https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    he https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    onClick https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    $f https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    es https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    eo https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    es https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    ms https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    jm https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-index-BMg5frqz.js:6:6326
-[TON_CONNECT_SDK] Failed to actualize bridge connection Error: [TON_CONNECT_SDK_ERROR] ne
-Wallet info not found for appName: "Tonkeeper"
-    ne https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    getRemoteWallet https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    promise callback*f https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    getRemoteWallet https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    actualizeBridgeConnection https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    actualizeBridgeConnection https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    getConnection https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    promise callback*f https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    getConnection https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    increaseNextRpcRequestId https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    increaseNextRpcRequestId https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    sendRequest https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    promise callback*f https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    sendRequest https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    sendRequest https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    waitForSendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    waitForSendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    waitForSendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    i https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    promise callback*s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    sendTransaction https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    processPayment https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    he https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    onClick https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    $f https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    es https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    eo https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    es https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    ms https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    jm https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-index-BMg5frqz.js:6:6326
-[TON_CONNECT_SDK] Send http-bridge request: 
-Object { method: "sendTransaction", params: (1) […], id: "6" }
-index-BMg5frqz.js:6:6326
-[TON_CONNECT_SDK] Sending analytics events... 2 index-BMg5frqz.js:6:6326
-XHR
-POST
-https://analytics.ton.org/events
-[HTTP/2 400  73ms]
-
-[TON_CONNECT_SDK] Failed to send analytics events: Error: [TON_CONNECT_SDK_ERROR] ne
-Analytics API error: 400 
-    ne https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    handleClientError https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    handleResponse https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    processEventsBatch https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    promise callback*f https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    processEventsBatch https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    flush https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    flush https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    timeoutId https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    setTimeout handler*startTimeout https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    emit https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    get https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    g1 https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    dispatchEvent https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    dispatchEvent https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    dispatchUserActionEvent https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    trackTransactionSentForSignature https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    waitForSendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    waitForSendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    waitForSendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    i https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    promise callback*s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    Le https://snakeonton.vercel.app/assets/index-BMg5frqz.js:46
-    sendTransaction https://snakeonton.vercel.app/assets/index-BMg5frqz.js:1242
-    sendTransaction https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    processPayment https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    he https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    onClick https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    $f https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    es https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    eo https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    es https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:48
-    ms https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-    jm https://snakeonton.vercel.app/assets/index-Dc3h7Pj0.js:49
-index-BMg5frqz.js:6:6396
-[TON_CONNECT_SDK] Analytics events sent successfully index-BMg5frqz.js:6:6326
-[TON_CONNECT_SDK] Wallet message received: 
-Object { result: "te6cckEBAgEAqgAB4YgAHZ5ji4C+fgyEsCY7rNRvpdXme0AJOvum8M2glX0wSjwFkTbfbCeVk19dR3QwuokWOwO1RZPaiG/Au5c+H/vYl3snEgxsKcVaskeJrM52j7lJKFGXh15oodaQX3evRQpIUU1NGLtNTb5AAAAAKAAcAQBoQgBbIMN/1sbeeStqxTrBSPR1ega2RtPnAf5HanC++aV+ZKAvrwgAAAAAAAAAAAAAAAAAABdQbaE=", id: "6" }
-index-BMg5frqz.js:6:6326
-[TonService] Transaction sent successfully! index-Dc3h7Pj0.js:49:64682
-[PaymentService] Transaction result: true index-Dc3h7Pj0.js:49:100871
-[PaymentService] Testnet mode - auto-approving transaction index-Dc3h7Pj0.js:49:101111
-[TON_CONNECT_SDK] Sending analytics events... 2 index-BMg5frqz.js:6:6326
-XHR
-POST
-https://analytics.ton.org/events
-[HTTP/2 400  70ms]
-
-[TON_CONNECT_SDK] Failed to send analytics events: Error: [TON_CONNECT_SDK_ERROR] ne
-Analytics API error: 400 
-    ne https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    handleClientError https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    handleResponse https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    processEventsBatch https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    promise callback*f https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    processEventsBatch https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    flush https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    flush https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    timeoutId https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    setTimeout handler*startTimeout https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    emit https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    get https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    gatewayListener https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    gatewayListener https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    messagesHandler https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    promise callback*f https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    messagesHandler https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    onmessage https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-index-BMg5frqz.js:6:6396
-    hn https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    handleClientError https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    handleResponse https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    processEventsBatch https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    (Async: promise callback)
-    f https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    processEventsBatch https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    flush https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    flush https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    timeoutId https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    (Async: setTimeout handler)
-    startTimeout https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    emit https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    get https://snakeonton.vercel.app/assets/index-BMg5frqz.js:42
-    gatewayListener https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    gatewayListener https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    messagesHandler https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    s https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    (Async: promise callback)
-    f https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    te https://snakeonton.vercel.app/assets/index-BMg5frqz.js:5
-    messagesHandler https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-    onmessage https://snakeonton.vercel.app/assets/index-BMg5frqz.js:6
-[TON_CONNECT_SDK] Analytics events sent successfully index-BMg5frqz.js:6:6326
-
-​
-
+2026-03-05T22:34:52.105604513Z [inf]  Starting Container
+2026-03-05T22:34:52.178931300Z [err]  npm warn config production Use `--omit=dev` instead.
+2026-03-05T22:34:52.178936810Z [inf]  
+2026-03-05T22:34:52.178943000Z [inf]  > snake-ton-backend@1.0.0 start
+2026-03-05T22:34:52.178948380Z [inf]  > node index.js
+2026-03-05T22:34:52.178953630Z [inf]  
+2026-03-05T22:34:52.178959170Z [inf]  🤖 Telegram Bot started.
+2026-03-05T22:34:52.178964350Z [err]  (node:25) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-03-05T22:34:52.178970040Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-03-05T22:34:52.178975470Z [inf]  🚀 API Server running on port 8080
+2026-03-05T22:34:53.876366619Z [err]  /app/node_modules/telegraf/lib/core/network/client.js:315
+2026-03-05T22:34:53.876372709Z [err]              throw new error_1.default(data, { method, payload });
+2026-03-05T22:34:53.876375459Z [err]                    ^
+2026-03-05T22:34:53.876381559Z [err]  
+2026-03-05T22:34:53.876384719Z [err]  TelegramError: 401: Unauthorized
+2026-03-05T22:34:53.876387498Z [err]      at Telegram.callApi (/app/node_modules/telegraf/lib/core/network/client.js:315:19)
+2026-03-05T22:34:53.876390018Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-03-05T22:34:53.876394068Z [err]      at async Telegraf.launch (/app/node_modules/telegraf/lib/telegraf.js:188:78) {
+2026-03-05T22:34:53.876397428Z [err]    response: { ok: false, error_code: 401, description: 'Unauthorized' },
+2026-03-05T22:34:53.876400718Z [err]    on: { method: 'getMe', payload: {} }
+2026-03-05T22:34:53.876403478Z [err]  }
+2026-03-05T22:34:53.876406348Z [err]  
+2026-03-05T22:34:53.876409138Z [err]  Node.js v22.22.1
+2026-03-05T22:34:54.436760741Z [err]  npm warn config production Use `--omit=dev` instead.
+2026-03-05T22:34:54.445744307Z [inf]  
+2026-03-05T22:34:54.445747077Z [inf]  > snake-ton-backend@1.0.0 start
+2026-03-05T22:34:54.445749727Z [inf]  > node index.js
+2026-03-05T22:34:54.445752547Z [inf]  
+2026-03-05T22:34:54.573128086Z [inf]  🤖 Telegram Bot started.
+2026-03-05T22:34:54.582155510Z [err]  (node:25) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-03-05T22:34:54.582159540Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-03-05T22:34:54.583349295Z [inf]  🚀 API Server running on port 8080
+2026-03-05T22:34:54.592525038Z [err]  /app/node_modules/telegraf/lib/core/network/client.js:315
+2026-03-05T22:34:54.592530478Z [err]              throw new error_1.default(data, { method, payload });
+2026-03-05T22:34:54.592535378Z [err]                    ^
+2026-03-05T22:34:54.592540628Z [err]  
+2026-03-05T22:34:54.592546378Z [err]  TelegramError: 401: Unauthorized
+2026-03-05T22:34:54.592551588Z [err]      at Telegram.callApi (/app/node_modules/telegraf/lib/core/network/client.js:315:19)
+2026-03-05T22:34:54.592557148Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-03-05T22:34:54.592561708Z [err]      at async Telegraf.launch (/app/node_modules/telegraf/lib/telegraf.js:188:78) {
+2026-03-05T22:34:54.592574038Z [err]    response: { ok: false, error_code: 401, description: 'Unauthorized' },
+2026-03-05T22:34:54.592578808Z [err]    on: { method: 'getMe', payload: {} }
+2026-03-05T22:34:54.592583688Z [err]  }
+2026-03-05T22:34:54.592588258Z [err]  
+2026-03-05T22:34:54.592592818Z [err]  Node.js v22.22.1
+2026-03-05T22:34:55.184418463Z [err]  npm warn config production Use `--omit=dev` instead.
+2026-03-05T22:34:55.184425803Z [inf]  
+2026-03-05T22:34:55.184431803Z [inf]  > snake-ton-backend@1.0.0 start
+2026-03-05T22:34:55.184438253Z [inf]  > node index.js
+2026-03-05T22:34:55.184443913Z [inf]  
+2026-03-05T22:34:55.310568949Z [inf]  🤖 Telegram Bot started.
+2026-03-05T22:34:55.314919447Z [err]  (node:25) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-03-05T22:34:55.314922377Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-03-05T22:34:55.314924907Z [inf]  🚀 API Server running on port 8080
+2026-03-05T22:34:55.326743658Z [err]  /app/node_modules/telegraf/lib/core/network/client.js:315
+2026-03-05T22:34:55.326746108Z [err]              throw new error_1.default(data, { method, payload });
+2026-03-05T22:34:55.326748338Z [err]                    ^
+2026-03-05T22:34:55.326750838Z [err]  
+2026-03-05T22:34:55.326753148Z [err]  TelegramError: 401: Unauthorized
+2026-03-05T22:34:55.326758468Z [err]      at Telegram.callApi (/app/node_modules/telegraf/lib/core/network/client.js:315:19)
+2026-03-05T22:34:55.326761208Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-03-05T22:34:55.326763708Z [err]      at async Telegraf.launch (/app/node_modules/telegraf/lib/telegraf.js:188:78) {
+2026-03-05T22:34:55.326766348Z [err]    response: { ok: false, error_code: 401, description: 'Unauthorized' },
+2026-03-05T22:34:55.326768658Z [err]    on: { method: 'getMe', payload: {} }
+2026-03-05T22:34:55.326771638Z [err]  }
+2026-03-05T22:34:55.326774278Z [err]  
+2026-03-05T22:34:55.326776648Z [err]  Node.js v22.22.1
+2026-03-05T22:34:56.110587148Z [err]  npm warn config production Use `--omit=dev` instead.
+2026-03-05T22:34:56.110590218Z [inf]  
+2026-03-05T22:34:56.110593218Z [inf]  > snake-ton-backend@1.0.0 start
+2026-03-05T22:34:56.110596978Z [inf]  > node index.js
+2026-03-05T22:34:56.110600678Z [inf]  
+2026-03-05T22:34:56.158371347Z [inf]  🤖 Telegram Bot started.
+2026-03-05T22:34:56.181900259Z [err]  (node:25) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-03-05T22:34:56.181905399Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-03-05T22:34:56.181913779Z [inf]  🚀 API Server running on port 8080
+2026-03-05T22:34:56.183452951Z [err]  /app/node_modules/telegraf/lib/core/network/client.js:315
+2026-03-05T22:34:56.183468111Z [err]              throw new error_1.default(data, { method, payload });
+2026-03-05T22:34:56.183478271Z [err]                    ^
+2026-03-05T22:34:56.183483221Z [err]  
+2026-03-05T22:34:56.183487621Z [err]  TelegramError: 401: Unauthorized
+2026-03-05T22:34:56.183492231Z [err]      at Telegram.callApi (/app/node_modules/telegraf/lib/core/network/client.js:315:19)
+2026-03-05T22:34:56.183496151Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-03-05T22:34:56.183499571Z [err]      at async Telegraf.launch (/app/node_modules/telegraf/lib/telegraf.js:188:78) {
+2026-03-05T22:34:56.183503211Z [err]    response: { ok: false, error_code: 401, description: 'Unauthorized' },
+2026-03-05T22:34:56.183507811Z [err]    on: { method: 'getMe', payload: {} }
+2026-03-05T22:34:56.183511031Z [err]  }
+2026-03-05T22:34:56.183514061Z [err]  
+2026-03-05T22:34:56.183517271Z [err]  Node.js v22.22.1
+2026-03-05T22:34:56.794609299Z [err]  npm warn config production Use `--omit=dev` instead.
+2026-03-05T22:34:56.807555784Z [inf]  
+2026-03-05T22:34:56.807558174Z [inf]  > snake-ton-backend@1.0.0 start
+2026-03-05T22:34:56.807560534Z [inf]  > node index.js
+2026-03-05T22:34:56.807563334Z [inf]  
+2026-03-05T22:34:57.118440491Z [err]      at async Telegraf.launch (/app/node_modules/telegraf/lib/telegraf.js:188:78) {
+2026-03-05T22:34:57.118455501Z [err]    response: { ok: false, error_code: 401, description: 'Unauthorized' },
+2026-03-05T22:34:57.118462611Z [err]    on: { method: 'getMe', payload: {} }
+2026-03-05T22:34:57.118468601Z [err]  }
+2026-03-05T22:34:57.118476721Z [err]  
+2026-03-05T22:34:57.118485541Z [err]  Node.js v22.22.1
+2026-03-05T22:34:57.118819249Z [inf]  🤖 Telegram Bot started.
+2026-03-05T22:34:57.118824399Z [err]  (node:25) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-03-05T22:34:57.118830020Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-03-05T22:34:57.118835490Z [inf]  🚀 API Server running on port 8080
+2026-03-05T22:34:57.118842130Z [err]  /app/node_modules/telegraf/lib/core/network/client.js:315
+2026-03-05T22:34:57.118848590Z [err]              throw new error_1.default(data, { method, payload });
+2026-03-05T22:34:57.118854040Z [err]                    ^
+2026-03-05T22:34:57.118864649Z [err]  
+2026-03-05T22:34:57.118870759Z [err]  TelegramError: 401: Unauthorized
+2026-03-05T22:34:57.118878249Z [err]      at Telegram.callApi (/app/node_modules/telegraf/lib/core/network/client.js:315:19)
+2026-03-05T22:34:57.118885649Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-03-05T22:34:57.608637067Z [err]  npm warn config production Use `--omit=dev` instead.
+2026-03-05T22:34:57.618450688Z [inf]  
+2026-03-05T22:34:57.618455898Z [inf]  > snake-ton-backend@1.0.0 start
+2026-03-05T22:34:57.618460478Z [inf]  > node index.js
+2026-03-05T22:34:57.618463728Z [inf]  
+2026-03-05T22:34:57.787441758Z [inf]  🤖 Telegram Bot started.
+2026-03-05T22:34:57.799788335Z [err]  (node:25) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-03-05T22:34:57.799792085Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-03-05T22:34:57.799795475Z [inf]  🚀 API Server running on port 8080
+2026-03-05T22:34:57.810582931Z [err]  /app/node_modules/telegraf/lib/core/network/client.js:315
+2026-03-05T22:34:57.810586861Z [err]              throw new error_1.default(data, { method, payload });
+2026-03-05T22:34:57.810590341Z [err]                    ^
+2026-03-05T22:34:57.810594361Z [err]  
+2026-03-05T22:34:57.810598261Z [err]  TelegramError: 401: Unauthorized
+2026-03-05T22:34:57.810601911Z [err]      at Telegram.callApi (/app/node_modules/telegraf/lib/core/network/client.js:315:19)
+2026-03-05T22:34:57.810605341Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-03-05T22:34:57.810609291Z [err]      at async Telegraf.launch (/app/node_modules/telegraf/lib/telegraf.js:188:78) {
+2026-03-05T22:34:57.810612931Z [err]    response: { ok: false, error_code: 401, description: 'Unauthorized' },
+2026-03-05T22:34:57.810616301Z [err]    on: { method: 'getMe', payload: {} }
+2026-03-05T22:34:57.810619711Z [err]  }
+2026-03-05T22:34:57.810622961Z [err]  
+2026-03-05T22:34:57.810625851Z [err]  Node.js v22.22.1
+2026-03-05T22:34:58.422995463Z [err]  npm warn config production Use `--omit=dev` instead.
+2026-03-05T22:34:58.437897669Z [inf]  
+2026-03-05T22:34:58.437901929Z [inf]  > snake-ton-backend@1.0.0 start
+2026-03-05T22:34:58.437905029Z [inf]  > node index.js
+2026-03-05T22:34:58.437909429Z [inf]  
+2026-03-05T22:34:58.590050993Z [inf]  🤖 Telegram Bot started.
+2026-03-05T22:34:58.603528805Z [err]  (node:25) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-03-05T22:34:58.603536195Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-03-05T22:34:58.603539965Z [inf]  🚀 API Server running on port 8080
+2026-03-05T22:34:58.613480756Z [err]  /app/node_modules/telegraf/lib/core/network/client.js:315
+2026-03-05T22:34:58.613488136Z [err]              throw new error_1.default(data, { method, payload });
+2026-03-05T22:34:58.613493806Z [err]                    ^
+2026-03-05T22:34:58.613499166Z [err]  
+2026-03-05T22:34:58.613504776Z [err]  TelegramError: 401: Unauthorized
+2026-03-05T22:34:58.613510906Z [err]      at Telegram.callApi (/app/node_modules/telegraf/lib/core/network/client.js:315:19)
+2026-03-05T22:34:58.613517806Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-03-05T22:34:58.613525475Z [err]      at async Telegraf.launch (/app/node_modules/telegraf/lib/telegraf.js:188:78) {
+2026-03-05T22:34:58.613531945Z [err]    response: { ok: false, error_code: 401, description: 'Unauthorized' },
+2026-03-05T22:34:58.613537925Z [err]    on: { method: 'getMe', payload: {} }
+2026-03-05T22:34:58.613544165Z [err]  }
+2026-03-05T22:34:58.613551765Z [err]  
+2026-03-05T22:34:58.613557865Z [err]  Node.js v22.22.1
+2026-03-05T22:34:59.248967650Z [err]  npm warn config production Use `--omit=dev` instead.
+2026-03-05T22:34:59.261849246Z [inf]  
+2026-03-05T22:34:59.261854606Z [inf]  > snake-ton-backend@1.0.0 start
+2026-03-05T22:34:59.261861556Z [inf]  > node index.js
+2026-03-05T22:34:59.261865885Z [inf]  
+2026-03-05T22:34:59.371226856Z [inf]  🤖 Telegram Bot started.
+2026-03-05T22:34:59.423984681Z [err]  (node:25) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-03-05T22:34:59.423990891Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-03-05T22:34:59.423995981Z [inf]  🚀 API Server running on port 8080
+2026-03-05T22:34:59.439042125Z [err]  /app/node_modules/telegraf/lib/core/network/client.js:315
+2026-03-05T22:34:59.439051045Z [err]              throw new error_1.default(data, { method, payload });
+2026-03-05T22:34:59.439059075Z [err]                    ^
+2026-03-05T22:34:59.439081425Z [err]  
+2026-03-05T22:34:59.439092125Z [err]  TelegramError: 401: Unauthorized
+2026-03-05T22:34:59.439099904Z [err]      at Telegram.callApi (/app/node_modules/telegraf/lib/core/network/client.js:315:19)
+2026-03-05T22:34:59.439107804Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-03-05T22:34:59.439117064Z [err]      at async Telegraf.launch (/app/node_modules/telegraf/lib/telegraf.js:188:78) {
+2026-03-05T22:34:59.439124894Z [err]    response: { ok: false, error_code: 401, description: 'Unauthorized' },
+2026-03-05T22:34:59.439132204Z [err]    on: { method: 'getMe', payload: {} }
+2026-03-05T22:34:59.439139744Z [err]  }
+2026-03-05T22:34:59.439146574Z [err]  
+2026-03-05T22:34:59.439153695Z [err]  Node.js v22.22.1
+2026-03-05T22:35:00.123989922Z [err]  npm warn config production Use `--omit=dev` instead.
+2026-03-05T22:35:00.123992632Z [inf]  
+2026-03-05T22:35:00.123995812Z [inf]  > snake-ton-backend@1.0.0 start
+2026-03-05T22:35:00.123998482Z [inf]  > node index.js
+2026-03-05T22:35:00.124001782Z [inf]  
+2026-03-05T22:35:00.205951089Z [inf]  🤖 Telegram Bot started.
+2026-03-05T22:35:00.217429142Z [err]  (node:25) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-03-05T22:35:00.217431612Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-03-05T22:35:00.217433972Z [inf]  🚀 API Server running on port 8080
+2026-03-05T22:35:00.227414062Z [err]  /app/node_modules/telegraf/lib/core/network/client.js:315
+2026-03-05T22:35:00.227416572Z [err]              throw new error_1.default(data, { method, payload });
+2026-03-05T22:35:00.227419442Z [err]                    ^
+2026-03-05T22:35:00.227421932Z [err]  
+2026-03-05T22:35:00.227424562Z [err]  TelegramError: 401: Unauthorized
+2026-03-05T22:35:00.227427382Z [err]      at Telegram.callApi (/app/node_modules/telegraf/lib/core/network/client.js:315:19)
+2026-03-05T22:35:00.227430542Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-03-05T22:35:00.227432942Z [err]      at async Telegraf.launch (/app/node_modules/telegraf/lib/telegraf.js:188:78) {
+2026-03-05T22:35:00.227435312Z [err]    response: { ok: false, error_code: 401, description: 'Unauthorized' },
+2026-03-05T22:35:00.227437842Z [err]    on: { method: 'getMe', payload: {} }
+2026-03-05T22:35:00.227471482Z [err]  }
+2026-03-05T22:35:00.227474082Z [err]  
+2026-03-05T22:35:00.227476922Z [err]  Node.js v22.22.1
+2026-03-05T22:35:00.883610023Z [err]  npm warn config production Use `--omit=dev` instead.
+2026-03-05T22:35:00.895733881Z [inf]  
+2026-03-05T22:35:00.895743461Z [inf]  > snake-ton-backend@1.0.0 start
+2026-03-05T22:35:00.895750121Z [inf]  > node index.js
+2026-03-05T22:35:00.895755431Z [inf]  
+2026-03-05T22:35:01.145770015Z [inf]  🤖 Telegram Bot started.
+2026-03-05T22:35:01.145775085Z [err]  (node:25) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-03-05T22:35:01.145779685Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-03-05T22:35:01.145784845Z [inf]  🚀 API Server running on port 8080
+2026-03-05T22:35:01.145791615Z [err]  /app/node_modules/telegraf/lib/core/network/client.js:315
+2026-03-05T22:35:01.145792315Z [err]      at Telegram.callApi (/app/node_modules/telegraf/lib/core/network/client.js:315:19)
+2026-03-05T22:35:01.145804035Z [err]              throw new error_1.default(data, { method, payload });
+2026-03-05T22:35:01.145807755Z [err]                    ^
+2026-03-05T22:35:01.145812205Z [err]  
+2026-03-05T22:35:01.145818375Z [err]  TelegramError: 401: Unauthorized
+2026-03-05T22:35:01.145818645Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-03-05T22:35:01.145824105Z [err]      at async Telegraf.launch (/app/node_modules/telegraf/lib/telegraf.js:188:78) {
+2026-03-05T22:35:01.145827525Z [err]    response: { ok: false, error_code: 401, description: 'Unauthorized' },
+2026-03-05T22:35:01.145832775Z [err]    on: { method: 'getMe', payload: {} }
+2026-03-05T22:35:01.145837455Z [err]  }
+2026-03-05T22:35:01.145841335Z [err]  
+2026-03-05T22:35:01.145845155Z [err]  Node.js v22.22.1
+2026-03-05T22:35:01.677180943Z [err]  npm warn config production Use `--omit=dev` instead.
+2026-03-05T22:35:01.691029783Z [inf]  
+2026-03-05T22:35:01.691037773Z [inf]  > snake-ton-backend@1.0.0 start
+2026-03-05T22:35:01.691043413Z [inf]  > node index.js
+2026-03-05T22:35:01.691048833Z [inf]  
+2026-03-05T22:35:01.806006575Z [inf]  🤖 Telegram Bot started.
+2026-03-05T22:35:01.849947364Z [err]  (node:25) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-03-05T22:35:01.849952334Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-03-05T22:35:01.849957894Z [inf]  🚀 API Server running on port 8080
+2026-03-05T22:35:01.864057814Z [err]  }
+2026-03-05T22:35:01.864062524Z [err]  
+2026-03-05T22:35:01.864066494Z [err]  Node.js v22.22.1
+2026-03-05T22:35:01.864083534Z [err]  /app/node_modules/telegraf/lib/core/network/client.js:315
+2026-03-05T22:35:01.864086784Z [err]              throw new error_1.default(data, { method, payload });
+2026-03-05T22:35:01.864090123Z [err]                    ^
+2026-03-05T22:35:01.864093453Z [err]  
+2026-03-05T22:35:01.864096323Z [err]  TelegramError: 401: Unauthorized
+2026-03-05T22:35:01.864100093Z [err]      at Telegram.callApi (/app/node_modules/telegraf/lib/core/network/client.js:315:19)
+2026-03-05T22:35:01.864109833Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-03-05T22:35:01.864114133Z [err]      at async Telegraf.launch (/app/node_modules/telegraf/lib/telegraf.js:188:78) {
+2026-03-05T22:35:01.864117163Z [err]    response: { ok: false, error_code: 401, description: 'Unauthorized' },
+2026-03-05T22:35:01.864120283Z [err]    on: { method: 'getMe', payload: {} }
