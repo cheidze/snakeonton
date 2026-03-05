@@ -121,6 +121,8 @@ class TelegramService {
                 platform: this.getPlatform(),
                 version: '1.0.0'
             });
+        } else {
+            console.log('[TelegramService] Analytics not available, continuing without it');
         }
     }
 
@@ -132,7 +134,8 @@ class TelegramService {
             try {
                 window.TelegramAnalytics.sendEvent(eventName, params);
             } catch (e) {
-                console.warn('[TelegramService] Analytics event error:', e);
+                // Silently fail - analytics is optional
+                console.debug('[TelegramService] Analytics event tracking failed:', e);
             }
         }
     }
@@ -145,7 +148,8 @@ class TelegramService {
             try {
                 window.TelegramAnalytics.setUserProperty(property, value);
             } catch (e) {
-                console.warn('[TelegramService] Set user property error:', e);
+                // Silently fail - analytics is optional
+                console.debug('[TelegramService] Set user property failed:', e);
             }
         }
     }
