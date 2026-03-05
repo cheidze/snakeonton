@@ -786,3 +786,744 @@ index-BzgTAkzq.js:49:99577
 ​
 
 
+
+Feature Policy: Skipping unsupported feature name “clipboard-write”. main.39a8a2cda48f23d84fcf.js:1:332849
+Feature Policy: Skipping unsupported feature name “clipboard-write”. main.39a8a2cda48f23d84fcf.js:1:5512
+GET
+https://snakeonton.vercel.app/#tgWebAppData=query_id=AAEFlw12AgAAAAWXDXY_Y0H8&user=%7B%22id%22%3A6275569413%2C%22first_name%22%3A%22Groku%22%2C%22last_name%22%3A%22%22%2C%22username%22%3A%22Mandalorel%22%2C%22language_code%22%3A%22en%22%2C%22allows_write_to_pm%22%3Atrue%2C%22photo_url%22%3A%22https%3A%5C%2F%5C%2Ft.me%5C%2Fi%5C%2Fuserpic%5C%2F320%5C%2F7mdQLYMkjqfISxs6VyoOtkcsRuX43OK4a-R8Y80nb7Xryt8SP1DqUEhNez8dI3nL.svg%22%7D&auth_date=1772671514&signature=KDHQOaGL4PXfex09ef1Xc4YIiHn7TRREjKgx4lJFC_crvThJ19Z9lp-swnN1d9UPmrSP-CmJ9eaQv-73ATKcBQ&hash=b1237cb7bbf41ba0ebd7b749b0842bc1413c14ea6c32779cc8e396b8fae6f38a&tgWebAppVersion=9.1&tgWebAppPlatform=weba&tgWebAppThemeParams={"bg_color":"#212121","text_color":"#ffffff","hint_color":"#aaaaaa","link_color":"#8774e1","button_color":"#8774e1","button_text_color":"#ffffff","secondary_bg_color":"#0f0f0f","header_bg_color":"#212121","accent_text_color":"#8774e1","section_bg_color":"#212121","section_header_text_color":"#aaaaaa","subtitle_text_color":"#aaaaaa","destructive_text_color":"#e53935"}
+[HTTP/2 200  636ms]
+
+GET
+https://telegram.org/js/telegram-web-app.js
+[HTTP/2 200  0ms]
+
+GET
+https://cdn.tailwindcss.com/
+[HTTP/2 302  0ms]
+
+GET
+https://accounts.google.com/gsi/client
+[HTTP/3 200  0ms]
+
+GET
+https://cdn.tailwindcss.com/3.4.17
+[HTTP/2 200  0ms]
+
+SES Removing unpermitted intrinsics lockdown-install.js:1:203117
+  Removing intrinsics.%MapPrototype%.getOrInsert lockdown-install.js:1:202962
+  Removing intrinsics.%MapPrototype%.getOrInsertComputed lockdown-install.js:1:202962
+  Removing intrinsics.%WeakMapPrototype%.getOrInsert lockdown-install.js:1:202962
+  Removing intrinsics.%WeakMapPrototype%.getOrInsertComputed lockdown-install.js:1:202962
+  Removing intrinsics.%DatePrototype%.toTemporalInstant lockdown-install.js:1:202962
+[Telegram.WebView] > postEvent web_app_set_header_color 
+Object { color_key: "bg_color" }
+telegram-web-app.js:135:13
+[Telegram.WebView] > postEvent web_app_set_background_color 
+Object { color: "#212121" }
+telegram-web-app.js:135:13
+[Telegram.WebView] > postEvent web_app_set_bottom_bar_color 
+Object { color: "#0f0f0f" }
+telegram-web-app.js:135:13
+[Telegram.WebView] > postEvent web_app_request_theme <empty string> telegram-web-app.js:135:13
+[Telegram.WebView] > postEvent web_app_request_viewport <empty string> telegram-web-app.js:135:13
+[Telegram.WebView] > postEvent web_app_request_safe_area <empty string> telegram-web-app.js:135:13
+[Telegram.WebView] > postEvent web_app_request_content_safe_area <empty string> telegram-web-app.js:135:13
+GET
+https://telegram.org/js/telegram-analytics.js
+NS_BINDING_ABORTED
+
+cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation cdn.tailwindcss.com:64:1711
+GET
+https://snakeonton.vercel.app/assets/index-CrBMdSek.js
+[HTTP/2 200  530ms]
+
+Loading failed for the <script> with source “https://telegram.org/js/telegram-analytics.js”. snakeonton.vercel.app:1:1
+[Analytics] Failed to load, continuing without analytics snakeonton.vercel.app:18:49
+Partitioned cookie or storage access was provided to “https://snakeonton.vercel.app/#tgWebAppData=query_id%3DAAEFlw12AgAAAAWXDXY_Y0H8%26user%3D%257B%2522id%2522%253A6275569413%252C%2522first_name%2522%253A%2522Groku%2522%252C%2522last_name%2522%253A%2522%2522%252C%2522username%2522%253A%2522Mandalorel%2522%252C%2522language_code%2522%253A%2522en%2522%252C%2522allows_write_to_pm%2522%253Atrue%252C%2522photo_url%2522%253A%2522https%253A%255C%252F%255C%252Ft.me%255C%252Fi%255C%252Fuserpic%255C%252F320%255C%252F7mdQLYMkjqfISxs6VyoOtkcsRuX43OK4a-R8Y80nb7Xryt8SP1DqUEhNez8dI3nL.svg%2522%257D%26auth_date%3D1772671514%26signature%3DKDHQOaGL4PXfex09ef1Xc4YIiHn7TRREjKgx4lJFC_crvThJ19Z9lp-swnN1d9UPmrSP-CmJ9eaQv-73ATKcBQ%26hash%3Db1237cb7bbf41ba0ebd7b749b0842bc1413c14ea6c32779cc8e396b8fae6f38a&tgWebAppVersion=9.1&tgWebAppPlatform=weba&tgWebAppThemeParams=%7B%22bg_color%22%3A%22%23212121%22%2C%22text_color%22%3A%22%23ffffff%22%2C%22hint_color%22%3A%22%23aaaaaa%22%2C%22link_color%22%3A%22%238774e1%22%2C%22button_color%22%3A%22%238774e1%22%2C%22button_text_color%22%3A%22%23ffffff%22%2C%22secondary_bg_color%22%3A%22%230f0f0f%22%2C%22header_bg_color%22%3A%22%23212121%22%2C%22accent_text_color%22%3A%22%238774e1%22%2C%22section_bg_color%22%3A%22%23212121%22%2C%22section_header_text_color%22%3A%22%23aaaaaa%22%2C%22subtitle_text_color%22%3A%22%23aaaaaa%22%2C%22destructive_text_color%22%3A%22%23e53935%22%7D” because it is loaded in the third-party context and dynamic state partitioning is enabled. contentscript.js:12:73448
+A resource is blocked by OpaqueResponseBlocking, please check browser console for details. telegram-analytics.js
+[Telegram.WebView] < receiveEvent theme_changed 
+Object { theme_params: {…} }
+telegram-web-app.js:162:13
+[Telegram.WebView] > postEvent web_app_setup_main_button 
+Object { is_visible: false }
+telegram-web-app.js:135:13
+[Telegram.WebView] > postEvent web_app_setup_secondary_button 
+Object { is_visible: false }
+telegram-web-app.js:135:13
+[Telegram.WebView] < receiveEvent viewport_changed 
+Object { width: 511, height: 673, is_expanded: true, is_state_stable: true }
+telegram-web-app.js:162:13
+[Telegram.WebView] < receiveEvent safe_area_changed 
+Object { left: 0, right: 0, top: 0, bottom: 0 }
+telegram-web-app.js:162:13
+[Telegram.WebView] < receiveEvent content_safe_area_changed 
+Object { left: 0, right: 0, top: 0, bottom: 0 }
+telegram-web-app.js:162:13
+[Telegram.WebView] < receiveEvent safe_area_changed 
+Object { left: 0, right: 0, top: 0, bottom: 0 }
+telegram-web-app.js:162:13
+[Telegram.WebView] < receiveEvent content_safe_area_changed 
+Object { left: 0, right: 0, top: 0, bottom: 0 }
+telegram-web-app.js:162:13
+[PaymentService] Backend URL: https://your-backend-url.railway.app index-CrBMdSek.js:49:99956
+[Telegram.WebView] > postEvent web_app_ready <empty string> telegram-web-app.js:135:13
+[Telegram.WebView] > postEvent web_app_expand <empty string> telegram-web-app.js:135:13
+[Telegram.WebView] > postEvent web_app_set_header_color 
+Object { color: "#0a0a0f" }
+telegram-web-app.js:135:13
+[Telegram.WebView] > postEvent web_app_set_background_color 
+Object { color: "#0a0a0f" }
+telegram-web-app.js:135:13
+[TelegramService] Analytics not available, continuing without it index-CrBMdSek.js:49:102786
+GET
+https://snakeonton.vercel.app/assets/index-1da05dzv.js
+[HTTP/2 200  406ms]
+
+[Telegram.WebView] < receiveEvent visibility_changed 
+Object { is_visible: true }
+telegram-web-app.js:162:13
+GET
+https://t.me/i/userpic/320/7mdQLYMkjqfISxs6VyoOtkcsRuX43OK4a-R8Y80nb7Xryt8SP1DqUEhNez8dI3nL.svg
+[HTTP/2 200  0ms]
+
+GET
+data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNCIgaGVpZ2h0PSI0IiB2aWV3Qm94PSIwIDAgNCA0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9IjIiIGN5PSIyIiByPSIxIiBmaWxsPSIjZmZmIi8+PC9zdmc+
+
+GET
+https://flagcdn.com/w80/ge.png
+[HTTP/3 200  0ms]
+
+[TonService] TonConnectUI initialized index-CrBMdSek.js:49:63103
+GET
+https://config.ton.org/assets/telegram_wallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/tonkeeper.png
+[HTTP/2 304  13ms]
+
+GET
+https://config.ton.org/assets/mytonwallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/tonhub.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/bitgettonwallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/binanceweb3tonwallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/okxwallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/okxtonwallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/hot.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/bybittonwallet.png
+[HTTP/2 304  10ms]
+
+GET
+https://config.ton.org/assets/dewallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/safepalwallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/gatewallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/openmask.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/bitgetweb3.png
+[HTTP/2 304  8ms]
+
+GET
+https://config.ton.org/assets/xtonwallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/tonwallet.png
+[HTTP/2 304  10ms]
+
+GET
+https://config.ton.org/assets/bitgetwalletlite.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/tomowallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/miraiapp_tg.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/architec_ton.png
+[HTTP/2 304  4ms]
+
+GET
+https://config.ton.org/assets/tokenpocket.png
+[HTTP/2 304  5ms]
+
+GET
+https://config.ton.org/assets/uxuywallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/tonkeeper_pro.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/nicegramwallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/echoootonwallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/blitzwallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/koloweb3wallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/imtoken.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/cactuslink.png
+[HTTP/2 304  4ms]
+
+GET
+https://config.ton.org/assets/onekey.png
+[HTTP/2 304  4ms]
+
+GET
+https://config.ton.org/assets/defiway.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/sparx.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/stower.png
+[HTTP/2 200  0ms]
+
+[TON_CONNECT_SDK] Sending analytics events... 4 index-1da05dzv.js:6:6326
+XHRPOST
+https://analytics.ton.org/events
+[HTTP/2 400  210ms]
+
+[TON_CONNECT_SDK] Failed to send analytics events: Error: [TON_CONNECT_SDK_ERROR] ne
+Analytics API error: 400 
+    ne https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    handleClientError https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    handleResponse https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    processEventsBatch https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    s https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    promise callback*f https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    te https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    te https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    processEventsBatch https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    flush https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    te https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    te https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    flush https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    timeoutId https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    setTimeout handler*startTimeout https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    emit https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    get https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    g1 https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    dispatchEvent https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    te https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    te https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    dispatchEvent https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    dispatchUserActionEvent https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    trackSelectedWallet https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    Pm https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    i https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    promise callback*s https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Pm https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    s https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    yt https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Ra https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    O1 https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Zr https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    _t https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Pm https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    jm https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    init https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    wy https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    gn https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    xf https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Ht https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    xf https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Ht https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    xf https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Lf https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Rf https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    ce https://snakeonton.vercel.app/assets/index-CrBMdSek.js:25
+    Rm https://snakeonton.vercel.app/assets/index-CrBMdSek.js:25
+    Rm https://snakeonton.vercel.app/assets/index-CrBMdSek.js:25
+    Gm https://snakeonton.vercel.app/assets/index-CrBMdSek.js:25
+    Ym https://snakeonton.vercel.app/assets/index-CrBMdSek.js:41
+    Lm https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    <anonymous> https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+index-1da05dzv.js:6:6396
+[TON_CONNECT_SDK] Analytics events sent successfully index-1da05dzv.js:6:6326
+[PaymentService] Starting payment process: 
+Object { toAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", amountNanoTon: "200000000", comment: "Buy Skin: Fire Red", userId: "demo_user", type: "buy_skin", amount: 0.2, itemName: "Fire Red" }
+index-CrBMdSek.js:49:100045
+[PaymentService] About to call tonService.sendTransaction index-CrBMdSek.js:49:100105
+[TonService] Sending transaction: 
+Object { toAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", formattedAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", amountNanoTon: "200000000", comment: "Buy Skin: Fire Red" }
+index-CrBMdSek.js:49:64211
+[TonService] Transaction object created, sending to wallet... index-CrBMdSek.js:49:64518
+[TON_CONNECT_UI] postEvent web_app_expand 
+Object {  }
+index-1da05dzv.js:85:779
+validUntil (1772671883) is more than 5 minutes from now (1772671523) index-1da05dzv.js:42:16225
+[TonService] sendTransaction error: Error: [TON_CONNECT_SDK_ERROR] ne
+SendTransactionRequest validation failed: Wrong 'address' format in message at index 0
+    ne https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    te https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    te https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    i https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    promise callback*s https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    sendTransaction https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    processPayment https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    he https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    onClick https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    $f https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    es https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    eo https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    es https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    ms https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    jm https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    Ff https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Ic https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Pc https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Pc https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    createRoot https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    <anonymous> https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+index-CrBMdSek.js:49:64712
+[TonService] Error details: 
+Object { message: "[TON_CONNECT_SDK_ERROR] ne\nSendTransactionRequest validation failed: Wrong 'address' format in message at index 0", stack: "ne@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:889\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:42:44940\nte/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:819\nte@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:619\nsendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:42:44627\nwaitForSendTransaction/</<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25626\nwaitForSendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25188\nLe/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1436\nLe@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1256\nwaitForSendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25156\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:20393\ni@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1294\npromise callback*s@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1407\nLe/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1418\nLe@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1256\nsendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:19110\nsendTransaction@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:64607\nprocessPayment@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:100187\nhe@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:105104\nonClick@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:111966\n$f@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127468\nYm/es/<@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:132553\neo@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:15122\nes@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:128703\nms@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:28662\njm@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:28482\nEventListener.handleEvent*Ff@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:128264\nIc@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127664\nYm/Pc/<@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127830\nPc@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127775\nYm/Un.createRoot@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:36517\n@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:146092\n" }
+index-CrBMdSek.js:49:64787
+[PaymentService] Transaction result: false index-CrBMdSek.js:49:100287
+[PaymentService] Transaction failed - check tonService logs above index-CrBMdSek.js:49:100344
+[PaymentService] Starting payment process: 
+Object { toAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", amountNanoTon: "300000000", comment: "Buy Skin: Toxic Waste", userId: "demo_user", type: "buy_skin", amount: 0.3, itemName: "Toxic Waste" }
+index-CrBMdSek.js:49:100045
+[PaymentService] About to call tonService.sendTransaction index-CrBMdSek.js:49:100105
+[TonService] Sending transaction: 
+Object { toAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", formattedAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", amountNanoTon: "300000000", comment: "Buy Skin: Toxic Waste" }
+index-CrBMdSek.js:49:64211
+[TonService] Transaction object created, sending to wallet... index-CrBMdSek.js:49:64518
+[TON_CONNECT_UI] postEvent web_app_expand 
+Object {  }
+index-1da05dzv.js:85:779
+validUntil (1772671884) is more than 5 minutes from now (1772671524) index-1da05dzv.js:42:16225
+[TonService] sendTransaction error: Error: [TON_CONNECT_SDK_ERROR] ne
+SendTransactionRequest validation failed: Wrong 'address' format in message at index 0
+    ne https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    te https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    te https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    i https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    promise callback*s https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    sendTransaction https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    processPayment https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    he https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    onClick https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    $f https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    es https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    eo https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    es https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    ms https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    jm https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    Ff https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Ic https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Pc https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Pc https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    createRoot https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    <anonymous> https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+index-CrBMdSek.js:49:64712
+[TonService] Error details: 
+Object { message: "[TON_CONNECT_SDK_ERROR] ne\nSendTransactionRequest validation failed: Wrong 'address' format in message at index 0", stack: "ne@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:889\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:42:44940\nte/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:819\nte@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:619\nsendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:42:44627\nwaitForSendTransaction/</<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25626\nwaitForSendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25188\nLe/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1436\nLe@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1256\nwaitForSendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25156\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:20393\ni@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1294\npromise callback*s@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1407\nLe/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1418\nLe@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1256\nsendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:19110\nsendTransaction@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:64607\nprocessPayment@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:100187\nhe@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:105104\nonClick@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:111966\n$f@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127468\nYm/es/<@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:132553\neo@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:15122\nes@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:128703\nms@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:28662\njm@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:28482\nEventListener.handleEvent*Ff@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:128264\nIc@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127664\nYm/Pc/<@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127830\nPc@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127775\nYm/Un.createRoot@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:36517\n@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:146092\n" }
+index-CrBMdSek.js:49:64787
+[PaymentService] Transaction result: false index-CrBMdSek.js:49:100287
+[PaymentService] Transaction failed - check tonService logs above index-CrBMdSek.js:49:100344
+[PaymentService] Starting payment process: 
+Object { toAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", amountNanoTon: "500000000", comment: "Buy Skin: Galaxy Purple", userId: "demo_user", type: "buy_skin", amount: 0.5, itemName: "Galaxy Purple" }
+index-CrBMdSek.js:49:100045
+[PaymentService] About to call tonService.sendTransaction index-CrBMdSek.js:49:100105
+[TonService] Sending transaction: 
+Object { toAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", formattedAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", amountNanoTon: "500000000", comment: "Buy Skin: Galaxy Purple" }
+index-CrBMdSek.js:49:64211
+[TonService] Transaction object created, sending to wallet... index-CrBMdSek.js:49:64518
+[TON_CONNECT_UI] postEvent web_app_expand 
+Object {  }
+index-1da05dzv.js:85:779
+validUntil (1772671885) is more than 5 minutes from now (1772671525) index-1da05dzv.js:42:16225
+[TonService] sendTransaction error: Error: [TON_CONNECT_SDK_ERROR] ne
+SendTransactionRequest validation failed: Wrong 'address' format in message at index 0
+    ne https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    te https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    te https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    i https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    promise callback*s https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    sendTransaction https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    processPayment https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    he https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    onClick https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    $f https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    es https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    eo https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    es https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    ms https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    jm https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    Ff https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Ic https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Pc https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Pc https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    createRoot https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    <anonymous> https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+index-CrBMdSek.js:49:64712
+[TonService] Error details: 
+Object { message: "[TON_CONNECT_SDK_ERROR] ne\nSendTransactionRequest validation failed: Wrong 'address' format in message at index 0", stack: "ne@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:889\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:42:44940\nte/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:819\nte@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:619\nsendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:42:44627\nwaitForSendTransaction/</<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25626\nwaitForSendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25188\nLe/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1436\nLe@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1256\nwaitForSendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25156\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:20393\ni@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1294\npromise callback*s@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1407\nLe/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1418\nLe@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1256\nsendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:19110\nsendTransaction@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:64607\nprocessPayment@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:100187\nhe@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:105104\nonClick@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:111966\n$f@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127468\nYm/es/<@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:132553\neo@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:15122\nes@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:128703\nms@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:28662\njm@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:28482\nEventListener.handleEvent*Ff@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:128264\nIc@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127664\nYm/Pc/<@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127830\nPc@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127775\nYm/Un.createRoot@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:36517\n@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:146092\n" }
+index-CrBMdSek.js:49:64787
+[PaymentService] Transaction result: false index-CrBMdSek.js:49:100287
+[PaymentService] Transaction failed - check tonService logs above index-CrBMdSek.js:49:100344
+[PaymentService] Starting payment process: 
+Object { toAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", amountNanoTon: "1000000000", comment: "Buy Skin: Gold Rush", userId: "demo_user", type: "buy_skin", amount: 1, itemName: "Gold Rush" }
+index-CrBMdSek.js:49:100045
+[PaymentService] About to call tonService.sendTransaction index-CrBMdSek.js:49:100105
+[TonService] Sending transaction: 
+Object { toAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", formattedAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", amountNanoTon: "1000000000", comment: "Buy Skin: Gold Rush" }
+index-CrBMdSek.js:49:64211
+[TonService] Transaction object created, sending to wallet... index-CrBMdSek.js:49:64518
+[TON_CONNECT_UI] postEvent web_app_expand 
+Object {  }
+index-1da05dzv.js:85:779
+validUntil (1772671887) is more than 5 minutes from now (1772671527) index-1da05dzv.js:42:16225
+[TonService] sendTransaction error: Error: [TON_CONNECT_SDK_ERROR] ne
+SendTransactionRequest validation failed: Wrong 'address' format in message at index 0
+    ne https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    te https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    te https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    i https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    promise callback*s https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    sendTransaction https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    processPayment https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    he https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    onClick https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    $f https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    es https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    eo https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    es https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    ms https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    jm https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    Ff https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Ic https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Pc https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Pc https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    createRoot https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    <anonymous> https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+index-CrBMdSek.js:49:64712
+[TonService] Error details: 
+Object { message: "[TON_CONNECT_SDK_ERROR] ne\nSendTransactionRequest validation failed: Wrong 'address' format in message at index 0", stack: "ne@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:889\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:42:44940\nte/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:819\nte@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:619\nsendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:42:44627\nwaitForSendTransaction/</<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25626\nwaitForSendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25188\nLe/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1436\nLe@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1256\nwaitForSendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25156\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:20393\ni@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1294\npromise callback*s@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1407\nLe/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1418\nLe@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1256\nsendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:19110\nsendTransaction@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:64607\nprocessPayment@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:100187\nhe@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:105104\nonClick@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:111966\n$f@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127468\nYm/es/<@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:132553\neo@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:15122\nes@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:128703\nms@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:28662\njm@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:28482\nEventListener.handleEvent*Ff@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:128264\nIc@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127664\nYm/Pc/<@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127830\nPc@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127775\nYm/Un.createRoot@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:36517\n@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:146092\n" }
+index-CrBMdSek.js:49:64787
+[PaymentService] Transaction result: false index-CrBMdSek.js:49:100287
+[PaymentService] Transaction failed - check tonService logs above index-CrBMdSek.js:49:100344
+[PaymentService] Starting payment process: 
+Object { toAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", amountNanoTon: "800000000", comment: "Buy Skin: Rainbow Dash", userId: "demo_user", type: "buy_skin", amount: 0.8, itemName: "Rainbow Dash" }
+index-CrBMdSek.js:49:100045
+[PaymentService] About to call tonService.sendTransaction index-CrBMdSek.js:49:100105
+[TonService] Sending transaction: 
+Object { toAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", formattedAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", amountNanoTon: "800000000", comment: "Buy Skin: Rainbow Dash" }
+index-CrBMdSek.js:49:64211
+[TonService] Transaction object created, sending to wallet... index-CrBMdSek.js:49:64518
+[TON_CONNECT_UI] postEvent web_app_expand 
+Object {  }
+index-1da05dzv.js:85:779
+validUntil (1772671888) is more than 5 minutes from now (1772671528) index-1da05dzv.js:42:16225
+[TonService] sendTransaction error: Error: [TON_CONNECT_SDK_ERROR] ne
+SendTransactionRequest validation failed: Wrong 'address' format in message at index 0
+    ne https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    te https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    te https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    i https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    promise callback*s https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    sendTransaction https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    processPayment https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    he https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    onClick https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    $f https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    es https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    eo https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    es https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    ms https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    jm https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    Ff https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Ic https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Pc https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Pc https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    createRoot https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    <anonymous> https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+index-CrBMdSek.js:49:64712
+[TonService] Error details: 
+Object { message: "[TON_CONNECT_SDK_ERROR] ne\nSendTransactionRequest validation failed: Wrong 'address' format in message at index 0", stack: "ne@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:889\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:42:44940\nte/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:819\nte@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:619\nsendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:42:44627\nwaitForSendTransaction/</<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25626\nwaitForSendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25188\nLe/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1436\nLe@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1256\nwaitForSendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25156\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:20393\ni@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1294\npromise callback*s@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1407\nLe/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1418\nLe@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1256\nsendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:19110\nsendTransaction@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:64607\nprocessPayment@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:100187\nhe@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:105104\nonClick@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:111966\n$f@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127468\nYm/es/<@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:132553\neo@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:15122\nes@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:128703\nms@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:28662\njm@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:28482\nEventListener.handleEvent*Ff@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:128264\nIc@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127664\nYm/Pc/<@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127830\nPc@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127775\nYm/Un.createRoot@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:36517\n@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:146092\n" }
+index-CrBMdSek.js:49:64787
+[PaymentService] Transaction result: false index-CrBMdSek.js:49:100287
+[PaymentService] Transaction failed - check tonService logs above index-CrBMdSek.js:49:100344
+[PaymentService] Starting payment process: 
+Object { toAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", amountNanoTon: "900000000", comment: "Buy Skin: Cyber Punk", userId: "demo_user", type: "buy_skin", amount: 0.9, itemName: "Cyber Punk" }
+index-CrBMdSek.js:49:100045
+[PaymentService] About to call tonService.sendTransaction index-CrBMdSek.js:49:100105
+[TonService] Sending transaction: 
+Object { toAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", formattedAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", amountNanoTon: "900000000", comment: "Buy Skin: Cyber Punk" }
+index-CrBMdSek.js:49:64211
+[TonService] Transaction object created, sending to wallet... index-CrBMdSek.js:49:64518
+[TON_CONNECT_UI] postEvent web_app_expand 
+Object {  }
+index-1da05dzv.js:85:779
+validUntil (1772671889) is more than 5 minutes from now (1772671529) index-1da05dzv.js:42:16225
+[TonService] sendTransaction error: Error: [TON_CONNECT_SDK_ERROR] ne
+SendTransactionRequest validation failed: Wrong 'address' format in message at index 0
+    ne https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    te https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    te https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    i https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    promise callback*s https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    sendTransaction https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    processPayment https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    he https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    onClick https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    $f https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    es https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    eo https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    es https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    ms https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    jm https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    Ff https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Ic https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Pc https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Pc https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    createRoot https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    <anonymous> https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+index-CrBMdSek.js:49:64712
+[TonService] Error details: 
+Object { message: "[TON_CONNECT_SDK_ERROR] ne\nSendTransactionRequest validation failed: Wrong 'address' format in message at index 0", stack: "ne@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:889\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:42:44940\nte/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:819\nte@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:619\nsendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:42:44627\nwaitForSendTransaction/</<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25626\nwaitForSendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25188\nLe/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1436\nLe@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1256\nwaitForSendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25156\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:20393\ni@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1294\npromise callback*s@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1407\nLe/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1418\nLe@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1256\nsendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:19110\nsendTransaction@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:64607\nprocessPayment@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:100187\nhe@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:105104\nonClick@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:111966\n$f@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127468\nYm/es/<@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:132553\neo@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:15122\nes@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:128703\nms@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:28662\njm@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:28482\nEventListener.handleEvent*Ff@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:128264\nIc@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127664\nYm/Pc/<@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127830\nPc@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127775\nYm/Un.createRoot@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:36517\n@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:146092\n" }
+index-CrBMdSek.js:49:64787
+[PaymentService] Transaction result: false index-CrBMdSek.js:49:100287
+[PaymentService] Transaction failed - check tonService logs above index-CrBMdSek.js:49:100344
+[PaymentService] Starting payment process: 
+Object { toAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", amountNanoTon: "950000000", comment: "Buy Skin: The Matrix", userId: "demo_user", type: "buy_skin", amount: 0.95, itemName: "The Matrix" }
+index-CrBMdSek.js:49:100045
+[PaymentService] About to call tonService.sendTransaction index-CrBMdSek.js:49:100105
+[TonService] Sending transaction: 
+Object { toAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", formattedAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", amountNanoTon: "950000000", comment: "Buy Skin: The Matrix" }
+index-CrBMdSek.js:49:64211
+[TonService] Transaction object created, sending to wallet... index-CrBMdSek.js:49:64518
+[TON_CONNECT_UI] postEvent web_app_expand 
+Object {  }
+index-1da05dzv.js:85:779
+validUntil (1772671891) is more than 5 minutes from now (1772671531) index-1da05dzv.js:42:16225
+[TonService] sendTransaction error: Error: [TON_CONNECT_SDK_ERROR] ne
+SendTransactionRequest validation failed: Wrong 'address' format in message at index 0
+    ne https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    te https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    te https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    i https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    promise callback*s https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    sendTransaction https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    processPayment https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    he https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    onClick https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    $f https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    es https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    eo https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    es https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    ms https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    jm https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    Ff https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Ic https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Pc https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Pc https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    createRoot https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    <anonymous> https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+index-CrBMdSek.js:49:64712
+    sendTransaction https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    processPayment https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    he https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    onClick https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    $f https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    es https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    eo https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    es https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    ms https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    jm https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    (Async: EventListener.handleEvent)
+    Ff https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Ic https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Pc https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Pc https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    createRoot https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    <anonymous> https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+[TonService] Error details: 
+Object { message: "[TON_CONNECT_SDK_ERROR] ne\nSendTransactionRequest validation failed: Wrong 'address' format in message at index 0", stack: "ne@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:889\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:42:44940\nte/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:819\nte@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:619\nsendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:42:44627\nwaitForSendTransaction/</<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25626\nwaitForSendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25188\nLe/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1436\nLe@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1256\nwaitForSendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25156\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:20393\ni@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1294\npromise callback*s@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1407\nLe/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1418\nLe@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1256\nsendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:19110\nsendTransaction@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:64607\nprocessPayment@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:100187\nhe@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:105104\nonClick@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:111966\n$f@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127468\nYm/es/<@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:132553\neo@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:15122\nes@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:128703\nms@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:28662\njm@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:28482\nEventListener.handleEvent*Ff@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:128264\nIc@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127664\nYm/Pc/<@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127830\nPc@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127775\nYm/Un.createRoot@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:36517\n@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:146092\n" }
+index-CrBMdSek.js:49:64787
+[PaymentService] Transaction result: false index-CrBMdSek.js:49:100287
+[PaymentService] Transaction failed - check tonService logs above index-CrBMdSek.js:49:100344
+[PaymentService] Starting payment process: 
+Object { toAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", amountNanoTon: "600000000", comment: "Buy Skin: Midnight", userId: "demo_user", type: "buy_skin", amount: 0.6, itemName: "Midnight" }
+index-CrBMdSek.js:49:100045
+[PaymentService] About to call tonService.sendTransaction index-CrBMdSek.js:49:100105
+[TonService] Sending transaction: 
+Object { toAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", formattedAddress: "EQC9q38UghP0eT3E9RwXBdjAThZ-CmTou3WckAgFQlX_w3OR", amountNanoTon: "600000000", comment: "Buy Skin: Midnight" }
+index-CrBMdSek.js:49:64211
+[TonService] Transaction object created, sending to wallet... index-CrBMdSek.js:49:64518
+[TON_CONNECT_UI] postEvent web_app_expand 
+Object {  }
+index-1da05dzv.js:85:779
+validUntil (1772671894) is more than 5 minutes from now (1772671534) index-1da05dzv.js:42:16225
+[TonService] sendTransaction error: Error: [TON_CONNECT_SDK_ERROR] ne
+SendTransactionRequest validation failed: Wrong 'address' format in message at index 0
+    ne https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    te https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    te https://snakeonton.vercel.app/assets/index-1da05dzv.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:42
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    i https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    promise callback*s https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    Le https://snakeonton.vercel.app/assets/index-1da05dzv.js:46
+    sendTransaction https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242
+    sendTransaction https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    processPayment https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    he https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    onClick https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    $f https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    es https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    eo https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    es https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    ms https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    jm https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    Ff https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Ic https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Pc https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    Pc https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48
+    createRoot https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+    <anonymous> https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49
+index-CrBMdSek.js:49:64712
+[TonService] Error details: 
+Object { message: "[TON_CONNECT_SDK_ERROR] ne\nSendTransactionRequest validation failed: Wrong 'address' format in message at index 0", stack: "ne@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:889\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:42:44940\nte/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:819\nte@https://snakeonton.vercel.app/assets/index-1da05dzv.js:5:619\nsendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:42:44627\nwaitForSendTransaction/</<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25626\nwaitForSendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25188\nLe/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1436\nLe@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1256\nwaitForSendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:25156\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:20393\ni@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1294\npromise callback*s@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1407\nLe/<@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1418\nLe@https://snakeonton.vercel.app/assets/index-1da05dzv.js:46:1256\nsendTransaction@https://snakeonton.vercel.app/assets/index-1da05dzv.js:1242:19110\nsendTransaction@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:64607\nprocessPayment@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:100187\nhe@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:105104\nonClick@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:111966\n$f@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127468\nYm/es/<@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:132553\neo@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:15122\nes@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:128703\nms@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:28662\njm@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:28482\nEventListener.handleEvent*Ff@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:128264\nIc@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127664\nYm/Pc/<@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127830\nPc@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:48:127775\nYm/Un.createRoot@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:36517\n@https://snakeonton.vercel.app/assets/index-CrBMdSek.js:49:146092\n" }
+index-CrBMdSek.js:49:64787
+[PaymentService] Transaction result: false index-CrBMdSek.js:49:100287
+[PaymentService] Transaction failed - check tonService logs above index-CrBMdSek.js:49:100344

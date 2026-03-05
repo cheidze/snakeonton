@@ -49,24 +49,7 @@ class PaymentService {
         try {
             console.log('[PaymentService] Starting payment process:', params);
             
-            // Check if TonService is initialized
-            if (!tonService.isReady()) {
-                console.error('[PaymentService] TonService not initialized! Attempting to initialize...');
-                const manifestUrl = `${window.location.origin}/tonconnect-manifest.json`;
-                await tonService.init(manifestUrl);
-                
-                // Wait a moment for initialization
-                await new Promise(resolve => setTimeout(resolve, 500));
-                
-                if (!tonService.isReady()) {
-                    return {
-                        success: false,
-                        message: 'TON Connect is not ready. Please refresh the page and try again.'
-                    };
-                }
-                console.log('[PaymentService] TonService initialized successfully');
-            }
-            
+            // Step 1: Send transaction via TON Connect
             console.log('[PaymentService] About to call tonService.sendTransaction');
             const txSuccess = await tonService.sendTransaction({
                 toAddress: params.toAddress,
@@ -218,4 +201,3 @@ class PaymentService {
 }
 
 export const paymentService = new PaymentService();
-
