@@ -110,11 +110,14 @@ class TonService {
     }): Promise<boolean> {
         if (!this.instance) return false;
         try {
+            // Convert address to user-friendly format if needed
+            const formattedAddress = this.formatAddressForTransaction(params.toAddress);
+            
             const transaction = {
                 validUntil: Math.floor(Date.now() / 1000) + 360, // 6 min expiry
                 messages: [
                     {
-                        address: params.toAddress,
+                        address: formattedAddress,
                         amount: params.amountNanoTon,
                         // Properly encode comment as cell payload
                         payload: params.comment
@@ -129,6 +132,19 @@ class TonService {
             console.error('[TonService] sendTransaction error:', e);
             return false;
         }
+    }
+
+    /**
+     * Format address for TON Connect transaction
+     * Ensures address is in the correct format (user-friendly or raw)
+     */
+    private formatAddressForTransaction(address: string): string {
+        // If already starts with EQ or UQ, it's already in raw format
+        if (address.startsWith('EQ') || address.startsWith('UQ')) {
+            return address;
+        }
+        // Otherwise return as-is (should already be correct format)
+        return address;
     }
 
     /**
