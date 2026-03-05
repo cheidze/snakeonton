@@ -133,10 +133,8 @@ class TonService {
                     {
                         address: formattedAddress,
                         amount: params.amountNanoTon,
-                        // Properly encode comment as cell payload
-                        payload: params.comment
-                            ? this.createCommentPayload(params.comment)
-                            : undefined,
+                        // Properly encode comment as cell payload only on mainnet
+                        ...((!isTestnet && params.comment) ? { payload: this.createCommentPayload(params.comment) } : {}),
                     },
                 ],
             };

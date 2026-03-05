@@ -281,3 +281,205 @@ index-BEYvB55B.js:49:64787
 
 ​
 
+new info
+
+
+SES Removing unpermitted intrinsics lockdown-install.js:1:203117
+[PaymentService] Transaction result: false index-DPPxW216.js:49:100862
+[PaymentService] Transaction failed - check tonService logs above index-DPPxW216.js:49:100919
+[PaymentService] Starting payment process: 
+Object { toAddress: "0QC2QYb_rY288lbVinWCkejq9A1sjafOA_yO1OF980r8yTF0", amountNanoTon: "100000000", comment: "Buy Skin: The Matrix", userId: "demo_user", type: "buy_skin", amount: 0.1, itemName: "The Matrix" }
+index-DPPxW216.js:49:100218
+[PaymentService] About to call tonService.sendTransaction index-DPPxW216.js:49:100680
+[TonService] Converting base64url to base64: 
+Object { original: "0QC2QYb_rY288lbVinWCkejq9A1sjafOA_yO1OF980r8yTF0", converted: "0QC2QYb/rY288lbVinWCkejq9A1sjafOA/yO1OF980r8yTF0" }
+index-DPPxW216.js:49:65031
+[TonService] Sending transaction: 
+Object { toAddress: "0QC2QYb_rY288lbVinWCkejq9A1sjafOA_yO1OF980r8yTF0", formattedAddress: "0QC2QYb/rY288lbVinWCkejq9A1sjafOA/yO1OF980r8yTF0", amountNanoTon: "100000000", comment: "Buy Skin: The Matrix" }
+index-DPPxW216.js:49:64227
+[TonService] Transaction object created, sending to wallet... index-DPPxW216.js:49:64557
+[TON_CONNECT_UI] postEvent web_app_expand 
+Object {  }
+index-D9vjJdbn.js:85:779
+validUntil (1772713940) is more than 5 minutes from now (1772713580) index-D9vjJdbn.js:42:16225
+[TonService] sendTransaction error: Error: [TON_CONNECT_SDK_ERROR] ne
+SendTransactionRequest validation failed: Invalid 'payload' in message at index 0
+    ne https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:42
+    te https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5
+    te https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:42
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242
+    Le https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46
+    Le https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242
+    sendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242
+    i https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46
+index-DPPxW216.js:49:64751
+[TonService] Error details: 
+Object { message: "[TON_CONNECT_SDK_ERROR] ne\nSendTransactionRequest validation failed: Invalid 'payload' in message at index 0", stack: "ne@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5:889\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:42:44940\nte/<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5:819\nte@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5:619\nsendTransaction@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:42:44627\nwaitForSendTransaction/</<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242:25626\nwaitForSendTransaction/<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242:25188\nLe/<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46:1436\nLe@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46:1256\nwaitForSendTransaction@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242:25156\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242:20393\ni@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46:1294\n" }
+index-DPPxW216.js:49:64826
+[PaymentService] Transaction result: false index-DPPxW216.js:49:100862
+[PaymentService] Transaction failed - check tonService logs above index-DPPxW216.js:49:100919
+[PaymentService] Starting payment process: 
+Object { toAddress: "0QC2QYb_rY288lbVinWCkejq9A1sjafOA_yO1OF980r8yTF0", amountNanoTon: "100000000", comment: "Buy Skin: The Matrix", userId: "demo_user", type: "buy_skin", amount: 0.1, itemName: "The Matrix" }
+index-DPPxW216.js:49:100218
+[PaymentService] About to call tonService.sendTransaction index-DPPxW216.js:49:100680
+[TonService] Converting base64url to base64: 
+Object { original: "0QC2QYb_rY288lbVinWCkejq9A1sjafOA_yO1OF980r8yTF0", converted: "0QC2QYb/rY288lbVinWCkejq9A1sjafOA/yO1OF980r8yTF0" }
+index-DPPxW216.js:49:65031
+[TonService] Sending transaction: 
+Object { toAddress: "0QC2QYb_rY288lbVinWCkejq9A1sjafOA_yO1OF980r8yTF0", formattedAddress: "0QC2QYb/rY288lbVinWCkejq9A1sjafOA/yO1OF980r8yTF0", amountNanoTon: "100000000", comment: "Buy Skin: The Matrix" }
+index-DPPxW216.js:49:64227
+[TonService] Transaction object created, sending to wallet... index-DPPxW216.js:49:64557
+[TON_CONNECT_UI] postEvent web_app_expand 
+Object {  }
+index-D9vjJdbn.js:85:779
+validUntil (1772714074) is more than 5 minutes from now (1772713714) index-D9vjJdbn.js:42:16225
+[TonService] sendTransaction error: Error: [TON_CONNECT_SDK_ERROR] ne
+SendTransactionRequest validation failed: Invalid 'payload' in message at index 0
+    ne https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:42
+    te https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5
+    te https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:42
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242
+    Le https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46
+    Le https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242
+    sendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242
+    i https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46
+index-DPPxW216.js:49:64751
+[TonService] Error details: 
+Object { message: "[TON_CONNECT_SDK_ERROR] ne\nSendTransactionRequest validation failed: Invalid 'payload' in message at index 0", stack: "ne@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5:889\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:42:44940\nte/<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5:819\nte@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5:619\nsendTransaction@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:42:44627\nwaitForSendTransaction/</<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242:25626\nwaitForSendTransaction/<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242:25188\nLe/<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46:1436\nLe@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46:1256\nwaitForSendTransaction@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242:25156\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242:20393\ni@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46:1294\n" }
+index-DPPxW216.js:49:64826
+[PaymentService] Transaction result: false index-DPPxW216.js:49:100862
+[PaymentService] Transaction failed - check tonService logs above index-DPPxW216.js:49:100919
+[Telegram.WebView] < receiveEvent viewport_changed 
+Object { width: 420, height: 673, is_expanded: true, is_state_stable: false }
+telegram-web-app.js:162:13
+[Telegram.WebView] < receiveEvent viewport_changed 
+Object { width: 420, height: 673, is_expanded: true, is_state_stable: true }
+telegram-web-app.js:162:13
+[Telegram.WebView] < receiveEvent safe_area_changed 
+Object { left: 0, right: 0, top: 0, bottom: 0 }
+telegram-web-app.js:162:13
+[Telegram.WebView] < receiveEvent content_safe_area_changed 
+Object { left: 0, right: 0, top: 0, bottom: 0 }
+telegram-web-app.js:162:13
+[Telegram.WebView] < receiveEvent viewport_changed 
+Object { width: 420, height: 673, is_expanded: true, is_state_stable: true }
+telegram-web-app.js:162:13
+[PaymentService] Starting payment process: 
+Object { toAddress: "0QC2QYb_rY288lbVinWCkejq9A1sjafOA_yO1OF980r8yTF0", amountNanoTon: "100000000", comment: "Buy Skin: Neon Blue", userId: "demo_user", type: "buy_skin", amount: 0.1, itemName: "Neon Blue" }
+index-DPPxW216.js:49:100218
+[PaymentService] About to call tonService.sendTransaction index-DPPxW216.js:49:100680
+[TonService] Converting base64url to base64: 
+Object { original: "0QC2QYb_rY288lbVinWCkejq9A1sjafOA_yO1OF980r8yTF0", converted: "0QC2QYb/rY288lbVinWCkejq9A1sjafOA/yO1OF980r8yTF0" }
+index-DPPxW216.js:49:65031
+[TonService] Sending transaction: 
+Object { toAddress: "0QC2QYb_rY288lbVinWCkejq9A1sjafOA_yO1OF980r8yTF0", formattedAddress: "0QC2QYb/rY288lbVinWCkejq9A1sjafOA/yO1OF980r8yTF0", amountNanoTon: "100000000", comment: "Buy Skin: Neon Blue" }
+index-DPPxW216.js:49:64227
+[TonService] Transaction object created, sending to wallet... index-DPPxW216.js:49:64557
+[TON_CONNECT_UI] postEvent web_app_expand 
+Object {  }
+index-D9vjJdbn.js:85:779
+validUntil (1772714125) is more than 5 minutes from now (1772713765) index-D9vjJdbn.js:42:16225
+[TonService] sendTransaction error: Error: [TON_CONNECT_SDK_ERROR] ne
+SendTransactionRequest validation failed: Invalid 'payload' in message at index 0
+    ne https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:42
+    te https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5
+    te https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:42
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242
+    Le https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46
+    Le https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242
+    sendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242
+    i https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46
+    promise callback*s https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46
+    Le https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46
+    Le https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46
+    sendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242
+    sendTransaction https://snakeonton.vercel.app/assets/index-DPPxW216.js:49
+    processPayment https://snakeonton.vercel.app/assets/index-DPPxW216.js:49
+    he https://snakeonton.vercel.app/assets/index-DPPxW216.js:49
+    onClick https://snakeonton.vercel.app/assets/index-DPPxW216.js:49
+    $f https://snakeonton.vercel.app/assets/index-DPPxW216.js:48
+    es https://snakeonton.vercel.app/assets/index-DPPxW216.js:48
+    eo https://snakeonton.vercel.app/assets/index-DPPxW216.js:48
+    es https://snakeonton.vercel.app/assets/index-DPPxW216.js:48
+    ms https://snakeonton.vercel.app/assets/index-DPPxW216.js:49
+    jm https://snakeonton.vercel.app/assets/index-DPPxW216.js:49
+index-DPPxW216.js:49:64751
+[TonService] Error details: 
+Object { message: "[TON_CONNECT_SDK_ERROR] ne\nSendTransactionRequest validation failed: Invalid 'payload' in message at index 0", stack: "ne@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5:889\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:42:44940\nte/<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5:819\nte@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5:619\nsendTransaction@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:42:44627\nwaitForSendTransaction/</<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242:25626\nwaitForSendTransaction/<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242:25188\nLe/<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46:1436\nLe@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46:1256\nwaitForSendTransaction@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242:25156\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242:20393\ni@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46:1294\npromise callback*s@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46:1407\nLe/<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46:1418\nLe@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46:1256\nsendTransaction@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242:19110\nsendTransaction@https://snakeonton.vercel.app/assets/index-DPPxW216.js:49:64646\nprocessPayment@https://snakeonton.vercel.app/assets/index-DPPxW216.js:49:100762\nhe@https://snakeonton.vercel.app/assets/index-DPPxW216.js:49:105679\nonClick@https://snakeonton.vercel.app/assets/index-DPPxW216.js:49:112541\n$f@https://snakeonton.vercel.app/assets/index-DPPxW216.js:48:127468\nYm/es/<@https://snakeonton.vercel.app/assets/index-DPPxW216.js:48:132553\neo@https://snakeonton.vercel.app/assets/index-DPPxW216.js:48:15122\nes@https://snakeonton.vercel.app/assets/index-DPPxW216.js:48:128703\nms@https://snakeonton.vercel.app/assets/index-DPPxW216.js:49:28662\njm@https://snakeonton.vercel.app/assets/index-DPPxW216.js:49:28482\n" }
+index-DPPxW216.js:49:64826
+[PaymentService] Transaction result: false index-DPPxW216.js:49:100862
+[PaymentService] Transaction failed - check tonService logs above index-DPPxW216.js:49:100919
+[PaymentService] Starting payment process: 
+Object { toAddress: "0QC2QYb_rY288lbVinWCkejq9A1sjafOA_yO1OF980r8yTF0", amountNanoTon: "100000000", comment: "Buy Skin: Neon Blue", userId: "demo_user", type: "buy_skin", amount: 0.1, itemName: "Neon Blue" }
+index-DPPxW216.js:49:100218
+[PaymentService] About to call tonService.sendTransaction index-DPPxW216.js:49:100680
+[TonService] Converting base64url to base64: 
+Object { original: "0QC2QYb_rY288lbVinWCkejq9A1sjafOA_yO1OF980r8yTF0", converted: "0QC2QYb/rY288lbVinWCkejq9A1sjafOA/yO1OF980r8yTF0" }
+index-DPPxW216.js:49:65031
+[TonService] Sending transaction: 
+Object { toAddress: "0QC2QYb_rY288lbVinWCkejq9A1sjafOA_yO1OF980r8yTF0", formattedAddress: "0QC2QYb/rY288lbVinWCkejq9A1sjafOA/yO1OF980r8yTF0", amountNanoTon: "100000000", comment: "Buy Skin: Neon Blue" }
+index-DPPxW216.js:49:64227
+[TonService] Transaction object created, sending to wallet... index-DPPxW216.js:49:64557
+[TON_CONNECT_UI] postEvent web_app_expand 
+Object {  }
+index-D9vjJdbn.js:85:779
+validUntil (1772714126) is more than 5 minutes from now (1772713766) index-D9vjJdbn.js:42:16225
+[TonService] sendTransaction error: Error: [TON_CONNECT_SDK_ERROR] ne
+SendTransactionRequest validation failed: Invalid 'payload' in message at index 0
+    ne https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:42
+    te https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5
+    te https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5
+    sendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:42
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242
+    Le https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46
+    Le https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46
+    waitForSendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242
+    sendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242
+    i https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46
+    promise callback*s https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46
+    Le https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46
+    Le https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46
+    sendTransaction https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242
+    sendTransaction https://snakeonton.vercel.app/assets/index-DPPxW216.js:49
+    processPayment https://snakeonton.vercel.app/assets/index-DPPxW216.js:49
+    he https://snakeonton.vercel.app/assets/index-DPPxW216.js:49
+    onClick https://snakeonton.vercel.app/assets/index-DPPxW216.js:49
+    $f https://snakeonton.vercel.app/assets/index-DPPxW216.js:48
+    es https://snakeonton.vercel.app/assets/index-DPPxW216.js:48
+    eo https://snakeonton.vercel.app/assets/index-DPPxW216.js:48
+    es https://snakeonton.vercel.app/assets/index-DPPxW216.js:48
+    ms https://snakeonton.vercel.app/assets/index-DPPxW216.js:49
+    jm https://snakeonton.vercel.app/assets/index-DPPxW216.js:49
+index-DPPxW216.js:49:64751
+    sendTransaction https://snakeonton.vercel.app/assets/index-DPPxW216.js:49
+    processPayment https://snakeonton.vercel.app/assets/index-DPPxW216.js:49
+    he https://snakeonton.vercel.app/assets/index-DPPxW216.js:49
+    onClick https://snakeonton.vercel.app/assets/index-DPPxW216.js:49
+    $f https://snakeonton.vercel.app/assets/index-DPPxW216.js:48
+    es https://snakeonton.vercel.app/assets/index-DPPxW216.js:48
+    eo https://snakeonton.vercel.app/assets/index-DPPxW216.js:48
+    es https://snakeonton.vercel.app/assets/index-DPPxW216.js:48
+    ms https://snakeonton.vercel.app/assets/index-DPPxW216.js:49
+    jm https://snakeonton.vercel.app/assets/index-DPPxW216.js:49
+[TonService] Error details: 
+Object { message: "[TON_CONNECT_SDK_ERROR] ne\nSendTransactionRequest validation failed: Invalid 'payload' in message at index 0", stack: "ne@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5:889\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:42:44940\nte/<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5:819\nte@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:5:619\nsendTransaction@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:42:44627\nwaitForSendTransaction/</<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242:25626\nwaitForSendTransaction/<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242:25188\nLe/<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46:1436\nLe@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46:1256\nwaitForSendTransaction@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242:25156\nsendTransaction/<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242:20393\ni@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46:1294\npromise callback*s@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46:1407\nLe/<@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46:1418\nLe@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:46:1256\nsendTransaction@https://snakeonton.vercel.app/assets/index-D9vjJdbn.js:1242:19110\nsendTransaction@https://snakeonton.vercel.app/assets/index-DPPxW216.js:49:64646\nprocessPayment@https://snakeonton.vercel.app/assets/index-DPPxW216.js:49:100762\nhe@https://snakeonton.vercel.app/assets/index-DPPxW216.js:49:105679\nonClick@https://snakeonton.vercel.app/assets/index-DPPxW216.js:49:112541\n$f@https://snakeonton.vercel.app/assets/index-DPPxW216.js:48:127468\nYm/es/<@https://snakeonton.vercel.app/assets/index-DPPxW216.js:48:132553\neo@https://snakeonton.vercel.app/assets/index-DPPxW216.js:48:15122\nes@https://snakeonton.vercel.app/assets/index-DPPxW216.js:48:128703\nms@https://snakeonton.vercel.app/assets/index-DPPxW216.js:49:28662\njm@https://snakeonton.vercel.app/assets/index-DPPxW216.js:49:28482\n" }
+index-DPPxW216.js:49:64826
+[PaymentService] Transaction result: false index-DPPxW216.js:49:100862
+[PaymentService] Transaction failed - check tonService logs above index-DPPxW216.js:49:100919
+
+​
+
