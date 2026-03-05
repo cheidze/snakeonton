@@ -115,16 +115,20 @@ class TonService {
         try {
             // Convert address to user-friendly format if needed
             const formattedAddress = this.formatAddressForTransaction(params.toAddress);
-            
+
             console.log('[TonService] Sending transaction:', {
                 toAddress: params.toAddress,
                 formattedAddress,
                 amountNanoTon: params.amountNanoTon,
                 comment: params.comment
             });
-            
+
+
+            const isTestnet = (import.meta as any).env?.VITE_TON_NETWORK === 'testnet';
+
             const transaction = {
                 validUntil: Math.floor(Date.now() / 1000) + 360, // 6 min expiry
+                network: isTestnet ? '-3' : '-239', // -3 for testnet, -239 for mainnet
                 messages: [
                     {
                         address: formattedAddress,
@@ -136,7 +140,7 @@ class TonService {
                     },
                 ],
             };
-            
+
             console.log('[TonService] Transaction object created, sending to wallet...');
             await this.instance.sendTransaction(transaction);
             console.log('[TonService] Transaction sent successfully!');
@@ -158,15 +162,25 @@ class TonService {
      * Ensures address is in the correct format (user-friendly or raw)
      */
     private formatAddressForTransaction(address: string): string {
-        // TON Connect expects addresses without special characters like dashes
-        // Remove spaces, dashes, underscores
-        let cleanAddress = address.replace(/[\s\-_]/g, '');
-        
-        console.log('[TonService] Formatting address:', {
-            original: address,
-            cleaned: cleanAddress
-        });
-        
+        // TON Connect expects addresses in base64 format (not base64url)
+        // base64url uses - and _ instead of + and /
+        // We need to convert back to standard base64
+
+        let cleanAddress = address;
+
+        // Check if this is a base64url encoded address (contains - or _)
+        if (address.includes('-') || address.includes('_')) {
+            // Convert from base64url to base64
+            cleanAddress = address
+                .replace(/-/g, '+')  // Replace - with +
+                .replace(/_/g, '/'); // Replace _ with /
+
+            console.log('[TonService] Converting base64url to base64:', {
+                original: address,
+                converted: cleanAddress
+            });
+        }
+
         return cleanAddress;
     }
 

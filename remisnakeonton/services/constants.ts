@@ -37,7 +37,7 @@ export const DEFAULT_SKINS: SnakeSkin[] = [
   {
     id: "neon-blue",
     name: "Neon Blue",
-    price: 500,
+    price: 1,
     tonPrice: 0.1,
     unlocked: false,
     colors: ["#00f3ff", "#005f7f"],
@@ -46,8 +46,8 @@ export const DEFAULT_SKINS: SnakeSkin[] = [
   {
     id: "fire-red",
     name: "Fire Red",
-    price: 800,
-    tonPrice: 0.2,
+    price: 1,
+    tonPrice: 0.1,
     unlocked: false,
     colors: ["#ef4444", "#f97316"],
     trailStyle: "fire"
@@ -55,8 +55,8 @@ export const DEFAULT_SKINS: SnakeSkin[] = [
   {
     id: "toxic-waste",
     name: "Toxic Waste",
-    price: 1200,
-    tonPrice: 0.3,
+    price: 1,
+    tonPrice: 0.1,
     unlocked: false,
     colors: ["#ccff00", "#39ff14"],
     trailStyle: "electric"
@@ -64,8 +64,8 @@ export const DEFAULT_SKINS: SnakeSkin[] = [
   {
     id: "galaxy-purple",
     name: "Galaxy Purple",
-    price: 2000,
-    tonPrice: 0.5,
+    price: 1,
+    tonPrice: 0.1,
     unlocked: false,
     colors: ["#bd00ff", "#7c3aed"],
     trailStyle: "cosmic"
@@ -73,8 +73,8 @@ export const DEFAULT_SKINS: SnakeSkin[] = [
   {
     id: "gold-rush",
     name: "Gold Rush",
-    price: 5000,
-    tonPrice: 1.0,
+    price: 1,
+    tonPrice: 0.1,
     unlocked: false,
     colors: ["#ffd700", "#b8860b"],
     trailStyle: "neon"
@@ -82,8 +82,8 @@ export const DEFAULT_SKINS: SnakeSkin[] = [
   {
     id: "rainbow-dash",
     name: "Rainbow Dash",
-    price: 3500,
-    tonPrice: 0.8,
+    price: 1,
+    tonPrice: 0.1,
     unlocked: false,
     colors: ["#ff0000", "#ff7f00", "#ffff00", "#00ff00", "#0000ff", "#4b0082", "#9400d3"],
     trailStyle: "cosmic"
@@ -91,8 +91,8 @@ export const DEFAULT_SKINS: SnakeSkin[] = [
   {
     id: "cyber-punk",
     name: "Cyber Punk",
-    price: 4000,
-    tonPrice: 0.9,
+    price: 1,
+    tonPrice: 0.1,
     unlocked: false,
     colors: ["#ff00ff", "#00ffff", "#ffff00"],
     trailStyle: "electric"
@@ -100,8 +100,8 @@ export const DEFAULT_SKINS: SnakeSkin[] = [
   {
     id: "matrix-code",
     name: "The Matrix",
-    price: 4500,
-    tonPrice: 0.95,
+    price: 1,
+    tonPrice: 0.1,
     unlocked: false,
     colors: ["#00ff00", "#003300", "#008800"],
     trailStyle: "electric"
@@ -109,8 +109,8 @@ export const DEFAULT_SKINS: SnakeSkin[] = [
   {
     id: "midnight-shadow",
     name: "Midnight",
-    price: 2500,
-    tonPrice: 0.6,
+    price: 1,
+    tonPrice: 0.1,
     unlocked: false,
     colors: ["#1a1a1a", "#404040"],
     trailStyle: "none"
@@ -122,7 +122,8 @@ export const DEFAULT_COLLECTIBLES: Collectible[] = [
     id: "trail_hearts",
     name: "Love Trail",
     type: "particle",
-    price: 1500,
+    price: 1,
+    tonPrice: 0.1,
     description: "Leaves a trail of hearts behind you",
     color: "#ff69b4",
     icon: "💖"
@@ -131,7 +132,8 @@ export const DEFAULT_COLLECTIBLES: Collectible[] = [
     id: "trail_money",
     name: "Cash Flow",
     type: "particle",
-    price: 2500,
+    price: 1,
+    tonPrice: 0.1,
     description: "Make it rain while you boost",
     color: "#85bb65",
     icon: "💸"
@@ -140,7 +142,8 @@ export const DEFAULT_COLLECTIBLES: Collectible[] = [
     id: "theme_gold",
     name: "Midas UI",
     type: "theme",
-    price: 5000,
+    price: 1,
+    tonPrice: 0.1,
     description: "A luxurious golden interface theme",
     color: "#ffd700",
     icon: "👑"
@@ -149,7 +152,8 @@ export const DEFAULT_COLLECTIBLES: Collectible[] = [
     id: "theme_dark",
     name: "Abyss UI",
     type: "theme",
-    price: 3000,
+    price: 1,
+    tonPrice: 0.1,
     description: "Pitch black interface style",
     color: "#333333",
     icon: "🌑"

@@ -83,6 +83,7 @@ export interface Collectible {
   name: string;
   type: 'particle' | 'theme';
   price: number;
+  tonPrice?: number;
   description: string;
   color: string;
   icon: string;
