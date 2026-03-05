@@ -27,9 +27,15 @@ class PaymentService {
 
     constructor() {
         // Use environment variable or detect from current deployment
-        this.backendUrl = (import.meta as any).env?.VITE_BACKEND_URL ||
+        let envUrl = (import.meta as any).env?.VITE_BACKEND_URL ||
             window.location.origin.replace('snakeonton.vercel.app', 'snakeonton-production.up.railway.app') ||
             'http://localhost:3000';
+
+        if (!envUrl.startsWith('http')) {
+            envUrl = `https://${envUrl}`;
+        }
+
+        this.backendUrl = envUrl;
 
         console.log('[PaymentService] Backend URL:', this.backendUrl);
     }

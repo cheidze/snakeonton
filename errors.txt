@@ -1,159 +1,337 @@
 
 SES Removing unpermitted intrinsics lockdown-install.js:1:203117
-  Removing intrinsics.%MapPrototype%.getOrInsertComputed lockdown-install.js:1:202962
-  Removing intrinsics.%WeakMapPrototype%.getOrInsert lockdown-install.js:1:202962
-  Removing intrinsics.%WeakMapPrototype%.getOrInsertComputed lockdown-install.js:1:202962
-  Removing intrinsics.%DatePrototype%.toTemporalInstant lockdown-install.js:1:202962
-Loading failed for the <script> with source “https://t.me/_websync_?authed=1&version=10.9.41+A”. a:1:1
-Loading failed for the <script> with source “https://telegram.me/_websync_?authed=1&version=10.9.41+A”. a:1:1
-Cookie warnings 2
-undefined main.591b17ddb6e56c8911a0.js:1:356142
-Uncaught (in promise) undefined
-[Teact] Error while rendering component  
-Object { id: 1308, "$element": {…}, Component: bh(), name: "", props: {…}, mountState: 1, context: {}, hooks: {…}, renderedValue: undefined, onUpdate: onUpdate() }
-main.591b17ddb6e56c8911a0.js:1:266707
-TypeError: can't access property "runtime", n is undefined
-    <anonymous> https://web.telegram.org/a/9451.98816126cb79a2d17f23.js:1
-    bh https://web.telegram.org/a/9451.98816126cb79a2d17f23.js:1
-    z https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    a https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    z https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    W https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    b https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    I https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    I https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    k https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    k https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    k https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    k https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    onUpdate https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    84051/$</</</< https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    84051/$</</< https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    84051/$</< https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    a https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    u https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    u https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-main.591b17ddb6e56c8911a0.js:1:356142
-    c https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    a https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    z https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    W https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    b https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    I https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    I https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    k https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    k https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    k https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    k https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    y https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    onUpdate https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    84051/$</</</< https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    84051/$</</< https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    84051/$</< https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    a https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    u https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-    u https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js:1
-SES_UNHANDLED_REJECTION: undefined lockdown-install.js:1:145776
-SES Removing unpermitted intrinsics lockdown-install.js:1:203117
-  Removing intrinsics.%MapPrototype%.getOrInsert lockdown-install.js:1:202962
-  Removing intrinsics.%MapPrototype%.getOrInsertComputed lockdown-install.js:1:202962
-  Removing intrinsics.%WeakMapPrototype%.getOrInsert lockdown-install.js:1:202962
-  Removing intrinsics.%WeakMapPrototype%.getOrInsertComputed lockdown-install.js:1:202962
-  Removing intrinsics.%DatePrototype%.toTemporalInstant lockdown-install.js:1:202962
-[Telegram.WebView] > postEvent web_app_set_header_color 
-Object { color_key: "bg_color" }
-telegram-web-app.js:135:13
-[Telegram.WebView] > postEvent web_app_set_background_color 
-Object { color: "#212121" }
-telegram-web-app.js:135:13
-[Telegram.WebView] > postEvent web_app_set_bottom_bar_color 
-Object { color: "#0f0f0f" }
-telegram-web-app.js:135:13
-[Telegram.WebView] > postEvent web_app_request_theme <empty string> telegram-web-app.js:135:13
-[Telegram.WebView] > postEvent web_app_request_viewport <empty string> telegram-web-app.js:135:13
-[Telegram.WebView] > postEvent web_app_request_safe_area <empty string> telegram-web-app.js:135:13
-[Telegram.WebView] > postEvent web_app_request_content_safe_area <empty string> telegram-web-app.js:135:13
-cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation cdn.tailwindcss.com:64:1711
-Partitioned cookie or storage access was provided to “https://snakeonton.vercel.app/#tgWebAppData=query_id%3DAAEFlw12AgAAAAWXDXaHwJp7%26user%3D%257B%2522id%2522%253A6275569413%252C%2522first_name%2522%253A%2522Groku%2522%252C%2522last_name%2522%253A%2522%2522%252C%2522username%2522%253A%2522Mandalorel%2522%252C%2522language_code%2522%253A%2522en%2522%252C%2522allows_write_to_pm%2522%253Atrue%252C%2522photo_url%2522%253A%2522https%253A%255C%252F%255C%252Ft.me%255C%252Fi%255C%252Fuserpic%255C%252F320%255C%252F7mdQLYMkjqfISxs6VyoOtkcsRuX43OK4a-R8Y80nb7Xryt8SP1DqUEhNez8dI3nL.svg%2522%257D%26auth_date%3D1772754235%26signature%3DfD5MjhNKKNNmA23p_SMFvTRSegiS2NXvhv1_OB3NXfwzBT-tTgTTC3b1P1bfEGDewOLwrC453zcFRptj3G9BBQ%26hash%3D459f2845a1f41e5dc821a7322cebb5dd4716a00960b6a21c7b4caee58316865a&tgWebAppVersion=8.0&tgWebAppPlatform=weba&tgWebAppThemeParams=%7B%22bg_color%22%3A%22%23212121%22%2C%22text_color%22%3A%22%23ffffff%22%2C%22hint_color%22%3A%22%23aaaaaa%22%2C%22link_color%22%3A%22%238774e1%22%2C%22button_color%22%3A%22%238774e1%22%2C%22button_text_color%22%3A%22%23ffffff%22%2C%22secondary_bg_color%22%3A%22%230f0f0f%22%2C%22header_bg_color%22%3A%22%23212121%22%2C%22accent_text_color%22%3A%22%238774e1%22%2C%22section_bg_color%22%3A%22%23212121%22%2C%22section_header_text_color%22%3A%22%23aaaaaa%22%2C%22subtitle_text_color%22%3A%22%23aaaaaa%22%2C%22destructive_text_color%22%3A%22%23e53935%22%7D” because it is loaded in the third-party context and dynamic state partitioning is enabled. contentscript.js:12:73448
-Loading failed for the <script> with source “https://telegram.org/js/telegram-analytics.js”. snakeonton.vercel.app:1:1
-[Analytics] Failed to load, continuing without analytics snakeonton.vercel.app:18:49
-A resource is blocked by OpaqueResponseBlocking, please check browser console for details. telegram-analytics.js
-[Telegram.WebView] < receiveEvent theme_changed 
-Object { theme_params: {…} }
-telegram-web-app.js:162:13
-[Telegram.WebView] > postEvent web_app_setup_main_button 
-Object { is_visible: false }
-telegram-web-app.js:135:13
-[Telegram.WebView] > postEvent web_app_setup_secondary_button 
-Object { is_visible: false }
-telegram-web-app.js:135:13
-[Telegram.WebView] < receiveEvent viewport_changed 
-Object { width: 479, height: 643, is_expanded: true, is_state_stable: true }
-telegram-web-app.js:162:13
-[Telegram.WebView] < receiveEvent safe_area_changed 
-Object { left: 0, right: 0, top: 0, bottom: 0 }
-telegram-web-app.js:162:13
-[Telegram.WebView] < receiveEvent content_safe_area_changed 
-Object { left: 0, right: 0, top: 0, bottom: 0 }
-telegram-web-app.js:162:13
-[Telegram.WebView] < receiveEvent safe_area_changed 
-Object { left: 0, right: 0, top: 0, bottom: 0 }
-telegram-web-app.js:162:13
-[Telegram.WebView] < receiveEvent content_safe_area_changed 
-Object { left: 0, right: 0, top: 0, bottom: 0 }
-telegram-web-app.js:162:13
-[PaymentService] Backend URL: https://your-backend-url.railway.app index-BTd2Gof1.js:49:100100
-[Telegram.WebView] > postEvent web_app_ready <empty string> telegram-web-app.js:135:13
-[Telegram.WebView] > postEvent web_app_expand <empty string> telegram-web-app.js:135:13
-[Telegram.WebView] > postEvent web_app_set_header_color 
-Object { color: "#0a0a0f" }
-telegram-web-app.js:135:13
-[Telegram.WebView] > postEvent web_app_set_background_color 
-Object { color: "#0a0a0f" }
-telegram-web-app.js:135:13
-[TelegramService] Analytics not available, continuing without it index-BTd2Gof1.js:49:104125
+GET
+https://snakeonton.vercel.app/assets/index-hQz6r36w.js
+[HTTP/2 200  354ms]
+
 [Telegram.WebView] < receiveEvent visibility_changed 
 Object { is_visible: true }
 telegram-web-app.js:162:13
-[TonService] TonConnectUI initialized index-BTd2Gof1.js:49:63105
+GET
+https://t.me/i/userpic/320/7mdQLYMkjqfISxs6VyoOtkcsRuX43OK4a-R8Y80nb7Xryt8SP1DqUEhNez8dI3nL.svg
+[HTTP/2 200  0ms]
+
+GET
+data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNCIgaGVpZ2h0PSI0IiB2aWV3Qm94PSIwIDAgNCA0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9IjIiIGN5PSIyIiByPSIxIiBmaWxsPSIjZmZmIi8+PC9zdmc+
+
+GET
+https://flagcdn.com/w80/ge.png
+[HTTP/3 200  0ms]
+
+[TonService] TonConnectUI initialized index-WVGvWlX5.js:49:63105
 [TON_CONNECT_SDK] Failed to actualize bridge connection Error: [TON_CONNECT_SDK_ERROR] ne
 Wallet info not found for appName: "Tonkeeper"
-    ne https://snakeonton.vercel.app/assets/index-BMTy-9QE.js:5
-    getRemoteWallet https://snakeonton.vercel.app/assets/index-BMTy-9QE.js:42
-    s https://snakeonton.vercel.app/assets/index-BMTy-9QE.js:5
-index-BMTy-9QE.js:6:6326
+    ne https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    getRemoteWallet https://snakeonton.vercel.app/assets/index-hQz6r36w.js:42
+    s https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    promise callback*f https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    getRemoteWallet https://snakeonton.vercel.app/assets/index-hQz6r36w.js:42
+    actualizeBridgeConnection https://snakeonton.vercel.app/assets/index-hQz6r36w.js:6
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    actualizeBridgeConnection https://snakeonton.vercel.app/assets/index-hQz6r36w.js:6
+    getConnection https://snakeonton.vercel.app/assets/index-hQz6r36w.js:6
+    s https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    promise callback*f https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    getConnection https://snakeonton.vercel.app/assets/index-hQz6r36w.js:6
+    getHttpConnection https://snakeonton.vercel.app/assets/index-hQz6r36w.js:6
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    getHttpConnection https://snakeonton.vercel.app/assets/index-hQz6r36w.js:6
+    fromStorage https://snakeonton.vercel.app/assets/index-hQz6r36w.js:6
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    fromStorage https://snakeonton.vercel.app/assets/index-hQz6r36w.js:6
+    restoreConnection https://snakeonton.vercel.app/assets/index-hQz6r36w.js:42
+    s https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    promise callback*f https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    restoreConnection https://snakeonton.vercel.app/assets/index-hQz6r36w.js:42
+    connectionRestored https://snakeonton.vercel.app/assets/index-hQz6r36w.js:1242
+    Le https://snakeonton.vercel.app/assets/index-hQz6r36w.js:46
+    Le https://snakeonton.vercel.app/assets/index-hQz6r36w.js:46
+    connectionRestored https://snakeonton.vercel.app/assets/index-hQz6r36w.js:1242
+    Lf https://snakeonton.vercel.app/assets/index-hQz6r36w.js:85
+    i https://snakeonton.vercel.app/assets/index-hQz6r36w.js:46
+    promise callback*s https://snakeonton.vercel.app/assets/index-hQz6r36w.js:46
+    Le https://snakeonton.vercel.app/assets/index-hQz6r36w.js:46
+    Le https://snakeonton.vercel.app/assets/index-hQz6r36w.js:46
+    Lf https://snakeonton.vercel.app/assets/index-hQz6r36w.js:85
+    jm https://snakeonton.vercel.app/assets/index-hQz6r36w.js:1242
+    init https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:49
+    Ty https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:49
+    bn https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:48
+    vf https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:48
+    qt https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:48
+    vf https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:48
+    qt https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:48
+    vf https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:48
+    Lf https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:48
+    Rf https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:48
+    ue https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:25
+    Rm https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:25
+    Rm https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:25
+    Gm https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:25
+    Ym https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:41
+    Lm https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:49
+    <anonymous> https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:49
+index-hQz6r36w.js:6:6326
 [TON_CONNECT_SDK] Failed to actualize bridge connection Error: [TON_CONNECT_SDK_ERROR] ne
 Wallet info not found for appName: "Tonkeeper"
-    ne https://snakeonton.vercel.app/assets/index-BMTy-9QE.js:5
-    getRemoteWallet https://snakeonton.vercel.app/assets/index-BMTy-9QE.js:42
-    s https://snakeonton.vercel.app/assets/index-BMTy-9QE.js:5
-index-BMTy-9QE.js:6:6326
-[TON_CONNECT_SDK] Sending analytics events... 4 index-BMTy-9QE.js:6:6326
+    ne https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    getRemoteWallet https://snakeonton.vercel.app/assets/index-hQz6r36w.js:42
+    s https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    promise callback*f https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    getRemoteWallet https://snakeonton.vercel.app/assets/index-hQz6r36w.js:42
+    actualizeBridgeConnection https://snakeonton.vercel.app/assets/index-hQz6r36w.js:6
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    actualizeBridgeConnection https://snakeonton.vercel.app/assets/index-hQz6r36w.js:6
+    getConnection https://snakeonton.vercel.app/assets/index-hQz6r36w.js:6
+    s https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    promise callback*f https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    getConnection https://snakeonton.vercel.app/assets/index-hQz6r36w.js:6
+    getHttpConnection https://snakeonton.vercel.app/assets/index-hQz6r36w.js:6
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    getHttpConnection https://snakeonton.vercel.app/assets/index-hQz6r36w.js:6
+    restoreConnection https://snakeonton.vercel.app/assets/index-hQz6r36w.js:6
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    restoreConnection https://snakeonton.vercel.app/assets/index-hQz6r36w.js:6
+    y https://snakeonton.vercel.app/assets/index-hQz6r36w.js:42
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    y https://snakeonton.vercel.app/assets/index-hQz6r36w.js:42
+    lo https://snakeonton.vercel.app/assets/index-hQz6r36w.js:6
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    lo https://snakeonton.vercel.app/assets/index-hQz6r36w.js:6
+    restoreConnection https://snakeonton.vercel.app/assets/index-hQz6r36w.js:42
+index-hQz6r36w.js:6:6326
+GET
+https://config.ton.org/assets/telegram_wallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/tonkeeper.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/mytonwallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/tonhub.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/bitgettonwallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/binanceweb3tonwallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/okxwallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/okxtonwallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/hot.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/bybittonwallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/dewallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/safepalwallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/gatewallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/openmask.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/bitgetweb3.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/xtonwallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/tonwallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/bitgetwalletlite.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/tomowallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/miraiapp_tg.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/architec_ton.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/tokenpocket.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/uxuywallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/tonkeeper_pro.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/nicegramwallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/echoootonwallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/blitzwallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/koloweb3wallet.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/imtoken.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/cactuslink.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/onekey.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/defiway.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/sparx.png
+[HTTP/2 200  0ms]
+
+GET
+https://config.ton.org/assets/stower.png
+[HTTP/2 200  0ms]
+
+SES_UNHANDLED_REJECTION: undefined lockdown-install.js:1:145776
+[TON_CONNECT_SDK] Sending analytics events... 4 index-hQz6r36w.js:6:6326
+XHR
+POST
+https://analytics.ton.org/events
+[HTTP/2 400  352ms]
+
 [TON_CONNECT_SDK] Failed to send analytics events: Error: [TON_CONNECT_SDK_ERROR] ne
 Analytics API error: 400 
-    ne https://snakeonton.vercel.app/assets/index-BMTy-9QE.js:5
-    handleClientError https://snakeonton.vercel.app/assets/index-BMTy-9QE.js:42
-    handleResponse https://snakeonton.vercel.app/assets/index-BMTy-9QE.js:42
-    processEventsBatch https://snakeonton.vercel.app/assets/index-BMTy-9QE.js:42
-    s https://snakeonton.vercel.app/assets/index-BMTy-9QE.js:5
-index-BMTy-9QE.js:6:6396
-[TON_CONNECT_SDK] Analytics events sent successfully index-BMTy-9QE.js:6:6326
-Source map error: Error: NetworkError when attempting to fetch resource.
-Resource URL: https://web.telegram.org/a/main.591b17ddb6e56c8911a0.js
-Source Map URL: main.b8b10c5f535a58c72c74.js.map
+    ne https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    handleClientError https://snakeonton.vercel.app/assets/index-hQz6r36w.js:42
+    handleResponse https://snakeonton.vercel.app/assets/index-hQz6r36w.js:42
+    processEventsBatch https://snakeonton.vercel.app/assets/index-hQz6r36w.js:42
+    s https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    promise callback*f https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    processEventsBatch https://snakeonton.vercel.app/assets/index-hQz6r36w.js:42
+    flush https://snakeonton.vercel.app/assets/index-hQz6r36w.js:42
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    flush https://snakeonton.vercel.app/assets/index-hQz6r36w.js:42
+    timeoutId https://snakeonton.vercel.app/assets/index-hQz6r36w.js:42
+    setTimeout handler*startTimeout https://snakeonton.vercel.app/assets/index-hQz6r36w.js:42
+    emit https://snakeonton.vercel.app/assets/index-hQz6r36w.js:42
+    get https://snakeonton.vercel.app/assets/index-hQz6r36w.js:42
+    g1 https://snakeonton.vercel.app/assets/index-hQz6r36w.js:42
+    dispatchEvent https://snakeonton.vercel.app/assets/index-hQz6r36w.js:42
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    te https://snakeonton.vercel.app/assets/index-hQz6r36w.js:5
+    dispatchEvent https://snakeonton.vercel.app/assets/index-hQz6r36w.js:42
+    dispatchUserActionEvent https://snakeonton.vercel.app/assets/index-hQz6r36w.js:1242
+    trackSelectedWallet https://snakeonton.vercel.app/assets/index-hQz6r36w.js:1242
+    Pm https://snakeonton.vercel.app/assets/index-hQz6r36w.js:1242
+    i https://snakeonton.vercel.app/assets/index-hQz6r36w.js:46
+    promise callback*s https://snakeonton.vercel.app/assets/index-hQz6r36w.js:46
+    Le https://snakeonton.vercel.app/assets/index-hQz6r36w.js:46
+    Le https://snakeonton.vercel.app/assets/index-hQz6r36w.js:46
+    Pm https://snakeonton.vercel.app/assets/index-hQz6r36w.js:1242
+    s https://snakeonton.vercel.app/assets/index-hQz6r36w.js:46
+    yt https://snakeonton.vercel.app/assets/index-hQz6r36w.js:46
+    Ra https://snakeonton.vercel.app/assets/index-hQz6r36w.js:46
+    O1 https://snakeonton.vercel.app/assets/index-hQz6r36w.js:46
+    Zr https://snakeonton.vercel.app/assets/index-hQz6r36w.js:46
+    _t https://snakeonton.vercel.app/assets/index-hQz6r36w.js:46
+    Pm https://snakeonton.vercel.app/assets/index-hQz6r36w.js:1242
+    jm https://snakeonton.vercel.app/assets/index-hQz6r36w.js:1242
+    init https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:49
+    Ty https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:49
+    bn https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:48
+    vf https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:48
+    qt https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:48
+    vf https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:48
+    qt https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:48
+    vf https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:48
+    Lf https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:48
+    Rf https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:48
+    ue https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:25
+    Rm https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:25
+    Rm https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:25
+    Gm https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:25
+    Ym https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:41
+    Lm https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:49
+    <anonymous> https://snakeonton.vercel.app/assets/index-WVGvWlX5.js:49
+index-hQz6r36w.js:6:6396
+[TON_CONNECT_SDK] Analytics events sent successfully index-hQz6r36w.js:6:6326
+XHR
+POST
+https://snakeonton.vercel.app/snakeonton-production.up.railway.app/api/create-invoice
+[HTTP/2 405  580ms]
+
+[PaymentService] Create invoice error: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data index-WVGvWlX5.js:49:102278
+XHR
+POST
+https://snakeonton.vercel.app/snakeonton-production.up.railway.app/api/create-invoice
+[HTTP/2 405  74ms]
+
+[PaymentService] Create invoice error: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data index-WVGvWlX5.js:49:102278
 
 ​
 
