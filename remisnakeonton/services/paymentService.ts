@@ -27,10 +27,10 @@ class PaymentService {
 
     constructor() {
         // Use environment variable or detect from current deployment
-        this.backendUrl = (import.meta as any).env?.VITE_BACKEND_URL || 
-                         window.location.origin.replace('snakeonton.vercel.app', 'your-backend-url.railway.app') || 
-                         'http://localhost:3000';
-        
+        this.backendUrl = (import.meta as any).env?.VITE_BACKEND_URL ||
+            window.location.origin.replace('snakeonton.vercel.app', 'your-backend-url.railway.app') ||
+            'http://localhost:3000';
+
         console.log('[PaymentService] Backend URL:', this.backendUrl);
     }
 
@@ -48,16 +48,16 @@ class PaymentService {
     }): Promise<VerificationResult> {
         try {
             console.log('[PaymentService] Starting payment process:', params);
-            
+
             // Check if TonService is initialized
             if (!tonService.isReady()) {
                 console.error('[PaymentService] TonService not initialized! Attempting to initialize...');
                 const manifestUrl = `${window.location.origin}/tonconnect-manifest.json`;
                 await tonService.init(manifestUrl);
-                
+
                 // Wait a moment for initialization
                 await new Promise(resolve => setTimeout(resolve, 500));
-                
+
                 if (!tonService.isReady()) {
                     return {
                         success: false,
@@ -66,7 +66,7 @@ class PaymentService {
                 }
                 console.log('[PaymentService] TonService initialized successfully');
             }
-            
+
             console.log('[PaymentService] About to call tonService.sendTransaction');
             const txSuccess = await tonService.sendTransaction({
                 toAddress: params.toAddress,
@@ -75,7 +75,7 @@ class PaymentService {
             });
 
             console.log('[PaymentService] Transaction result:', txSuccess);
-            
+
             // Log detailed error if transaction failed
             if (!txSuccess) {
                 console.error('[PaymentService] Transaction failed - check tonService logs above');
@@ -90,9 +90,10 @@ class PaymentService {
 
             // Step 2: For TESTNET - auto-approve without backend verification
             // In production, you would verify on backend here
-            const isTestnet = (import.meta as any).env?.VITE_TON_NETWORK === 'testnet' || 
-                             params.toAddress.includes('QC9q38UghP0eT3E9RwXBdjAThZ'); // Testnet address check
-            
+            const isTestnet = (import.meta as any).env?.VITE_TON_NETWORK === 'testnet' ||
+                params.toAddress.includes('QC9q38UghP0eT3E9RwXBdjAThZ') ||
+                params.toAddress.includes('0QC2QYb'); // additional testnet address check
+
             if (isTestnet) {
                 console.log('[PaymentService] Testnet mode - auto-approving transaction');
                 return {
@@ -205,7 +206,7 @@ class PaymentService {
      */
     validateWithdrawal(goldAmount: number): { valid: boolean; message?: string } {
         const MIN_WITHDRAW_GOLD = 100_000; // From economyService
-        
+
         if (goldAmount < MIN_WITHDRAW_GOLD) {
             return {
                 valid: false,
