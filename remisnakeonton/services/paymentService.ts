@@ -50,6 +50,7 @@ class PaymentService {
             console.log('[PaymentService] Starting payment process:', params);
             
             // Step 1: Send transaction via TON Connect
+            console.log('[PaymentService] About to call tonService.sendTransaction');
             const txSuccess = await tonService.sendTransaction({
                 toAddress: params.toAddress,
                 amountNanoTon: params.amountNanoTon,
@@ -57,6 +58,11 @@ class PaymentService {
             });
 
             console.log('[PaymentService] Transaction result:', txSuccess);
+            
+            // Log detailed error if transaction failed
+            if (!txSuccess) {
+                console.error('[PaymentService] Transaction failed - check tonService logs above');
+            }
 
             if (!txSuccess) {
                 return {

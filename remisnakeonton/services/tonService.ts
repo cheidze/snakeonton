@@ -108,10 +108,20 @@ class TonService {
         amountNanoTon: string; // string to avoid precision issues
         comment?: string;
     }): Promise<boolean> {
-        if (!this.instance) return false;
+        if (!this.instance) {
+            console.error('[TonService] Cannot send transaction - TonConnect UI not initialized');
+            return false;
+        }
         try {
             // Convert address to user-friendly format if needed
             const formattedAddress = this.formatAddressForTransaction(params.toAddress);
+            
+            console.log('[TonService] Sending transaction:', {
+                toAddress: params.toAddress,
+                formattedAddress,
+                amountNanoTon: params.amountNanoTon,
+                comment: params.comment
+            });
             
             const transaction = {
                 validUntil: Math.floor(Date.now() / 1000) + 360, // 6 min expiry
@@ -126,10 +136,19 @@ class TonService {
                     },
                 ],
             };
+            
+            console.log('[TonService] Transaction object created, sending to wallet...');
             await this.instance.sendTransaction(transaction);
+            console.log('[TonService] Transaction sent successfully!');
             return true;
         } catch (e) {
             console.error('[TonService] sendTransaction error:', e);
+            if (e instanceof Error) {
+                console.error('[TonService] Error details:', {
+                    message: e.message,
+                    stack: e.stack
+                });
+            }
             return false;
         }
     }
