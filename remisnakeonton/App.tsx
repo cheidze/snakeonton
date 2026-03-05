@@ -113,7 +113,7 @@ function App() {
     setCurrentUser(user);
     setPlayerData(loadPlayerData(user.id));
     setSettings(prev => ({ ...prev, playerName: user.username }));
-    
+
     // Track login with analytics
     telegramService.trackEvent('user_login', {
       user_id: user.id,
@@ -176,11 +176,12 @@ function App() {
   // Shop Logic - Skins
   const buySkin = (skin: SnakeSkin): boolean => {
     if (!currentUser) return false;
-    if (playerData.gold >= skin.price) {
+    const currentData = loadPlayerData(currentUser.id);
+    if (currentData.gold >= skin.price) {
       const newData = {
-        ...playerData,
-        gold: playerData.gold - skin.price,
-        unlockedSkinIds: [...playerData.unlockedSkinIds, skin.id],
+        ...currentData,
+        gold: currentData.gold - skin.price,
+        unlockedSkinIds: [...currentData.unlockedSkinIds, skin.id],
         selectedSkinId: skin.id
       };
       setPlayerData(newData);
@@ -192,7 +193,8 @@ function App() {
 
   const equipSkin = (skinId: string) => {
     if (!currentUser) return;
-    const newData = { ...playerData, selectedSkinId: skinId };
+    const currentData = loadPlayerData(currentUser.id);
+    const newData = { ...currentData, selectedSkinId: skinId };
     setPlayerData(newData);
     savePlayerData(currentUser.id, newData);
   };
@@ -200,9 +202,10 @@ function App() {
   // Directly unlocks and equips a skin (e.g. from TON purchase)
   const handleUnlockSkin = (skinId: string) => {
     if (!currentUser) return;
+    const currentData = loadPlayerData(currentUser.id);
     const newData = {
-      ...playerData,
-      unlockedSkinIds: Array.from(new Set([...playerData.unlockedSkinIds, skinId])),
+      ...currentData,
+      unlockedSkinIds: Array.from(new Set([...currentData.unlockedSkinIds, skinId])),
       selectedSkinId: skinId
     };
     setPlayerData(newData);
@@ -211,9 +214,10 @@ function App() {
 
   const handleRecordTransaction = (tx: import('./types').TransactionRecord) => {
     if (!currentUser) return;
+    const currentData = loadPlayerData(currentUser.id);
     const newData = {
-      ...playerData,
-      transactions: [tx, ...(playerData.transactions || [])]
+      ...currentData,
+      transactions: [tx, ...(currentData.transactions || [])]
     };
     setPlayerData(newData);
     savePlayerData(currentUser.id, newData);
@@ -222,11 +226,12 @@ function App() {
   // Shop Logic - Collectibles
   const buyCollectible = (item: Collectible): boolean => {
     if (!currentUser) return false;
-    if (playerData.gold >= item.price) {
+    const currentData = loadPlayerData(currentUser.id);
+    if (currentData.gold >= item.price) {
       const newData = {
-        ...playerData,
-        gold: playerData.gold - item.price,
-        unlockedCollectibles: [...playerData.unlockedCollectibles, item.id],
+        ...currentData,
+        gold: currentData.gold - item.price,
+        unlockedCollectibles: [...currentData.unlockedCollectibles, item.id],
       };
       setPlayerData(newData);
       savePlayerData(currentUser.id, newData);
@@ -237,8 +242,9 @@ function App() {
 
   const equipCollectible = (itemId: string) => {
     if (!currentUser) return;
-    const newId = playerData.selectedCollectibleId === itemId ? null : itemId;
-    const newData = { ...playerData, selectedCollectibleId: newId };
+    const currentData = loadPlayerData(currentUser.id);
+    const newId = currentData.selectedCollectibleId === itemId ? null : itemId;
+    const newData = { ...currentData, selectedCollectibleId: newId };
     setPlayerData(newData);
     savePlayerData(currentUser.id, newData);
   };
@@ -249,7 +255,7 @@ function App() {
     engine.setBotCount(settings.botCount);
     engine.spawnPlayer(name, activeSkin, userCountry, playerData.selectedCollectibleId);
     setGameState('PLAYING');
-    
+
     // Track game start
     telegramService.trackEvent('game_start', {
       player_name: name,
@@ -270,7 +276,7 @@ function App() {
       if (levelUpEvents.length > 0) {
         setPendingLevelUps(levelUpEvents);
       }
-      
+
       // Track game end
       telegramService.trackEvent('game_end', {
         score: score,
