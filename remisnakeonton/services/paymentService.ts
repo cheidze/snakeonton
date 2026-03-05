@@ -160,6 +160,57 @@ class PaymentService {
     }
 
     /**
+     * Create a fiat invoice link for Telegram Payments
+     */
+    async createFiatInvoice(params: {
+        userId: string;
+        goldAmount: number;
+        priceAmount: number; // in minor units, e.g., cents
+        currency: string;
+    }): Promise<{ success: boolean; url?: string; message?: string }> {
+        try {
+            const response = await fetch(`${this.backendUrl}/api/create-invoice`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(params)
+            });
+
+            if (!response.ok) {
+                const error = await response.json();
+                throw new Error(error.error || 'Failed to create invoice');
+            }
+
+            const result = await response.json();
+            return { success: true, url: result.url };
+
+        } catch (error: any) {
+            console.error('[PaymentService] Create invoice error:', error);
+            return { success: false, message: error.message || 'Failed to generate payment link.' };
+        }
+    }
+
+    /**
+     * Wrapper for telegramService.openInvoice via Promise
+     */
+    async processFiatPayment(invoiceUrl: string): Promise<{ success: boolean; status: string }> {
+        return new Promise((resolve) => {
+            // Import dynamically or assume telegramService is available globally if needed.
+            // But since paymentService relies on tonService, let's just import telegram service at top if not.
+            // Assuming it's imported at the top of the file in the next step or it's already there.
+            import('./telegramService').then(({ telegramService }) => {
+                telegramService.openInvoice(invoiceUrl, (status) => {
+                    resolve({ success: status === 'paid', status });
+                });
+            }).catch(e => {
+                console.error("Failed to load telegramService", e);
+                resolve({ success: false, status: 'failed' });
+            });
+        });
+    }
+
+    /**
      * Process withdrawal request
      */
     async processWithdrawal(params: {

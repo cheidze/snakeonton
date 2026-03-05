@@ -21,6 +21,7 @@ interface Props {
     onEquipCollectible: (itemId: string) => void;
     onUnlockSkin: (skinId: string) => void;
     onRecordTransaction: (tx: import('../types').TransactionRecord) => void;
+    onAddGold?: (amount: number) => void;
     onClose: () => void;
     tonAddress?: string | null;
 }
@@ -38,12 +39,14 @@ const Shop: React.FC<Props> = ({
     onBuyCollectible,
     onEquipCollectible,
     onRecordTransaction,
+    onAddGold,
     onClose,
     tonAddress
 }) => {
-    const [activeTab, setActiveTab] = useState<'skins' | 'particles' | 'themes' | 'withdraw'>('skins');
+    const [activeTab, setActiveTab] = useState<'skins' | 'particles' | 'themes' | 'withdraw' | 'topup'>('skins');
     const [errorMsg, setErrorMsg] = useState<string | null>(null);
     const [isWithdrawing, setIsWithdrawing] = useState(false);
+    const [isBuyingGold, setIsBuyingGold] = useState(false);
 
     // State for skin preview interaction (Store preview mode per skin ID if needed, 
     // but simpler to just have a generic hover state or local state map)
@@ -209,6 +212,73 @@ const Shop: React.FC<Props> = ({
         }
     };
 
+    const handleBuyGoldWithFiat = async (packageId: string, goldAmount: number, priceAmount: number, currency: string) => {
+        setIsBuyingGold(true);
+        setErrorMsg(null);
+        try {
+            // Track attempt
+            telegramService.trackEvent('fiat_purchase_attempt', {
+                package_id: packageId,
+                gold_amount: goldAmount,
+                price: priceAmount,
+                currency: currency
+            });
+
+            // 1) Ask backend to create invoice link
+            const invoiceResponse = await paymentService.createFiatInvoice({
+                userId: 'demo_user', // Will need active user ID in real app if tracking server side
+                goldAmount,
+                priceAmount,
+                currency
+            });
+
+            if (!invoiceResponse.success || !invoiceResponse.url) {
+                throw new Error(invoiceResponse.message || "Failed to generate invoice.");
+            }
+
+            // 2) Trigger Telegram Native Modal
+            const paymentResult = await paymentService.processFiatPayment(invoiceResponse.url);
+
+            if (paymentResult.success) {
+                audioService.playClick();
+                if (onAddGold) {
+                    onAddGold(goldAmount);
+                }
+
+                onRecordTransaction({
+                    id: Math.random().toString(36).substring(2, 10),
+                    type: 'buy_gold_fiat',
+                    amount: goldAmount,
+                    currency: currency,
+                    date: Date.now(),
+                    itemName: `Gold Package ${packageId}`
+                });
+
+                telegramService.trackEvent('fiat_purchase_success', {
+                    package_id: packageId,
+                    gold_amount: goldAmount
+                });
+
+                setErrorMsg(`Successfully purchased ${goldAmount} Gold!`);
+                setTimeout(() => setErrorMsg(null), 3000);
+            } else if (paymentResult.status === 'cancelled') {
+                setErrorMsg("Payment cancelled.");
+                setTimeout(() => setErrorMsg(null), 2000);
+            } else {
+                throw new Error("Payment failed or pending.");
+            }
+        } catch (e: any) {
+            telegramService.trackEvent('fiat_purchase_error', {
+                package_id: packageId,
+                error: e.message
+            });
+            setErrorMsg(e.message || "An error occurred during payment.");
+            setTimeout(() => setErrorMsg(null), 3000);
+        } finally {
+            setIsBuyingGold(false);
+        }
+    };
+
     return (
         <div className="absolute inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md animate-in fade-in duration-300">
             <div
@@ -226,7 +296,7 @@ const Shop: React.FC<Props> = ({
                             MARKETPLACE
                         </h2>
                         <div className="flex gap-4 mt-2 overflow-x-auto no-scrollbar pb-2 mask-linear">
-                            {(['skins', 'particles', 'themes', 'withdraw'] as const).map(tab => (
+                            {(['skins', 'particles', 'themes', 'topup', 'withdraw'] as const).map(tab => (
                                 <button
                                     key={tab}
                                     onClick={() => { audioService.playClick(); setActiveTab(tab); }}
@@ -236,7 +306,7 @@ const Shop: React.FC<Props> = ({
                                         }`}
                                     style={{ borderColor: activeTab === tab ? themeColor : 'transparent' }}
                                 >
-                                    {tab === 'withdraw' ? '💸 WITHDRAW' : tab}
+                                    {tab === 'withdraw' ? '💸 WITHDRAW' : tab === 'topup' ? '💳 TOP UP' : tab}
                                 </button>
                             ))}
                         </div>
@@ -561,6 +631,57 @@ const Shop: React.FC<Props> = ({
                         </div>
                     )}
 
+                    {/* TOP UP TAB */}
+                    {activeTab === 'topup' && (
+                        <div className="flex flex-col items-center justify-center py-10 max-w-4xl mx-auto text-center space-y-8">
+                            <div>
+                                <h3 className="text-3xl font-black italic text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-200 mb-2">Buy Gold</h3>
+                                <p className="text-gray-400 text-sm max-w-md mx-auto">Purchase gold directly with your credit card using Telegram Payments.</p>
+                            </div>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full px-4">
+                                {/* Package 1 */}
+                                <div className="bg-black/40 border-2 border-yellow-500/30 rounded-2xl p-6 flex flex-col items-center hover:border-yellow-500/60 transition-colors shadow-lg relative overflow-hidden group">
+                                    <div className="absolute top-0 right-0 bg-yellow-500 text-black text-xs font-bold px-3 py-1 rounded-bl-lg">
+                                        STARTER
+                                    </div>
+                                    <div className="text-6xl mb-4 transform group-hover:scale-110 transition-transform">🪙</div>
+                                    <h4 className="text-2xl font-black text-white mb-1">10,000 Gold</h4>
+                                    <p className="text-gray-400 mb-6">Perfect for beginners</p>
+
+                                    <button
+                                        onClick={() => handleBuyGoldWithFiat('pkg_10k', 10000, 100, 'EUR')} // 1.00 EUR
+                                        disabled={isBuyingGold}
+                                        className="w-full py-3 rounded-xl font-black text-lg bg-gradient-to-r from-yellow-600 to-yellow-400 hover:from-yellow-500 hover:to-yellow-300 text-black shadow-[0_0_15px_rgba(234,179,8,0.3)] transition-all transform hover:scale-105 disabled:opacity-50"
+                                    >
+                                        Buy for €1.00
+                                    </button>
+                                </div>
+
+                                {/* Package 2 */}
+                                <div className="bg-black/40 border-2 border-yellow-400 rounded-2xl p-6 flex flex-col items-center hover:border-yellow-300 transition-colors shadow-[0_0_20px_rgba(250,204,21,0.2)] relative overflow-hidden group">
+                                    <div className="absolute top-0 right-0 bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-bl-lg shadow-md animate-pulse">
+                                        MOST POPULAR
+                                    </div>
+                                    <div className="text-6xl mb-4 transform group-hover:scale-110 transition-transform">💰</div>
+                                    <h4 className="text-2xl font-black text-white mb-1">50,000 Gold</h4>
+                                    <p className="text-yellow-400/80 mb-6">+ 10% Bonus Gold included!</p>
+
+                                    <button
+                                        onClick={() => handleBuyGoldWithFiat('pkg_50k', 50000, 400, 'EUR')} // 4.00 EUR
+                                        disabled={isBuyingGold}
+                                        className="w-full py-3 rounded-xl font-black text-lg bg-gradient-to-r from-yellow-500 to-yellow-300 hover:from-yellow-400 hover:to-yellow-200 text-black shadow-[0_0_25px_rgba(250,204,21,0.5)] transition-all transform hover:scale-105 disabled:opacity-50"
+                                    >
+                                        Buy for €4.00
+                                    </button>
+                                </div>
+                            </div>
+
+                            <p className="text-xs text-gray-500 mt-4">
+                                Payments are securely processed via Telegram.
+                            </p>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

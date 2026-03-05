@@ -223,6 +223,17 @@ function App() {
     savePlayerData(currentUser.id, newData);
   };
 
+  const handleAddGold = (amount: number) => {
+    if (!currentUser) return;
+    const currentData = loadPlayerData(currentUser.id);
+    const newData = {
+      ...currentData,
+      gold: currentData.gold + amount
+    };
+    setPlayerData(newData);
+    savePlayerData(currentUser.id, newData);
+  };
+
   // Shop Logic - Collectibles
   const buyCollectible = (item: Collectible): boolean => {
     if (!currentUser) return false;
@@ -379,6 +390,7 @@ function App() {
           onBuyCollectible={buyCollectible}
           onEquipCollectible={equipCollectible}
           onRecordTransaction={handleRecordTransaction}
+          onAddGold={handleAddGold}
           onClose={() => setGameState('MENU')}
           tonAddress={tonAddress}
         />

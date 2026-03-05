@@ -71,6 +71,7 @@ interface TelegramWebApp {
     };
     openLink(url: string): void;
     openTelegramLink(url: string): void;
+    openInvoice(url: string, callback?: (status: 'paid' | 'cancelled' | 'failed' | 'pending') => void): void;
     setHeaderColor(color: string): void;
     setBackgroundColor(color: string): void;
 }
@@ -102,7 +103,7 @@ class TelegramService {
             // Use dark theme header to match game UI
             this.webApp.setHeaderColor('#0a0a0f');
             this.webApp.setBackgroundColor('#0a0a0f');
-            
+
             // Initialize Telegram Analytics
             this.initAnalytics();
         } catch (e) {
@@ -221,6 +222,19 @@ class TelegramService {
             this.webApp.openLink(url);
         } else {
             window.open(url, '_blank');
+        }
+    }
+
+    /**
+     * Open Telegram invoice
+     */
+    public openInvoice(url: string, callback?: (status: 'paid' | 'cancelled' | 'failed' | 'pending') => void): void {
+        if (this.webApp && this.webApp.openInvoice) {
+            this.webApp.openInvoice(url, callback);
+        } else {
+            console.warn('[TelegramService] openInvoice not available, falling back to openLink');
+            this.openLink(url);
+            if (callback) callback('pending'); // Can't know the status if opened externally
         }
     }
 
