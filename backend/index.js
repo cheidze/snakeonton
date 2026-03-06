@@ -94,21 +94,19 @@ app.post('/api/create-invoice', async (req, res) => {
 
         console.log(`[Payment Request] Generating invoice for ${goldAmount} Gold (User: ${userId}, Amount: ${priceAmount} ${currency})`);
 
-        const invoiceLink = await bot.telegram.createInvoiceLink(
+        const invoiceLink = await bot.telegram.createInvoiceLink({
             title,
             description,
             payload,
-            providerToken,
+            provider_token: providerToken,
             currency,
             prices,
-            {
-                need_name: false,
-                need_phone_number: false,
-                need_email: false,
-                need_shipping_address: false,
-                is_flexible: false,
-            }
-        );
+            need_name: false,
+            need_phone_number: false,
+            need_email: false,
+            need_shipping_address: false,
+            is_flexible: false,
+        });
 
         console.log(`[Payment Request] Successfully generated invoice Link`);
         res.json({ success: true, url: invoiceLink });
