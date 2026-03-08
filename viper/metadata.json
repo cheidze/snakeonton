@@ -1,0 +1,5 @@
+{
+  "name": "Viper",
+  "description": "A multiplayer-style competitive viper game with neon aesthetics, smooth physics, and bot simulation.",
+  "requestFramePermissions": []
+}

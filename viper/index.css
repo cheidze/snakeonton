@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+  --font-mono: "Consolas", "Monaco", "Courier New", monospace;
+  --color-neon-blue: #00f3ff;
+  --color-neon-pink: #ff00ff;
+  --color-neon-green: #00ff9d;
+  --color-neon-yellow: #ffe600;
+  --color-neon-purple: #bd00ff;
+  --color-dark-bg: #050510;
+  --color-dark-grid: #0a0a20;
+}
+
+body {
+  background-color: #050510;
+  color: white;
+  overflow: hidden;
+  touch-action: none; /* Prevent pull-to-refresh on mobile */
+}
+
+/* Hide scrollbars */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.glass-panel {
+  background: rgba(10, 10, 30, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.text-shadow-neon {
+  text-shadow: 0 0 5px currentColor, 0 0 10px currentColor;
+}

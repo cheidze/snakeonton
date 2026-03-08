@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>VIPER</title>
+    <meta name="description" content="Modern VIPER style game" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <style>
+      body {
+        background-color: #050510;
+        color: white;
+        overflow: hidden;
+        touch-action: none; /* Prevent pull-to-refresh on mobile */
+      }
+      /* Hide scrollbars */
+      ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+      }
+      .glass-panel {
+        background: rgba(10, 10, 30, 0.7);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .text-shadow-neon {
+        text-shadow: 0 0 5px currentColor, 0 0 10px currentColor;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
